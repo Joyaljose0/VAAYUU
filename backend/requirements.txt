@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pyserial
+pandas
+tensorflow
+numpy
+pyttsx3
+python-dotenv
+gunicorn

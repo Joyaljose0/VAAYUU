@@ -1,0 +1,5 @@
+{
+  "name": "AuraGuard AI - Air Quality Monitor",
+  "description": "An advanced AI-powered air quality monitoring system for vehicles and buildings featuring real-time sensor tracking, CNN-based predictive analysis, and intelligent safety alerts.",
+  "requestFramePermissions": []
+}

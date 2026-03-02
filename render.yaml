@@ -1,0 +1,30 @@
+services:
+  # Backend: FastAPI Web Service
+  - type: web
+    name: vaayuu-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && gunicorn api.main:app -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: BLYNK_AUTH_TOKEN
+        sync: false
+      - key: BLYNK_EVENT_CODE
+        value: critical_alert
+      - key: SMS_COOLDOWN_SECONDS
+        value: 300
+      - key: VITE_GEMINI_API_KEY
+        sync: false
+
+  # Frontend: React (Vite) Static Site
+  - type: static
+    name: vaayuu-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    publishDir: frontend/dist
+    envVars:
+      - key: VITE_BACKEND_URL
+        value: https://vaayuu-backend.onrender.com
+      - key: VITE_GEMINI_API_KEY
+        sync: false
