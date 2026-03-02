@@ -21,7 +21,7 @@ services:
         sync: false
 
   # Frontend: React (Vite) Static Site
-  - type: static_site
+  - type: web
     name: vaayuu-frontend
     env: static
     buildCommand: cd frontend && npm install && npm run build
