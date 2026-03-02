@@ -90,4 +90,4 @@ The system operates based on international safety thresholds:
 This project is developed as a sophisticated solution for industrial and domestic air safety monitoring.
 
 ---
-*Created with ❤️ by the VAAYUU Team.*
+*Created by VAAYUU Team.*
