@@ -28,7 +28,7 @@ import {
   Tooltip,
   ResponsiveContainer
 } from 'recharts';
-import { SensorData, EnvironmentType, Alert, PredictionResult } from './types';
+import { SensorData, EnvironmentType, Alert } from './types';
 import {
   BUILDING_THRESHOLDS,
   VEHICLE_THRESHOLDS,
@@ -37,7 +37,6 @@ import {
   CO_STATUS,
   O2_STATUS
 } from './constants';
-import { analyzeAirQuality } from './services/geminiService';
 
 // --- Live Fetching Logic ---
 const fetchLiveReading = async (): Promise<SensorData | null> => {
@@ -94,9 +93,6 @@ const App: React.FC = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [history, setHistory] = useState<SensorData[]>([]);
   const [alerts, setAlerts] = useState<Alert[]>([]);
-  const [prediction, setPrediction] = useState<PredictionResult | null>(null);
-  const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [autoAnalysis, setAutoAnalysis] = useState(true);
   const [isCritical, setIsCritical] = useState(false);
   const [buzzerEnabled, setBuzzerEnabled] = useState(true);
   const [connectionError, setConnectionError] = useState<string | null>(null);
@@ -137,6 +133,7 @@ const App: React.FC = () => {
       setWifiIp(currentData.backend_ip);
     }
   }, [currentData?.backend_ip, wifiIp]);
+  const currentRemaining = Math.min(countdownSeconds ?? 3600, physioSeconds ?? 3600);
 
   // Update current time and calculate live countdown
   useEffect(() => {
@@ -300,31 +297,33 @@ const App: React.FC = () => {
           id: Math.random().toString(),
           type: newData.co2 > currentThresholds.co2 * 1.5 ? 'DANGER' : 'WARNING',
           sensor: 'co2',
-          message: co2Level ? `${co2Level.status}: ${co2Level.desc}` : 'High CO2 level detected.',
+          message: co2Level ? `${co2Level.status}: ${co2Level.desc}. PRECAUTION: ${co2Level.precaution}` : 'High CO2 level detected.',
           timestamp: Date.now(),
           value: newData.co2
         });
         if (newData.co2 > currentThresholds.co2 * 1.5) criticalDetected = true;
       }
+
       if (newData.co > currentThresholds.co) {
         const coLevel = CO_STATUS.find(s => newData.co >= s.min && newData.co <= s.max);
         newAlerts.push({
           id: Math.random().toString(),
           type: newData.co > currentThresholds.co * 3 ? 'DANGER' : 'WARNING',
           sensor: 'co',
-          message: coLevel ? `${coLevel.status}: ${coLevel.desc}` : 'Elevated CO level detected.',
+          message: coLevel ? `${coLevel.status}: ${coLevel.desc}. PRECAUTION: ${coLevel.precaution}` : 'Elevated CO level detected.',
           timestamp: Date.now(),
           value: newData.co
         });
         if (newData.co > currentThresholds.co * 3) criticalDetected = true;
       }
+
       if (newData.o2 < currentThresholds.o2Min) {
         const o2Level = O2_STATUS.find(s => newData.o2 >= s.min && newData.o2 <= s.max);
         newAlerts.push({
           id: Math.random().toString(),
           type: newData.o2 < 17 ? 'DANGER' : 'WARNING',
           sensor: 'o2',
-          message: o2Level ? `${o2Level.status}: Time Remaining approx ${o2Level.time} min` : 'Low Oxygen detected.',
+          message: o2Level ? `${o2Level.status}: Time Remaining approx ${o2Level.time}. PRECAUTION: ${o2Level.precaution}` : 'Low Oxygen detected.',
           timestamp: Date.now(),
           value: newData.o2
         });
@@ -399,22 +398,6 @@ const App: React.FC = () => {
     };
   }, []); // Empty dependency array is fine since we use refs
 
-  // AI Prediction Trigger
-  const runPrediction = async () => {
-    if (history.length < 5 || isAnalyzing) return;
-    setIsAnalyzing(true);
-    const result = await analyzeAirQuality(history, history[history.length - 1]);
-    setPrediction(result);
-    setIsAnalyzing(false);
-  };
-
-  useEffect(() => {
-    if (autoAnalysis && history.length > 0) {
-      if (history.length % 5 === 0 || isCritical) {
-        runPrediction();
-      }
-    }
-  }, [history.length, autoAnalysis, isCritical]);
 
   const handleWifiConnect = async () => {
     setWifiStatus("Sending...");
@@ -743,22 +726,25 @@ const App: React.FC = () => {
           {/* Main Stats Card */}
           <div className="lg:col-span-2 space-y-6">
 
-            {/* Unified Predictive Analysis Panel */}
+            {/* LSTM Prediction Engine */}
             <div className={`p-6 rounded-3xl border transition-all ${isCritical ? 'bg-red-500/10 border-red-500/50' : 'bg-slate-900/40 border-slate-800'}`}>
               <div className="flex items-center gap-2 mb-6 text-slate-300">
                 <BrainCircuit className="w-6 h-6 text-indigo-400" />
                 <h2 className="text-sm font-bold uppercase tracking-widest opacity-90">
-                  ESTIMATED SURVIVAL (LSTM + PHYSIOLOGICAL)
+                  LSTM PREDICTION ENGINE (LOCAL AI)
                 </h2>
               </div>
+              <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold mb-4 -mt-4">
+                Analyzing gas trends and O2 depletion for survival estimation...
+              </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Visual Survival Clock */}
                 <div className="flex flex-col items-center justify-center p-4 bg-slate-950/50 rounded-2xl border border-slate-800/50">
-                  <div className={`text-6xl font-black font-mono tracking-tighter mb-1 ${Math.min(countdownSeconds || 3600, physioSeconds || 3600) > 600 ? 'text-emerald-400' : 'text-red-500 animate-pulse'}`}>
-                    {Math.min(countdownSeconds || 3600, physioSeconds || 3600) > 1800
+                  <div className={`text-6xl font-black font-mono tracking-tighter mb-1 ${currentRemaining > 600 ? 'text-emerald-400' : 'text-red-500 animate-pulse'}`}>
+                    {currentRemaining > 1800
                       ? "SAFE"
-                      : `${String(Math.floor(Math.min(countdownSeconds || 0, physioSeconds || 0) / 60)).padStart(2, '0')}:${String(Math.min(countdownSeconds || 0, physioSeconds || 0) % 60).padStart(2, '0')}`
+                      : `${String(Math.floor(currentRemaining / 60)).padStart(2, '0')}:${String(currentRemaining % 60).padStart(2, '0')}`
                     }
                   </div>
                   <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Time to Escape</p>
@@ -835,14 +821,14 @@ const App: React.FC = () => {
 
           {/* Side Panel */}
           <div className="space-y-6">
-            {/* Sensor Analytics Graph Relocated Here */}
+            {/* Sensor Analytics - CO2 */}
             <div className="glass rounded-2xl p-5 border border-slate-800">
               <div className="mb-4">
                 <h3 className="text-sm font-bold text-slate-100 flex items-center gap-2 uppercase tracking-widest">
-                  <TrendingUp className="w-4 h-4 text-indigo-500" /> Sensor Analytics
+                  <TrendingUp className="w-4 h-4 text-emerald-500" /> CO2 Analytics
                 </h3>
               </div>
-              <div className="h-[200px] w-full">
+              <div className="h-[150px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <AreaChart data={history}>
                     <defs>
@@ -850,6 +836,28 @@ const App: React.FC = () => {
                         <stop offset="5%" stopColor="#10b981" stopOpacity={0.3} />
                         <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
                       </linearGradient>
+                    </defs>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" vertical={false} />
+                    <XAxis dataKey="timestamp" hide />
+                    <YAxis domain={[400, 'auto']} stroke="#475569" fontSize={10} tickLine={false} axisLine={false} />
+                    <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderColor: '#1e293b', borderRadius: '8px', fontSize: '10px' }} />
+                    <Area type="monotone" dataKey="co2" stroke="#10b981" fill="url(#colorCo2)" strokeWidth={2} />
+                  </AreaChart>
+                </ResponsiveContainer>
+              </div>
+            </div>
+
+            {/* Sensor Analytics - O2 */}
+            <div className="glass rounded-2xl p-5 border border-slate-800">
+              <div className="mb-4">
+                <h3 className="text-sm font-bold text-slate-100 flex items-center gap-2 uppercase tracking-widest">
+                  <TrendingUp className="w-4 h-4 text-blue-500" /> Oxygen Analytics
+                </h3>
+              </div>
+              <div className="h-[150px] w-full">
+                <ResponsiveContainer width="100%" height="100%">
+                  <AreaChart data={history}>
+                    <defs>
                       <linearGradient id="colorO2" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3} />
                         <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
@@ -857,60 +865,14 @@ const App: React.FC = () => {
                     </defs>
                     <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" vertical={false} />
                     <XAxis dataKey="timestamp" hide />
-                    <YAxis stroke="#475569" fontSize={10} tickLine={false} axisLine={false} />
+                    <YAxis domain={[15, 21]} stroke="#475569" fontSize={10} tickLine={false} axisLine={false} />
                     <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderColor: '#1e293b', borderRadius: '8px', fontSize: '10px' }} />
-                    <Area type="monotone" dataKey="co2" stroke="#10b981" fill="url(#colorCo2)" strokeWidth={2} />
                     <Area type="monotone" dataKey="o2" stroke="#3b82f6" fill="url(#colorO2)" strokeWidth={2} />
                   </AreaChart>
                 </ResponsiveContainer>
               </div>
             </div>
 
-            {/* ML Predictor */}
-            <div className="glass rounded-2xl p-6 border border-slate-800 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 overflow-hidden relative">
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-semibold text-slate-100 flex items-center gap-2">
-                  <BrainCircuit className="w-5 h-5 text-indigo-400" /> ML Predictor
-                </h3>
-                <button
-                  onClick={runPrediction}
-                  disabled={isAnalyzing}
-                  className="p-1.5 bg-indigo-600/20 hover:bg-indigo-600/40 text-indigo-400 rounded-lg transition-colors"
-                >
-                  <Zap className={`w-4 h-4 ${isAnalyzing ? 'animate-pulse' : ''}`} />
-                </button>
-              </div>
-
-              {currentData.escape_time === null && !prediction ? (
-                <div className="py-8 text-center text-slate-500 text-sm">Waiting for baseline data...</div>
-              ) : isAnalyzing ? (
-                <div className="space-y-4">
-                  <div className="p-4 rounded-xl border border-indigo-500/20 bg-indigo-500/5 animate-pulse">
-                    <p className="text-xs uppercase font-bold tracking-wider mb-2 text-indigo-400">Trend Analysis</p>
-                    <div className="h-4 bg-indigo-500/20 rounded w-3/4 mb-2"></div>
-                    <div className="h-4 bg-indigo-500/20 rounded w-full mb-2"></div>
-                    <div className="h-4 bg-indigo-500/20 rounded w-5/6"></div>
-                  </div>
-                </div>
-              ) : (
-                <div className="space-y-4">
-
-                  {/* Periodic Gemini Analysis */}
-                  {prediction && (
-                    <div className={`p-4 rounded-xl border transition-colors ${prediction.predictedStatus === 'SAFE' ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400' :
-                      'bg-red-500/10 border-red-500/40 text-red-400 shadow-[0_0_15px_rgba(239,68,68,0.2)]'
-                      }`}>
-                      <p className="text-xs uppercase font-bold tracking-wider mb-2 opacity-80 flex items-center gap-2">
-                        {prediction.predictedStatus === 'SAFE' ? <CheckCircle2 className="w-4 h-4" /> : <AlertTriangle className="w-4 h-4" />}
-                        Trend Analysis
-                      </p>
-                      <p className="text-sm leading-relaxed text-slate-300 font-medium tracking-wide">"{prediction.recommendation}"</p>
-                    </div>
-                  )}
-
-                </div>
-              )}
-            </div>
 
             {/* Alerts Log */}
             <div className="glass rounded-2xl p-6 border border-slate-800 max-h-[450px] overflow-hidden flex flex-col">

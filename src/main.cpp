@@ -100,6 +100,7 @@ float getMQ135_PPM(int raw_adc) {
 }
 
 // Replaced old float methods with mapAnalogToPPM
+void startAPMode();
 
 /* ================= SETUP ================= */
 void setup() {

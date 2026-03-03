@@ -23,29 +23,29 @@ export const VEHICLE_THRESHOLDS: Thresholds = {
  * Descriptive maps based on User's provided tables
  */
 export const CO2_STATUS = [
-  { min: 0, max: 450, status: 'Normal', desc: 'Outdoor fresh air', color: 'text-green-500' },
-  { min: 451, max: 800, status: 'Good', desc: 'Well-ventilated indoor space', color: 'text-green-400' },
-  { min: 801, max: 1000, status: 'Acceptable', desc: 'Mild drowsiness possible', color: 'text-yellow-500' },
-  { min: 1001, max: 1500, status: 'Poor Air', desc: 'Fatigue, reduced concentration', color: 'text-orange-500' },
-  { min: 1501, max: 5000, status: 'Dangerous', desc: 'Headache, sleepiness', color: 'text-red-500' },
-  { min: 5001, max: 1000000, status: 'Critical', desc: 'Oxygen deprivation risk', color: 'text-purple-600' },
+  { min: 0, max: 450, status: 'Normal', desc: 'Outdoor fresh air', precaution: 'Safe conditions.', color: 'text-green-500' },
+  { min: 451, max: 800, status: 'Good', desc: 'Well-ventilated space', precaution: 'Maintain ventilation.', color: 'text-green-400' },
+  { min: 801, max: 1000, status: 'Acceptable', desc: 'Mild drowsiness possible', precaution: 'Open windows for fresh air.', color: 'text-yellow-500' },
+  { min: 1001, max: 1500, status: 'Poor Air', desc: 'Fatigue, reduced concentration', precaution: 'Increase ventilation immediately.', color: 'text-orange-500' },
+  { min: 1501, max: 5000, status: 'Dangerous', desc: 'Headache, sleepiness', precaution: 'Open all windows. Leave area if symptoms persist.', color: 'text-red-500' },
+  { min: 5001, max: 1000000, status: 'Critical', desc: 'Oxygen deprivation risk', precaution: 'EVACUATE IMMEDIATELY. DO NOT STAY IN AREA.', color: 'text-purple-600' },
 ];
 
 export const CO_STATUS = [
-  { min: 0, max: 2, status: 'Normal', desc: 'Fresh / Well-ventilated air', color: 'text-green-500' },
-  { min: 3, max: 9, status: 'Elevated', desc: 'Acceptable for short periods', color: 'text-yellow-500' },
-  { min: 10, max: 30, status: 'Unsafe', desc: 'Headache, dizziness after hours', color: 'text-orange-500' },
-  { min: 31, max: 50, status: 'Dangerous', desc: 'Nausea, fatigue (1-2 hours)', color: 'text-red-500' },
-  { min: 51, max: 200, status: 'Critical', desc: 'Serious poisoning emergency', color: 'text-purple-600' },
-  { min: 201, max: 1000, status: 'Fatal', desc: 'Life-threatening minutes', color: 'text-black font-bold text-xl' },
+  { min: 0, max: 2, status: 'Normal', desc: 'Fresh / Well-ventilated air', precaution: 'Safe conditions.', color: 'text-green-500' },
+  { min: 3, max: 9, status: 'Elevated', desc: 'Acceptable for short periods', precaution: 'Monitor CO source.', color: 'text-yellow-500' },
+  { min: 10, max: 30, status: 'Unsafe', desc: 'Headache, dizziness after hours', precaution: 'Ventilate and check appliances.', color: 'text-orange-500' },
+  { min: 31, max: 50, status: 'Dangerous', desc: 'Nausea, fatigue (1-2 hours)', precaution: 'Turn off combustion sources. Open windows.', color: 'text-red-500' },
+  { min: 51, max: 200, status: 'Critical', desc: 'Serious poisoning emergency', precaution: 'EVACUATE. SEEK FRESH AIR IMMEDIATELY.', color: 'text-purple-600' },
+  { min: 201, max: 1000, status: 'Fatal', desc: 'Life-threatening minutes', precaution: 'LEAVE NOW. DEADLY LEVELS.', color: 'text-black font-bold text-xl' },
 ];
 
 export const O2_STATUS = [
-  { min: 19.5, max: 100, status: 'Normal', time: '60 min', color: 'text-green-500' },
-  { min: 17, max: 19.49, status: 'Fatigue', time: '12 min', color: 'text-yellow-500' },
-  { min: 14, max: 16.99, status: 'Dizziness', time: '4 min', color: 'text-orange-500' },
-  { min: 10, max: 13.99, status: 'Fainting', time: '1.5 min', color: 'text-red-500' },
-  { min: 0, max: 9.99, status: 'Collapse', time: '30 sec', color: 'text-purple-600' },
+  { min: 19.5, max: 100, status: 'Normal', time: '60 min', precaution: 'Conditions safe.', color: 'text-green-500' },
+  { min: 17, max: 19.49, status: 'Fatigue', time: '12 min', precaution: 'Open windows. Check for CO2 buildup.', color: 'text-yellow-500' },
+  { min: 14, max: 16.99, status: 'Dizziness', time: '4 min', precaution: 'Ventilate immediately. Seek fresh air.', color: 'text-orange-500' },
+  { min: 10, max: 13.99, status: 'Fainting', time: '1.5 min', precaution: 'DANGEROUS. Evacuate to fresh air.', color: 'text-red-500' },
+  { min: 0, max: 9.99, status: 'Collapse', time: '30 sec', precaution: 'IMMEDIATE FATALITY RISK. EVACUATE NOW.', color: 'text-purple-600' },
 ];
 
 export const SENSOR_CONFIG = {
