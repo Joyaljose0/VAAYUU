@@ -10,6 +10,6 @@ def log_to_csv(data):
         writer = csv.writer(f)
         if not file_exists:
             writer.writerow([
-                "CO","Gas","Temp","Humidity","Pressure","Oxygen","Alert"
+                "CO","Gas","Temp","Humidity","Pressure","Oxygen","Alert","Escape_Time"
             ])
         writer.writerow(data)

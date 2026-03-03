@@ -96,7 +96,7 @@ async def lifespan(app: FastAPI):
                         latest_data.update({
                             **sensor,
                             "escape_time": escape_time,
-                            "alerts": alerts,
+                            "backend_alerts": alerts,
                             "is_warming_up": sensor.get("is_warming_up", False),
                             "last_updated": int(time.time())
                         })
@@ -118,7 +118,8 @@ async def lifespan(app: FastAPI):
                             sensor["humidity"],
                             sensor["pressure"],
                             sensor["oxygen"],
-                            alert_text
+                            alert_text,
+                            escape_time
                         ]
                         
                         log_to_csv(csv_data)
@@ -251,7 +252,7 @@ def process_wifi_data(sensor):
         latest_data.update({
             **sensor,
             "escape_time": escape_time,
-            "alerts": alerts,
+            "backend_alerts": alerts,
             "last_updated": int(time.time())
         })
         
@@ -266,7 +267,8 @@ def process_wifi_data(sensor):
         sensor["humidity"],
         sensor["pressure"],
         sensor["oxygen"],
-        alert_text
+        alert_text,
+        escape_time
     ]
     log_to_csv(csv_data)
 

@@ -16,4 +16,7 @@ model = Sequential([
 model.compile(optimizer="adam", loss="mse")
 model.fit(X, y, epochs=1)
 
-model.save("models/escape_time_lstm.keras")
+import os
+save_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "models", "escape_time_lstm.keras")
+model.save(save_path)
+print(f"Model saved to {save_path}")

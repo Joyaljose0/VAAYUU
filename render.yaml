@@ -12,13 +12,7 @@ services:
         value: 10000
       - key: RENDER
         value: true
-      - key: BLYNK_AUTH_TOKEN
-        sync: false
-      - key: BLYNK_EVENT_CODE
-        value: critical_alert
       - key: SMS_COOLDOWN_SECONDS
         value: 300
-      - key: VITE_GEMINI_API_KEY
-        sync: false
       - key: PYTHON_VERSION
         value: 3.11.9
