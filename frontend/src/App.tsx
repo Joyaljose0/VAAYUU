@@ -475,7 +475,7 @@ const App: React.FC = () => {
             </div>
             <h2 className="text-xl font-bold text-white">Sensor Warming Up</h2>
             <p className="text-slate-400 text-sm">
-              Stabilizing chemical baselines. This takes about 45 seconds to ensure precision readings.
+              Stabilizing chemical baselines. This takes about 2 minutes to ensure precision readings.
             </p>
             <div className="flex justify-center gap-1">
               {[0, 1, 2].map((i) => (

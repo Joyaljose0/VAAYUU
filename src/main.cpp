@@ -139,10 +139,10 @@ void setup() {
   }
 
   // MQ and Oxygen sensors need a longer warm-up for a stable baseline
-  Serial.println("Warming up sensors for baseline stabilization (45s)...");
+  Serial.println("Warming up sensors for baseline stabilization (2m)...");
   display.clearDisplay();
   display.setCursor(0, 0);
-  display.println("SENSOR WARMUP (45s)");
+  display.println("SENSOR WARMUP (2m)");
   display.display();
 
   // Send warmup status to backend
@@ -150,7 +150,7 @@ void setup() {
 
   long mq7_cal = 0;
   long mq135_cal = 0;
-  int samples = 300; // 30 seconds for MQ warmup
+  int samples = 600; // 60 seconds (600 * 100ms) for MQ warmup
   for (int i = 0; i < samples; i++) {
     mq7_cal += analogRead(MQ7_A_PIN);
     mq135_cal += analogRead(MQ135_A_PIN);
@@ -180,7 +180,7 @@ void setup() {
       display.fillRect(0, 16, 128, 8, BLACK);
       display.setCursor(0, 16);
       display.print("O2 Prep: ");
-      display.print((i * 100) / 15);
+      display.print((i * 100) / 60);
       display.println("%");
       display.display();
     }
