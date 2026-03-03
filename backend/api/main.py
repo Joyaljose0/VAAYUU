@@ -15,6 +15,7 @@ import threading
 import socket
 import time
 from collections import deque
+from ml.train_from_csv import train_model
 from pydantic import BaseModel
 
 def get_local_ip():
@@ -58,6 +59,10 @@ shutdown_event = threading.Event()
 training_queue = deque(maxlen=60) # Keep max 60 last frames
 training_lock = threading.Lock()
 
+# Inference buffers for sequence-based trend analysis
+inference_buffer_usb = deque(maxlen=30)
+inference_buffer_wifi = deque(maxlen=30)
+
 class ConnectionMode(BaseModel):
     mode: str
 
@@ -78,8 +83,10 @@ async def lifespan(app: FastAPI):
                 if sensor:
                     # Virtual oxygen removed to prioritize real hardware calibration accuracy.
                     
-                    # Calculate escape time strictly on the RAW data to prevent offset poisoning.
-                    escape_time = predict_escape(sensor)
+                    
+                    # Trend-based escape prediction using last 30 seconds
+                    inference_buffer_usb.append(sensor)
+                    escape_time = predict_escape(list(inference_buffer_usb))
                     alerts = check_alerts(
                         sensor["oxygen"],
                         sensor["co"],
@@ -130,25 +137,23 @@ async def lifespan(app: FastAPI):
             # Sleep 1s whether we read data or not (or if we skipped because of WIFI mode)
             time.sleep(1)
             
-    def ml_retrain_loop():
-        # Every 5 seconds, grab the latest sensor snapshots and run a training epoch
+    def periodic_training_loop():
+        """Periodic background training thread (User Request: Every 5-10 minutes)"""
+        print("[AI] Periodic Training Thread Started.")
         while not shutdown_event.is_set():
-            # Check every 1s for shutdown during the 5s sleep
-            for _ in range(5):
-                if shutdown_event.is_set(): return
-                time.sleep(1.0)
-            with training_lock:
-                if len(training_queue) > 0:
-                    batch = list(training_queue)
-                    training_queue.clear()
-                else:
-                    batch = []
-            
-            if batch:
-                train_on_live_data(batch)
+            try:
+                # Wait 5 minutes between training (300 seconds)
+                for _ in range(300):
+                    if shutdown_event.is_set(): return
+                    time.sleep(1)
+                
+                print("[AI] Starting periodic background retraining from CSV...")
+                train_model()
+            except Exception as e:
+                print(f"[AI] Training Thread Error: {e}")
 
     threading.Thread(target=loop, daemon=True).start()
-    threading.Thread(target=ml_retrain_loop, daemon=True).start()
+    threading.Thread(target=periodic_training_loop, daemon=True).start()
     yield
     print("Shutdown signal received. Stopping background threads...")
     shutdown_event.set()
@@ -235,8 +240,9 @@ def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
 
 def process_wifi_data(sensor):
     global latest_data
-    # Run predictions and checks in background to prevent ESP32 timeout
-    escape_time = predict_escape(sensor)
+    # Trend-based escape prediction using last 30 seconds
+    inference_buffer_wifi.append(sensor)
+    escape_time = predict_escape(list(inference_buffer_wifi))
     alerts = check_alerts(
         sensor["oxygen"],
         sensor["co"],
