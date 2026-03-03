@@ -1,4 +1,4 @@
-
+/// <reference types="vite/client" />
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import {
   Wind,
@@ -282,8 +282,10 @@ const App: React.FC = () => {
       }
 
       setConnectionError(null);
-      // @ts-ignore
-      setConnectionMode(prev => newData.connection_mode || prev);
+
+      // Use type assertion for backend-specific fields not in base SensorData
+      const extendedData = newData as any;
+      setConnectionMode(prev => extendedData.connection_mode || prev);
 
       // Inline alert checking to avoid stale closures.
       // We pull the LIVE values from thresholdsRef, which is updated whenever env changes!
@@ -360,12 +362,12 @@ const App: React.FC = () => {
       });
 
       // Update the countdown if the backend gives us a new critical escape time
-      if (newData.escape_time !== null) {
+      if (newData.escape_time !== undefined && newData.escape_time !== null) {
         const newSeconds = Math.floor(newData.escape_time * 60);
         setPredictionAnchor(prev => {
           // Snap immediately if prediction drops into dangerous territory (< 10 mins) 
           // or if the change is significant (to prevent UI jitter)
-          if (!prev || newSeconds < 600 || Math.abs(prev.escapeSeconds - newSeconds) > 30) {
+          if (!prev || newSeconds < 600 || Math.abs(prev.escapeSeconds - newSeconds) > 10) {
             return { timeMs: Date.now(), escapeSeconds: newSeconds };
           }
           return prev;
