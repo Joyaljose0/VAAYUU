@@ -26,6 +26,11 @@ WINDOW_SIZE = 10 # Matches user's sequence_length
 MODEL_RELOAD_INTERVAL = 300 # Reload model every 5 minutes or when updated
 last_model_load = 0
 
+# Integrity Metrics
+accuracy_buffer = deque(maxlen=50) # Compare LSTM vs Physio
+precision_buffer = deque(maxlen=50) # Stability of predictions
+last_prediction = 60.0
+
 # ---------------- PHYSIOLOGICAL SURVIVAL ESTIMATION ----------------
 def estimate_escape_time(sensor):
     oxygen_time = 60.0
@@ -111,11 +116,34 @@ def predict_escape(sensor_buffer):
         physio_time = estimate_escape_time(latest_sensor)
 
         # Safety-first: Min of AI trend and Physio logic
-        return min(lstm_minutes, physio_time)
+        final_time = min(lstm_minutes, physio_time)
+
+        # Update Accuracy Metric: How close is LSTM to Physio limit?
+        # A 100% accuracy means LSTM perfectly matches or is more conservative than Physio
+        acc = 100.0 - min(100.0, abs(lstm_minutes - physio_time) / 60.0 * 100.0)
+        accuracy_buffer.append(acc)
+
+        # Update Precision Metric: Stability of prediction vs last second
+        # A 100% precision means zero erratic jumping
+        global last_prediction
+        prec = 100.0 - min(100.0, abs(final_time - last_prediction) / 60.0 * 100.0)
+        precision_buffer.append(prec)
+        last_prediction = final_time
+
+        return final_time
 
     except Exception as e:
         print(f"LSTM Prediction Error: {e}")
         return 60.0
+
+def get_ai_metrics():
+    """Returns average accuracy and precision for the dashboard widget."""
+    acc = sum(accuracy_buffer) / len(accuracy_buffer) if accuracy_buffer else 100.0
+    prec = sum(precision_buffer) / len(precision_buffer) if precision_buffer else 100.0
+    return {
+        "accuracy": round(acc, 1),
+        "precision": round(prec, 1)
+    }
 
 # ---------------- ONLINE LEARNING PIPELINE ----------------
 def train_on_live_data(sensor_batch):

@@ -103,7 +103,13 @@ def check_alerts(o2, co, co2, temp, hum=50, mode='BUILDING'):
     if temp > t['temp_max']:
         alerts.append("Warning: Heat Stress Risk")
 
-    # 5. Sensor Fault Detection
+    # 5. Humidity Checks (Human Comfort/Health)
+    if hum > 70.0:
+        alerts.append("Warning: High Humidity (Respiratory Risk)")
+    elif hum < 30.0:
+        alerts.append("Warning: Low Humidity (Dry Air Discomfort)")
+
+    # 6. Sensor Fault Detection
     if o2 > 23.0:
         alerts.append("CRITICAL: O2 Sensor Unstable - Recalibrate")
     if co < -0.5:

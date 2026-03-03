@@ -9,7 +9,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from hardware.serial_reader import read_sensor, write_serial
 from hardware.csv_logger import log_to_csv
-from ml.lstm_predict import predict_escape, train_on_live_data
+from ml.lstm_predict import predict_escape, train_on_live_data, get_ai_metrics
 from api.alerts import check_alerts
 import threading
 import socket
@@ -104,6 +104,7 @@ async def lifespan(app: FastAPI):
                             **sensor,
                             "escape_time": escape_time,
                             "backend_alerts": alerts,
+                            "ai_metrics": get_ai_metrics(),
                             "is_warming_up": sensor.get("is_warming_up", False),
                             "last_updated": int(time.time())
                         })
@@ -259,6 +260,7 @@ def process_wifi_data(sensor):
             **sensor,
             "escape_time": escape_time,
             "backend_alerts": alerts,
+            "ai_metrics": get_ai_metrics(),
             "last_updated": int(time.time())
         })
         

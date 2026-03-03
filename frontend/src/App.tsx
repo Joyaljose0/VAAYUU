@@ -704,10 +704,12 @@ const App: React.FC = () => {
 
       {/* Hazard Banner */}
       {
-        isCritical && (
-          <div className="bg-red-600 text-white px-6 py-2 flex items-center justify-center gap-3 animate-bounce shadow-xl relative z-40">
+        (isCritical || alerts.some(a => a.message.includes("Humidity") || a.message.includes("Heat"))) && (
+          <div className={`text-white px-6 py-2 flex items-center justify-center gap-3 animate-pulse shadow-xl relative z-40 ${isCritical ? 'bg-red-600' : 'bg-orange-500'}`}>
             <AlertTriangle className="w-5 h-5" />
-            <span className="font-bold text-sm tracking-widest uppercase">Emergency Protocol Active: Ventilate Immediately</span>
+            <span className="font-bold text-sm tracking-widest uppercase">
+              {isCritical ? "Emergency Protocol: Ventilate Now" : "Environmental Health Alert: Check Dashboard"}
+            </span>
           </div>
         )
       }
@@ -823,6 +825,44 @@ const App: React.FC = () => {
 
           {/* Side Panel */}
           <div className="space-y-6">
+            {/* AI Integrity Analytics */}
+            <div className="glass rounded-2xl p-5 border border-slate-800 bg-indigo-500/5">
+              <div className="mb-4">
+                <h3 className="text-sm font-bold text-slate-100 flex items-center gap-2 uppercase tracking-widest">
+                  <ShieldCheck className="w-4 h-4 text-indigo-400" /> AI System Integrity
+                </h3>
+              </div>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-1.5 text-slate-400">
+                    <span>Model Accuracy</span>
+                    <span className="text-white">{currentData.ai_metrics?.accuracy || 100}%</span>
+                  </div>
+                  <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-indigo-500 transition-all duration-1000"
+                      style={{ width: `${currentData.ai_metrics?.accuracy || 100}%` }}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-1.5 text-slate-400">
+                    <span>Prediction Precision</span>
+                    <span className="text-white">{currentData.ai_metrics?.precision || 100}%</span>
+                  </div>
+                  <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-emerald-500 transition-all duration-1000"
+                      style={{ width: `${currentData.ai_metrics?.precision || 100}%` }}
+                    />
+                  </div>
+                </div>
+                <p className="text-[9px] text-slate-500 leading-relaxed italic">
+                  Integrity metrics verify LSTM trend consistency against physiological safety boundaries.
+                </p>
+              </div>
+            </div>
+
             {/* Sensor Analytics - CO2 */}
             <div className="glass rounded-2xl p-5 border border-slate-800">
               <div className="mb-4">

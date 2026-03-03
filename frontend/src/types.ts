@@ -12,6 +12,10 @@ export interface SensorData {
   escape_time?: number;
   backend_alerts?: string[];
   is_warming_up?: boolean;
+  ai_metrics?: {
+    accuracy: number;
+    precision: number;
+  };
 }
 
 export interface Thresholds {
