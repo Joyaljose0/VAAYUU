@@ -1,6 +1,21 @@
 /// <reference types="vite/client" />
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-Wifi,
+import {
+  Wind,
+  Activity,
+  AlertTriangle,
+  ShieldCheck,
+  TrendingUp,
+  Building2,
+  Car,
+  Bell,
+  Settings,
+  BrainCircuit,
+  Zap,
+  Volume2,
+  VolumeX,
+  Clock,
+  Wifi,
   CheckCircle2,
   AlertCircle
 } from 'lucide-react';

@@ -135,10 +135,10 @@ void setup() {
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
-  display.println("VAAYUU v2.1");
+  display.println("VAAYUU v2.2");
   display.println("Initializing...");
   display.display();
-  Serial.println("BOOT: VAAYUU v2.1 INITIALIZING");
+  Serial.println("BOOT: VAAYUU v2.2 INITIALIZING");
 
   /* -------- Oxygen Sensor -------- */
   while (!oxygen.begin(Oxygen_IICAddress)) {
