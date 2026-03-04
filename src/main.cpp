@@ -115,18 +115,26 @@ void sendCloudWarmupHeartbeat() {
       String url =
           (isHttps ? "https://" : "http://") + backendIp + "/sensor-data";
 
+      Serial.printf("DEBUG: Cloud Warmup Heartbeat to: %s\n", url.c_str());
       securedClient.stop();
       HTTPClient https;
-      https.setTimeout(8000);
+      https.setTimeout(10000);
       if (https.begin(securedClient, url)) {
         https.addHeader("Content-Type", "application/json");
         String payload =
             "{\"co\":0,\"gas\":400,\"temperature\":0,\"humidity\":0,"
             "\"pressure\":0,\"oxygen\":20.9,\"is_warming_up\":true}";
         int httpResponseCode = https.POST(payload);
-        Serial.printf("Cloud Warmup Heartbeat: %d\n", httpResponseCode);
+        Serial.printf("Cloud Warmup Heartbeat Result: %d\n", httpResponseCode);
+        if (httpResponseCode < 0) {
+          Serial.printf("Heartbeat ERROR: %s\n",
+                        https.errorToString(httpResponseCode).c_str());
+        }
         https.end();
         securedClient.stop();
+      } else {
+        Serial.println(
+            "Heartbeat ERROR: Unable to begin connection with securedClient");
       }
     }
   }
@@ -703,8 +711,9 @@ void loop() {
       if (millis() - lastCloudSend > 3000) {
         lastCloudSend = millis();
         securedClient.stop(); // Explicitly stop any previous session
+        Serial.printf("DEBUG: POSTing to Cloud: %s\n", url.c_str());
         HTTPClient https;
-        https.setTimeout(10000); // 10s for slow WiFi handshakes
+        https.setTimeout(10000);
         if (https.begin(securedClient, url)) {
           https.addHeader("Content-Type", "application/json");
           String payload = "{\"co\":" + String(co_ppm, 2) +
@@ -716,8 +725,15 @@ void loop() {
           int httpResponseCode = https.POST(payload);
           Serial.printf("HTTPS Output: %d | Free Heap: %u\n", httpResponseCode,
                         ESP.getFreeHeap());
+          if (httpResponseCode < 0) {
+            Serial.printf("HTTPS ERROR: %s\n",
+                          https.errorToString(httpResponseCode).c_str());
+          }
           https.end();
-          securedClient.stop(); // Clean shutdown
+          securedClient.stop();
+        } else {
+          Serial.println(
+              "HTTPS ERROR: Unable to begin connection with securedClient");
         }
       }
     } else {
