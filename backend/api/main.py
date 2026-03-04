@@ -226,6 +226,8 @@ def config_wifi(config: WiFiConfig):
 
 from fastapi import BackgroundTasks
 
+@app.post("/sensor-data")
+def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
     print(f"[Cloud API] POST /sensor-data received from {data.co}, {data.gas}")
     if connection_mode != "WIFI":
         print(f"[Cloud API] Warning: Ignoring WiFi data because mode is {connection_mode}")
