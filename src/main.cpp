@@ -117,10 +117,12 @@ void sendCloudWarmupHeartbeat() {
 
       Serial.printf("DEBUG: Cloud Warmup Heartbeat to: %s\n", url.c_str());
       securedClient.stop();
+      delay(100); // Wait for socket cleanup
       HTTPClient https;
-      https.setTimeout(15000); // 15s for slow Render cold-starts
+      https.setTimeout(30000); // 30s for slow Render cold-starts
       if (https.begin(securedClient, url)) {
         https.addHeader("Content-Type", "application/json");
+        https.addHeader("Connection", "close");
         String payload =
             "{\"co\":0,\"gas\":400,\"temperature\":0,\"humidity\":0,"
             "\"pressure\":0,\"oxygen\":20.9,\"is_warming_up\":true}";
@@ -711,11 +713,13 @@ void loop() {
       if (millis() - lastCloudSend > 3000) {
         lastCloudSend = millis();
         securedClient.stop(); // Explicitly stop any previous session
+        delay(100);           // Wait for socket cleanup
         Serial.printf("DEBUG: POSTing to Cloud: %s\n", url.c_str());
         HTTPClient https;
-        https.setTimeout(15000); // 15s for slow Render cold-starts
+        https.setTimeout(30000); // 30s for slow Render cold-starts
         if (https.begin(securedClient, url)) {
           https.addHeader("Content-Type", "application/json");
+          https.addHeader("Connection", "close");
           String payload = "{\"co\":" + String(co_ppm, 2) +
                            ",\"gas\":" + String(gas_ppm, 2) +
                            ",\"temperature\":" + String(temperature, 2) +
