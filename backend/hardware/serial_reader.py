@@ -3,6 +3,7 @@ import time
 import random
 import threading
 import socket
+import os
 
 # Configuration
 PORT = "COM3"
@@ -74,8 +75,11 @@ def write_serial(data: str):
                 return False
         return False
 
-# Try initial connection
-connect_serial()
+# Try initial connection if not on Render cloud
+if not os.getenv("RENDER"):
+    connect_serial()
+else:
+    print("[Serial] Running on Render Cloud. Serial (USB) disabled.")
 
 def read_sensor():
     global ser, is_warming_up
