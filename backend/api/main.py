@@ -233,10 +233,11 @@ from fastapi import BackgroundTasks
 
 @app.post("/sensor-data")
 def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
-    print(f"[Cloud API] POST /sensor-data received from {data.co}, {data.gas}")
+    global connection_mode
+    # Auto-switch to WIFI mode if hardware is successfully calling this endpoint
     if connection_mode != "WIFI":
-        print(f"[Cloud API] Warning: Ignoring WiFi data because mode is {connection_mode}")
-        return {"status": "ignored", "message": f"Backend is in {connection_mode} mode"}
+        print(f"[Cloud API] Mode Conflict: Switching to WIFI for incoming hardware data.")
+        connection_mode = "WIFI"
         
     sensor = data.dict()
     background_tasks.add_task(process_wifi_data, sensor)
