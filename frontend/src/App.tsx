@@ -39,11 +39,10 @@ import {
 } from './constants';
 
 // --- Live Fetching Logic ---
-const fetchLiveReading = async (): Promise<SensorData | null> => {
+const fetchLiveReading = async (): Promise<{ data: SensorData | null, status: 'ok' | 'offline' | 'waiting' }> => {
   try {
     const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
-    console.log(`Attempting to fetch from ${backendUrl}/live...`);
-    // Use cache: 'no-store' and a timestamp parameter to prevent aggressive browser GET caching
+
     const response = await fetch(`${backendUrl}/live?t=${Date.now()}`, {
       cache: 'no-store',
       headers: {
@@ -51,27 +50,25 @@ const fetchLiveReading = async (): Promise<SensorData | null> => {
         'Cache-Control': 'no-cache'
       }
     });
+
     if (!response.ok) {
-      console.error(`Fetch failed with status: ${response.status} ${response.statusText}`);
-      return null;
+      console.error(`Backend returned ${response.status}`);
+      return { data: null, status: 'offline' };
     }
 
     const data = await response.json();
-    console.log("Received raw data from backend:", data);
 
-    // Safely check if we actually have populated sensor data
+    // If the server is up but hasn't received any hardware data yet
     if (!data || typeof data !== 'object' || !('temperature' in data)) {
-      console.warn("Backend returned invalid data. Waiting for valid sensor structured data.");
-      return null;
+      return { data: null, status: 'waiting' };
     }
 
-    // Simple number parser now that the backend sends clean float scalars
     const extract = (val: any): number => {
       if (val === undefined || val === null) return 0;
       return Number(val) || 0;
     };
 
-    return {
+    const reading = {
       timestamp: Date.now(),
       temperature: extract(data.temperature),
       pressure: extract(data.pressure),
@@ -81,10 +78,12 @@ const fetchLiveReading = async (): Promise<SensorData | null> => {
       o2: extract(data.oxygen),
       last_updated: data.last_updated || 0,
       is_warming_up: !!data.is_warming_up
-    } as SensorData & { connection_mode: string, backend_ip: string, last_updated: number, backend_alerts: string[], is_warming_up: boolean };
+    } as SensorData;
+
+    return { data: reading, status: 'ok' };
   } catch (err) {
-    console.error("Failed to fetch live data completely (Network Error):", err);
-    return null;
+    console.error("Backend unreachable:", err);
+    return { data: null, status: 'offline' };
   }
 };
 
@@ -263,21 +262,29 @@ const App: React.FC = () => {
     let mounted = true;
 
     const interval = setInterval(async () => {
-      const newData = await fetchLiveReading();
-      if (!newData || !mounted) {
-        if (mounted) {
-          const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
-          setConnectionError(`Cannot reach backend (${backendUrl}/live) or backend offline.`);
-        }
+      const { data: newData, status } = await fetchLiveReading();
+
+      if (!mounted) return;
+
+      if (status === 'offline') {
+        const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
+        setConnectionError(`Backend Offline: Cannot reach ${backendUrl}. Please check Render status.`);
         return;
       }
 
+      if (status === 'waiting') {
+        setConnectionError("Backend Online: Waiting for first hardware data packet from ESP32...");
+        return;
+      }
+
+      // If we got here, status is 'ok'
+      if (!newData) return;
+
       const nowSecs = Math.floor(Date.now() / 1000);
       // @ts-ignore
-      if (newData.last_updated > 0 && (nowSecs - newData.last_updated > 7)) {
+      if (newData.last_updated > 0 && (nowSecs - newData.last_updated > 10)) {
         // @ts-ignore
-        setConnectionError(`Sensor Disconnected: No new data received on ${newData.connection_mode} mode in 7s. Please check ESP32 power and connection.`);
-        // Note: we let it return so it stops appending stale data to the charts!
+        setConnectionError(`Hardware Link Lost: No new data from ESP32 in 10s. Check device WiFi.`);
         return;
       }
 

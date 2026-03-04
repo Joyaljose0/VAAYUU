@@ -12,6 +12,9 @@ export interface SensorData {
   escape_time?: number;
   backend_alerts?: string[];
   is_warming_up?: boolean;
+  last_updated?: number;
+  connection_mode?: string;
+  backend_ip?: string;
   ai_metrics?: {
     accuracy: number;
     precision: number;
