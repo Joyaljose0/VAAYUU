@@ -235,7 +235,8 @@ def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
         
     sensor = data.dict()
     background_tasks.add_task(process_wifi_data, sensor)
-    return {"status": "ok"}
+    from fastapi import Response
+    return Response(content='{"status": "ok"}', media_type='application/json', headers={"Connection": "close"})
 
 def process_wifi_data(sensor):
     global latest_data
