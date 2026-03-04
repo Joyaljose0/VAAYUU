@@ -280,28 +280,24 @@ def process_wifi_data(sensor):
         with training_lock:
             training_queue.append(sensor)
 
-    except Exception as e:
-        print(f"[Cloud API ERROR] Critical failure in process_wifi_data: {e}")
-        import traceback
-        traceback.print_exc()
+        # Logging logic
+        alert_text = "|".join(alerts) if alerts else "no"
+        csv_data = [
+            sensor["co"],
+            sensor["gas"],
+            sensor["temperature"],
+            sensor["humidity"],
+            sensor["pressure"],
+            sensor["oxygen"],
+            alert_text,
+            escape_time
+        ]
+        log_to_csv(csv_data)
 
     except Exception as e:
         print(f"[Cloud API ERROR] Critical failure in process_wifi_data: {e}")
         import traceback
         traceback.print_exc()
-
-    alert_text = "|".join(alerts) if alerts else "no"
-    csv_data = [
-        sensor["co"],
-        sensor["gas"],
-        sensor["temperature"],
-        sensor["humidity"],
-        sensor["pressure"],
-        sensor["oxygen"],
-        alert_text,
-        escape_time
-    ]
-    log_to_csv(csv_data)
 
 
 if __name__ == "__main__":

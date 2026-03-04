@@ -15059,3 +15059,12 @@ CO,Gas,Temp,Humidity,Pressure,Oxygen,Alert,Escape_Time
 0.57,419.75,27.84,45.84,1007.39,18.91,Warning: Oxygen Fatigue (Low O2),10.112000000000002
 0.55,424.22,27.85,45.9,1007.37,18.89,Warning: Oxygen Fatigue (Low O2),10.048000000000002
 0.56,418.26,27.85,45.88,1007.35,18.85,Warning: Oxygen Fatigue (Low O2),9.920000000000005
+0.55,388.29,27.85,45.88,1007.36,18.85,Warning: Oxygen Fatigue (Low O2),9.920000000000005
+0.48,372.09,27.85,45.89,1007.41,18.89,Warning: Oxygen Fatigue (Low O2),10.048000000000002
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),19.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),7.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),4.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),0.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),0.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),0.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),0.0
