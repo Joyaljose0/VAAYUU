@@ -26,6 +26,19 @@ def get_local_ip():
     return IP
 
 def send_auto_ip():
+    # Check if we are intentionally using a Cloud Backend (Render)
+    # We look at the frontend config to see if it's pointing away from localhost
+    try:
+        env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "frontend", ".env.local")
+        if os.path.exists(env_path):
+            with open(env_path, "r") as f:
+                content = f.read()
+                if "onrender.com" in content or "https://" in content:
+                    print("[Serial] Cloud Backend detected in frontend config. Skipping local IP auto-sync to hardware.")
+                    return
+    except Exception as e:
+        print(f"[Serial] Error checking cloud config: {e}")
+
     ip = get_local_ip()
     if ip != '127.0.0.1':
         print(f"Auto-syncing backend IP via USB: {ip}")
