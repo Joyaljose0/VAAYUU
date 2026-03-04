@@ -241,11 +241,22 @@ def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
 def process_wifi_data(sensor):
     global latest_data
     try:
-        # Trend-based escape prediction using last 30 seconds
+        # STEP 1: Update dashboard immediately with raw sensor data
+        with data_lock:
+            latest_data.update({
+                **sensor,
+                "connection_mode": "WIFI",
+                "last_updated": int(time.time())
+            })
+        print(f"[Cloud API] Live Update Sent: Temp={sensor['temperature']}°C")
+
+        # STEP 2: Process heavy AI/Alerts in the background
         inference_buffer_wifi.append(sensor)
         
-        print("[Cloud AI] Calculating predictions...")
+        start_ai = time.time()
+        print("[Cloud AI] Starting prediction...")
         escape_time = predict_escape(list(inference_buffer_wifi))
+        ai_duration = time.time() - start_ai
         
         alerts = check_alerts(
             sensor["oxygen"],
@@ -255,22 +266,24 @@ def process_wifi_data(sensor):
             sensor["humidity"],
             env_mode
         )
-        print(f"[Cloud Data Received] -> Temp: {sensor['temperature']}°C | CO: {sensor['co']}ppm | O2: {sensor['oxygen']}%")
-
+        
+        # STEP 3: Update again with AI results
         with data_lock:
-            latest_data.clear()
             latest_data.update({
-                **sensor,
                 "escape_time": escape_time if not sensor.get("is_warming_up") else None,
                 "backend_alerts": alerts if not sensor.get("is_warming_up") else [],
                 "ai_metrics": get_ai_metrics(),
-                "last_updated": int(time.time())
             })
             
+        print(f"[Cloud AI] Done in {ai_duration:.2f}s. Prediction: {escape_time}m")
+
         with training_lock:
             training_queue.append(sensor)
-            
-        print(f"[Cloud API] Successfully updated latest_data at {latest_data['last_updated']}")
+
+    except Exception as e:
+        print(f"[Cloud API ERROR] Critical failure in process_wifi_data: {e}")
+        import traceback
+        traceback.print_exc()
 
     except Exception as e:
         print(f"[Cloud API ERROR] Critical failure in process_wifi_data: {e}")

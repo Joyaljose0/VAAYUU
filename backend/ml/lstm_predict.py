@@ -106,6 +106,7 @@ def predict_escape(sensor_buffer):
 
         # LSTM prediction
         if model is not None:
+            # print(f"[AI Debug] Running model.predict on {X.shape}...")
             prediction = float(model.predict(X, verbose=0)[0][0])
             # Maps 0-1 back to 0-60 mins
             lstm_minutes = round(max(0.0, min(60.0, prediction * 60.0)), 1)
