@@ -77,10 +77,17 @@ def predict_escape(sensor_buffer):
         if not sensor_buffer:
             return 60.0
 
-        # Optional: Periodic model reload to pick up background training updates
+        # Optional: Periodic model reload (DISABLED on Render to save RAM)
         current_time = time.time()
-        if model is None or (current_time - last_model_load) > MODEL_RELOAD_INTERVAL:
+        is_render = os.getenv("RENDER") == "true"
+        
+        if model is None or (not is_render and (current_time - last_model_load) > MODEL_RELOAD_INTERVAL):
             if model_path.exists():
+                # Clear old model from memory before loading new one
+                import gc
+                model = None
+                gc.collect()
+                
                 model = tf.keras.models.load_model(str(model_path))
                 last_model_load = current_time
                 print("[AI] Reloaded latest trained model.")

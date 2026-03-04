@@ -154,7 +154,12 @@ async def lifespan(app: FastAPI):
                 print(f"[AI] Training Thread Error: {e}")
 
     threading.Thread(target=loop, daemon=True).start()
-    threading.Thread(target=periodic_training_loop, daemon=True).start()
+    
+    # Only run training thread if NOT on Render (Free tier 512MB RAM limit)
+    if not os.getenv("RENDER"):
+        threading.Thread(target=periodic_training_loop, daemon=True).start()
+    else:
+        print("[AI] Background training DISABLED for Render stability.")
     yield
     print("Shutdown signal received. Stopping background threads...")
     shutdown_event.set()
