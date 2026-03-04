@@ -39,9 +39,14 @@ import {
 } from './constants';
 
 // --- Live Fetching Logic ---
-const fetchLiveReading = async (): Promise<{ data: SensorData | null, status: 'ok' | 'offline' | 'waiting' }> => {
+const getBackendUrl = (source: 'RENDER' | 'LOCAL') => {
+  if (source === 'LOCAL') return `http://${window.location.hostname}:8000`;
+  return import.meta.env.VITE_BACKEND_URL || `https://vaayuu-backend.onrender.com`;
+};
+
+const fetchLiveReading = async (source: 'RENDER' | 'LOCAL'): Promise<{ data: SensorData | null, status: 'ok' | 'offline' | 'waiting' }> => {
   try {
-    const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
+    const backendUrl = getBackendUrl(source);
 
     const response = await fetch(`${backendUrl}/live?t=${Date.now()}`, {
       cache: 'no-store',
@@ -112,6 +117,13 @@ const App: React.FC = () => {
   const [wifiStatus, setWifiStatus] = useState<string | null>(null);
 
   const [connectionMode, setConnectionMode] = useState<string>('USB');
+  const [backendSource, setBackendSource] = useState<'RENDER' | 'LOCAL'>(() => {
+    return (localStorage.getItem('vaayuu-backend-source') as 'RENDER' | 'LOCAL') || 'RENDER';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('vaayuu-backend-source', backendSource);
+  }, [backendSource]);
 
   const audioCtxRef = useRef<AudioContext | null>(null);
   const buzzerIntervalRef = useRef<number | null>(null);
@@ -262,12 +274,12 @@ const App: React.FC = () => {
     let mounted = true;
 
     const interval = setInterval(async () => {
-      const { data: newData, status } = await fetchLiveReading();
+      const { data: newData, status } = await fetchLiveReading(backendSource);
 
       if (!mounted) return;
 
       if (status === 'offline') {
-        const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
+        const backendUrl = getBackendUrl(backendSource);
         setConnectionError(`Backend Offline: Cannot reach ${backendUrl}. Please check Render status.`);
         return;
       }
@@ -410,7 +422,7 @@ const App: React.FC = () => {
 
   const handleWifiConnect = async () => {
     setWifiStatus("Sending...");
-    const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
+    const backendUrl = getBackendUrl(backendSource);
     try {
       const res = await fetch(`${backendUrl}/config-wifi`, {
         method: 'POST',
@@ -501,13 +513,31 @@ const App: React.FC = () => {
             {currentTime.toLocaleTimeString()}
           </div>
 
+          {/* Backend Switcher */}
+          <div className="flex bg-slate-900/50 p-1 rounded-full border border-slate-800 gap-1 scale-90 sm:scale-100">
+            <button
+              onClick={() => setBackendSource('RENDER')}
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase transition-all ${backendSource === 'RENDER' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300'}`}
+              title="Connect to Cloud (Render)"
+            >
+              Cloud
+            </button>
+            <button
+              onClick={() => setBackendSource('LOCAL')}
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase transition-all ${backendSource === 'LOCAL' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300'}`}
+              title="Connect to Localhost:8000"
+            >
+              Local
+            </button>
+          </div>
+
           {/* Settings / Calibration */}
           <div className="flex bg-slate-900/50 p-1 rounded-full border border-slate-800 gap-1">
             <button
               onClick={async () => {
                 if (window.confirm("Perform FULL SYSTEM CALIBRATION? Ensure EVERYTHING is in CLEAN FRESH AIR.")) {
                   try {
-                    const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
+                    const backendUrl = getBackendUrl(backendSource);
                     await fetch(`${backendUrl}/command`, {
                       method: 'POST',
                       headers: { 'Content-Type': 'application/json' },
@@ -526,7 +556,7 @@ const App: React.FC = () => {
               onClick={async () => {
                 if (window.confirm("Trigger Oxygen Calibration? Ensure device is in FRESH AIR (20.9%).")) {
                   try {
-                    const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
+                    const backendUrl = getBackendUrl(backendSource);
                     await fetch(`${backendUrl}/command`, {
                       method: 'POST',
                       headers: { 'Content-Type': 'application/json' },
@@ -545,7 +575,7 @@ const App: React.FC = () => {
               onClick={async () => {
                 if (window.confirm("Zero MQ7 (CO)? Ensure device is in CLEAN AIR.")) {
                   try {
-                    const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
+                    const backendUrl = getBackendUrl(backendSource);
                     await fetch(`${backendUrl}/command`, {
                       method: 'POST',
                       headers: { 'Content-Type': 'application/json' },
@@ -564,7 +594,7 @@ const App: React.FC = () => {
               onClick={async () => {
                 if (window.confirm("Zero MQ135 (CO2)? Ensure device is in CLEAN AIR.")) {
                   try {
-                    const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
+                    const backendUrl = getBackendUrl(backendSource);
                     await fetch(`${backendUrl}/command`, {
                       method: 'POST',
                       headers: { 'Content-Type': 'application/json' },
@@ -585,7 +615,7 @@ const App: React.FC = () => {
             <button
               onClick={async () => {
                 setEnv('BUILDING');
-                const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
+                const backendUrl = getBackendUrl(backendSource);
                 try {
                   await fetch(`${backendUrl}/env-mode`, {
                     method: 'POST',
@@ -601,7 +631,7 @@ const App: React.FC = () => {
             <button
               onClick={async () => {
                 setEnv('VEHICLE');
-                const backendUrl = import.meta.env.VITE_BACKEND_URL || `http://${window.location.hostname}:8000`;
+                const backendUrl = getBackendUrl(backendSource);
                 try {
                   await fetch(`${backendUrl}/env-mode`, {
                     method: 'POST',
@@ -827,7 +857,6 @@ const App: React.FC = () => {
                 config={SENSOR_CONFIG.pressure}
               />
             </div>
-
           </div>
 
           {/* Side Panel */}
@@ -922,7 +951,6 @@ const App: React.FC = () => {
               </div>
             </div>
 
-
             {/* Alerts Log */}
             <div className="glass rounded-2xl p-6 border border-slate-800 max-h-[450px] overflow-hidden flex flex-col">
               <h3 className="text-lg font-semibold text-slate-100 mb-4 flex items-center gap-2">
@@ -947,7 +975,6 @@ const App: React.FC = () => {
                 )}
               </div>
             </div>
-
           </div>
         </div>
       </main>
@@ -955,7 +982,7 @@ const App: React.FC = () => {
       <footer className="p-8 text-center text-slate-600 text-xs border-t border-slate-900">
         <p>&copy; 2024 AuraGuard AI - Vehicle Safety Module Active</p>
       </footer>
-    </div >
+    </div>
   );
 };
 

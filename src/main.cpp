@@ -297,9 +297,22 @@ void setup() {
 }
 
 void startAPMode() {
-  WiFi.softAP("VAAYUU-Setup", "12345678");
-  Serial.println("AP Mode Started. Connect to 'VAAYUU-Setup' (Pass: 12345678)");
-  Serial.println("Visit http://192.168.4.1 in your browser.");
+  WiFi.mode(WIFI_AP);
+  WiFi.softAPdisconnect(true);
+  delay(100);
+
+  bool success = WiFi.softAP("VAAYUU-Setup", "12345678");
+  if (success) {
+    Serial.println(
+        "AP Mode Started. Connect to 'VAAYUU-Setup' (Pass: 12345678)");
+    Serial.print("AP IP Address: ");
+    Serial.println(WiFi.softAPIP());
+    Serial.println("Visit http://192.168.4.1 in your browser.");
+  } else {
+    Serial.println("CRITICAL ERROR: Failed to start WiFi Access Point.");
+    // Fallback attempt with different channel
+    WiFi.softAP("VAAYUU-Setup", "12345678", 6);
+  }
 
   display.clearDisplay();
   display.setCursor(0, 0);
@@ -498,6 +511,19 @@ void loop() {
       Serial.println(MQ7_R0);
       Serial.print("MQ135_R0: ");
       Serial.println(MQ135_R0);
+    } else if (msg == "RESET_WIFI") {
+      Serial.println("Manual WiFi Reset Triggered. Clearing credentials and "
+                     "starting AP mode...");
+      preferences.begin("wifi-config", false);
+      preferences.clear();
+      preferences.end();
+      display.clearDisplay();
+      display.setCursor(0, 0);
+      display.println("WIFI RESET...");
+      display.println("Starting AP Mode");
+      display.display();
+      delay(2000);
+      ESP.restart();
     }
   }
 
