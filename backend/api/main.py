@@ -226,46 +226,53 @@ def config_wifi(config: WiFiConfig):
 
 from fastapi import BackgroundTasks
 
-@app.post("/sensor-data")
-def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
-    global latest_data, connection_mode
-    
+    print(f"[Cloud API] POST /sensor-data received from {data.co}, {data.gas}")
     if connection_mode != "WIFI":
-        return {"status": "ignored", "message": "Backend is in USB mode"}
+        print(f"[Cloud API] Warning: Ignoring WiFi data because mode is {connection_mode}")
+        return {"status": "ignored", "message": f"Backend is in {connection_mode} mode"}
         
     sensor = data.dict()
-    # Virtual oxygen removed - using raw sensor data for calibration check
-    
     background_tasks.add_task(process_wifi_data, sensor)
     return {"status": "ok"}
 
 def process_wifi_data(sensor):
     global latest_data
-    # Trend-based escape prediction using last 30 seconds
-    inference_buffer_wifi.append(sensor)
-    escape_time = predict_escape(list(inference_buffer_wifi))
-    alerts = check_alerts(
-        sensor["oxygen"],
-        sensor["co"],
-        sensor["gas"],
-        sensor["temperature"],
-        sensor["humidity"],
-        env_mode
-    )
-    print(f"[WiFi Data Received] -> Temp: {sensor['temperature']}°C | CO: {sensor['co']}ppm | O2: {sensor['oxygen']}%")
-
-    with data_lock:
-        latest_data.clear()
-        latest_data.update({
-            **sensor,
-            "escape_time": escape_time if not sensor.get("is_warming_up") else None,
-            "backend_alerts": alerts if not sensor.get("is_warming_up") else [],
-            "ai_metrics": get_ai_metrics(),
-            "last_updated": int(time.time())
-        })
+    try:
+        # Trend-based escape prediction using last 30 seconds
+        inference_buffer_wifi.append(sensor)
         
-    with training_lock:
-        training_queue.append(sensor)
+        print("[Cloud AI] Calculating predictions...")
+        escape_time = predict_escape(list(inference_buffer_wifi))
+        
+        alerts = check_alerts(
+            sensor["oxygen"],
+            sensor["co"],
+            sensor["gas"],
+            sensor["temperature"],
+            sensor["humidity"],
+            env_mode
+        )
+        print(f"[Cloud Data Received] -> Temp: {sensor['temperature']}°C | CO: {sensor['co']}ppm | O2: {sensor['oxygen']}%")
+
+        with data_lock:
+            latest_data.clear()
+            latest_data.update({
+                **sensor,
+                "escape_time": escape_time if not sensor.get("is_warming_up") else None,
+                "backend_alerts": alerts if not sensor.get("is_warming_up") else [],
+                "ai_metrics": get_ai_metrics(),
+                "last_updated": int(time.time())
+            })
+            
+        with training_lock:
+            training_queue.append(sensor)
+            
+        print(f"[Cloud API] Successfully updated latest_data at {latest_data['last_updated']}")
+
+    except Exception as e:
+        print(f"[Cloud API ERROR] Critical failure in process_wifi_data: {e}")
+        import traceback
+        traceback.print_exc()
 
     alert_text = "|".join(alerts) if alerts else "no"
     csv_data = [
