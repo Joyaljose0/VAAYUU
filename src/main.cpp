@@ -38,6 +38,9 @@ WebServer server(80);
 /* ================= OBJECTS ================= */
 Adafruit_BME280 bme;
 DFRobot_OxygenSensor oxygen;
+WiFiClientSecure
+    securedClient; // Persistent SSL client to prevent fragmentation
+unsigned long lastCloudSend = 0;
 
 /* ================= OXYGEN SENSOR ================= */
 #define Oxygen_IICAddress ADDRESS_3 // 0x73
@@ -117,10 +120,13 @@ void setup() {
 
   /* -------- BME280 -------- */
   if (!bme.begin(0x76)) {
-    Serial.println("BME280_ERROR");
-    while (1)
-      ;
+    Serial.println("BME280_ERROR: Proceeding with dummy values.");
   }
+
+  // --- SSL Stability Config ---
+  securedClient.setInsecure();
+  securedClient.setHandshakeTimeout(10000); // 10s for slow WiFi handshakes
+
   /* -------- OLED Display -------- */
   if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
     Serial.println(F("SSD1306 allocation failed"));
@@ -129,9 +135,10 @@ void setup() {
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0, 0);
-  display.println("VAAYUU");
+  display.println("VAAYUU v2.1");
   display.println("Initializing...");
   display.display();
+  Serial.println("BOOT: VAAYUU v2.1 INITIALIZING");
 
   /* -------- Oxygen Sensor -------- */
   while (!oxygen.begin(Oxygen_IICAddress)) {
@@ -658,12 +665,12 @@ void loop() {
     }
 
     if (isHttps) {
-      WiFiClientSecure *client = new WiFiClientSecure;
-      if (client) {
-        client->setInsecure(); // Simplify for this demo; prevents certificate
-                               // validation issues
+      if (millis() - lastCloudSend > 3000) {
+        lastCloudSend = millis();
+        securedClient.stop(); // Explicitly stop any previous session
         HTTPClient https;
-        if (https.begin(*client, url)) {
+        https.setTimeout(10000); // 10s for slow WiFi handshakes
+        if (https.begin(securedClient, url)) {
           https.addHeader("Content-Type", "application/json");
           String payload = "{\"co\":" + String(co_ppm, 2) +
                            ",\"gas\":" + String(gas_ppm, 2) +
@@ -672,11 +679,11 @@ void loop() {
                            ",\"pressure\":" + String(pressure, 2) +
                            ",\"oxygen\":" + String(oxygenLevel, 2) + "}";
           int httpResponseCode = https.POST(payload);
-          Serial.print("HTTPS Output: ");
-          Serial.println(httpResponseCode);
+          Serial.printf("HTTPS Output: %d | Free Heap: %u\n", httpResponseCode,
+                        ESP.getFreeHeap());
           https.end();
+          securedClient.stop(); // Clean shutdown
         }
-        delete client;
       }
     } else {
       WiFiClient client;
