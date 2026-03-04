@@ -43,6 +43,7 @@ class SensorData(BaseModel):
     humidity: float
     pressure: float
     oxygen: float
+    is_warming_up: bool = False
 
 # Virtual Oxygen calculation removed to prioritize real hardware calibration accuracy.
 
@@ -257,8 +258,8 @@ def process_wifi_data(sensor):
         latest_data.clear()
         latest_data.update({
             **sensor,
-            "escape_time": escape_time,
-            "backend_alerts": alerts,
+            "escape_time": escape_time if not sensor.get("is_warming_up") else None,
+            "backend_alerts": alerts if not sensor.get("is_warming_up") else [],
             "ai_metrics": get_ai_metrics(),
             "last_updated": int(time.time())
         })

@@ -463,7 +463,7 @@ const App: React.FC = () => {
             </span>
             <span className="text-slate-600 text-[10px]">•</span>
             <span className="text-slate-500 text-[10px] uppercase font-bold tracking-widest leading-none">
-              AuraGuard v2.1
+              AuraGuard v2.2
             </span>
           </div>
         </div>

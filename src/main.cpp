@@ -41,6 +41,7 @@ DFRobot_OxygenSensor oxygen;
 WiFiClientSecure
     securedClient; // Persistent SSL client to prevent fragmentation
 unsigned long lastCloudSend = 0;
+unsigned long lastWarmupHeartbeat = 0;
 
 /* ================= OXYGEN SENSOR ================= */
 #define Oxygen_IICAddress ADDRESS_3 // 0x73
@@ -102,8 +103,38 @@ float getMQ135_PPM(int raw_adc) {
   return (ppm > 50000.0) ? 50000.0 : ppm;
 }
 
-// Replaced old float methods with mapAnalogToPPM
+void sendCloudWarmupHeartbeat();
 void startAPMode();
+
+void sendCloudWarmupHeartbeat() {
+  if (WiFi.status() == WL_CONNECTED && backendIp != "") {
+    if (millis() - lastWarmupHeartbeat > 5000) { // Every 5s
+      lastWarmupHeartbeat = millis();
+      bool isHttps = backendIp.startsWith("https://") ||
+                     backendIp.indexOf("onrender.com") != -1;
+      String url =
+          (isHttps ? "https://" : "http://") + backendIp + "/sensor-data";
+
+      securedClient.stop();
+      HTTPClient https;
+      https.setTimeout(8000);
+      if (https.begin(securedClient, url)) {
+        https.addHeader("Content-Type", "application/json");
+        String payload =
+            "{\"co\":0,\"gas\":400,\"temperature\":0,\"humidity\":0,"
+            "\"pressure\":0,\"oxygen\":20.9,\"is_warming_up\":true}";
+        int httpResponseCode = https.POST(payload);
+        Serial.printf("Cloud Warmup Heartbeat: %d\n", httpResponseCode);
+        https.end();
+        securedClient.stop();
+      }
+    }
+  }
+}
+
+void startAPMode();
+
+// Replaced old float methods with mapAnalogToPPM
 
 /* ================= SETUP ================= */
 void setup() {
@@ -165,6 +196,7 @@ void setup() {
 
     if (i % 20 == 0) { // Every 2 seconds
       Serial.println("STATUS:WARMING_UP");
+      sendCloudWarmupHeartbeat(); // WiFi Heartbeat
       display.fillRect(0, 16, 128, 8, BLACK);
       display.setCursor(0, 16);
       display.print("MQ Warmup: ");
@@ -185,6 +217,7 @@ void setup() {
   // 15 seconds for O2
   for (int i = 0; i < 15; i++) {
     Serial.println("STATUS:WARMING_UP"); // Keep backend informed
+    sendCloudWarmupHeartbeat();          // WiFi Heartbeat
     delay(1000);
     if (i % 2 == 0) {
       display.fillRect(0, 16, 128, 8, BLACK);
