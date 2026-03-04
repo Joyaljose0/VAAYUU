@@ -82,10 +82,12 @@ def train_model():
     model.fit(
         X,
         y,
-        epochs=15,
-        batch_size=32,
-        verbose=0 # Keep it quiet in background
+        epochs=3,   # Reduced from 15 to maintain background responsiveness
+        batch_size=64, # Increased for speed
+        verbose=0 
     )
+    # Clear session to free up memory on CPU
+    tf.keras.backend.clear_session()
 
     # Save to a temporary file first then rename to prevent corruption during read/write
     temp_path = str(MODEL_PATH) + ".tmp"

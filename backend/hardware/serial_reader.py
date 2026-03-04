@@ -149,7 +149,11 @@ def read_sensor():
                     print(f"ESP32 INFO: {line}")
                 continue
                 
-        # If we looped 10 times and still didn't find good data
+        # If we looped 10 times and still didn't find good data, 
+        # but the device IS warming up, let the backend know.
+        if is_warming_up:
+            return {"is_warming_up": True, "co": 0, "gas": 0, "temperature": 0, "humidity": 0, "pressure": 0, "oxygen": 20.9}
+            
         return None
         
             

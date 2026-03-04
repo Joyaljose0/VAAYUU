@@ -102,10 +102,9 @@ async def lifespan(app: FastAPI):
                         latest_data.clear()
                         latest_data.update({
                             **sensor,
-                            "escape_time": escape_time,
-                            "backend_alerts": alerts,
+                            "escape_time": escape_time if not sensor.get("is_warming_up") else None,
+                            "backend_alerts": alerts if not sensor.get("is_warming_up") else [],
                             "ai_metrics": get_ai_metrics(),
-                            "is_warming_up": sensor.get("is_warming_up", False),
                             "last_updated": int(time.time())
                         })
 

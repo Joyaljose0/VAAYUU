@@ -1,22 +1,8 @@
 /// <reference types="vite/client" />
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import {
-  Wind,
-  Activity,
-  AlertTriangle,
-  ShieldCheck,
-  TrendingUp,
-  Building2,
-  Car,
-  Bell,
-  Settings,
-  BrainCircuit,
-  Zap,
-  Volume2,
-  VolumeX,
-  Clock,
-  Wifi,
-  CheckCircle2
+Wifi,
+  CheckCircle2,
+  AlertCircle
 } from 'lucide-react';
 
 import {
@@ -440,19 +426,63 @@ const App: React.FC = () => {
     }
   };
 
-  if (!currentData) {
+  if (!currentData || currentData.is_warming_up) {
     return (
-      <div className="h-screen flex flex-col items-center justify-center bg-slate-950 text-white space-y-4">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-indigo-500"></div>
-        <p className="text-xl font-semibold">Initializing Sensors...</p>
-        <p className="text-slate-400 text-sm max-w-md text-center">
-          Waiting for backend data. Make sure <code className="bg-slate-800 px-1 rounded text-pink-400">python backend/main.py</code> is running.
-        </p>
-        {connectionError && (
-          <div className="mt-8 p-4 bg-red-900/30 border border-red-500/50 rounded-lg text-red-200 text-xs text-center max-w-lg">
-            <strong>Connection/Data Error:</strong><br />{connectionError}
-            <p className="mt-2 text-slate-400">Press F12 to check the browser developer console for detailed network logs.</p>
+      <div className="h-screen flex flex-col items-center justify-center bg-slate-950 text-white space-y-6">
+        <div className="relative">
+          <div className="animate-spin rounded-full h-20 w-20 border-t-2 border-b-2 border-indigo-500/50"></div>
+          {currentData?.is_warming_up && (
+            <div className="absolute inset-0 flex items-center justify-center animate-pulse">
+              <span className="text-[10px] font-black text-indigo-400 uppercase tracking-tighter">Warming</span>
+            </div>
+          )}
+        </div>
+
+        <div className="text-center space-y-2">
+          <p className="text-2xl font-bold tracking-tight">
+            {currentData?.is_warming_up ? "Sensors Stabilizing..." : "Initializing System..."}
+          </p>
+          <div className="flex items-center justify-center gap-2">
+            <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold uppercase ${backendSource === 'RENDER' ? 'bg-indigo-500/20 text-indigo-400' : 'bg-emerald-500/20 text-emerald-400'}`}>
+              Source: {backendSource}
+            </span>
+            <span className="text-slate-600 text-[10px]">•</span>
+            <span className="text-slate-500 text-[10px] uppercase font-bold tracking-widest leading-none">
+              AuraGuard v2.1
+            </span>
           </div>
+        </div>
+
+        <div className="text-slate-400 text-sm max-w-sm text-center leading-relaxed">
+          {currentData?.is_warming_up
+            ? "Your hardware is connected! Chemical sensors require dynamic thermal stabilization to reach baseline accuracy."
+            : "Waiting for backend handshake. Verify that your hardware is streaming and the backend is responsive."}
+        </div>
+
+        {currentData?.is_warming_up && (
+          <div className="flex flex-col items-center gap-2">
+            <div className="h-1 w-48 bg-slate-900 rounded-full overflow-hidden">
+              <div className="h-full bg-indigo-500 animate-loading-bar" />
+            </div>
+            <p className="text-[10px] text-indigo-400/60 uppercase tracking-widest animate-pulse font-bold">
+              Estimated wait: ~2 minutes
+            </p>
+          </div>
+        )}
+
+        {connectionError && (
+          <div className="glass mt-8 p-5 border border-red-500/20 bg-red-500/5 rounded-2xl max-w-sm">
+            <p className="text-[10px] font-black uppercase text-red-500 mb-2 tracking-widest flex items-center gap-2">
+              <AlertCircle className="w-3 h-3" /> Connection Status
+            </p>
+            <p className="text-xs text-red-100/60 font-medium leading-relaxed">{connectionError}</p>
+          </div>
+        )}
+
+        {!currentData?.is_warming_up && !connectionError && (
+          <p className="text-[10px] text-slate-700 italic">
+            Connecting to {backendSource === 'RENDER' ? 'Cloud' : 'Local'} API...
+          </p>
         )}
       </div>
     );

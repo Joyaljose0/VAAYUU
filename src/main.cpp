@@ -163,7 +163,8 @@ void setup() {
     mq7_cal += analogRead(MQ7_A_PIN);
     mq135_cal += analogRead(MQ135_A_PIN);
 
-    if (i % 10 == 0) {
+    if (i % 20 == 0) { // Every 2 seconds
+      Serial.println("STATUS:WARMING_UP");
       display.fillRect(0, 16, 128, 8, BLACK);
       display.setCursor(0, 16);
       display.print("MQ Warmup: ");
@@ -183,12 +184,13 @@ void setup() {
 
   // 15 seconds for O2
   for (int i = 0; i < 15; i++) {
+    Serial.println("STATUS:WARMING_UP"); // Keep backend informed
     delay(1000);
     if (i % 2 == 0) {
       display.fillRect(0, 16, 128, 8, BLACK);
       display.setCursor(0, 16);
       display.print("O2 Prep: ");
-      display.print((i * 100) / 60);
+      display.print((i * 100) / 15); // Fixed progress calc
       display.println("%");
       display.display();
     }
