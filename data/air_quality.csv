@@ -15086,3 +15086,5 @@ CO,Gas,Temp,Humidity,Pressure,Oxygen,Alert,Escape_Time
 0.57,450.04,27.81,46.18,1007.39,18.89,Warning: Oxygen Fatigue (Low O2),10.048000000000002
 0.54,446.87,27.81,46.17,1007.39,18.86,Warning: Oxygen Fatigue (Low O2),9.951999999999998
 0.56,442.16,27.81,46.15,1007.39,18.86,Warning: Oxygen Fatigue (Low O2),9.951999999999998
+0.54,442.16,27.82,46.15,1007.38,18.87,Warning: Oxygen Fatigue (Low O2),9.984000000000004
+0.54,437.5,27.82,46.16,1007.34,18.9,Warning: Oxygen Fatigue (Low O2),10.079999999999995

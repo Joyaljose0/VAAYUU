@@ -282,8 +282,13 @@ def process_wifi_data(sensor):
             
         print(f"[Cloud AI] Done in {ai_duration:.2f}s. Prediction: {escape_time}m")
 
-        with training_lock:
-            training_queue.append(sensor)
+        if not os.getenv("RENDER"):
+            with training_lock:
+                training_queue.append(sensor)
+        
+        # Explicitly clear RAM on Render
+        import gc
+        gc.collect()
 
         # Logging logic
         alert_text = "|".join(alerts) if alerts else "no"
