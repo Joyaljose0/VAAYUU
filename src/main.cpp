@@ -118,7 +118,7 @@ void sendCloudWarmupHeartbeat() {
       Serial.printf("DEBUG: Cloud Warmup Heartbeat to: %s\n", url.c_str());
       securedClient.stop();
       HTTPClient https;
-      https.setTimeout(10000);
+      https.setTimeout(15000); // 15s for slow Render cold-starts
       if (https.begin(securedClient, url)) {
         https.addHeader("Content-Type", "application/json");
         String payload =
@@ -713,7 +713,7 @@ void loop() {
         securedClient.stop(); // Explicitly stop any previous session
         Serial.printf("DEBUG: POSTing to Cloud: %s\n", url.c_str());
         HTTPClient https;
-        https.setTimeout(10000);
+        https.setTimeout(15000); // 15s for slow Render cold-starts
         if (https.begin(securedClient, url)) {
           https.addHeader("Content-Type", "application/json");
           String payload = "{\"co\":" + String(co_ppm, 2) +
