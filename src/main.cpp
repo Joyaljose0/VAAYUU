@@ -319,27 +319,7 @@ void setup() {
     Serial.println("Found Saved WiFi Credentials. Connecting...");
     display.display();
 
-    // Check if default (DHCP) DNS works first
-    IPAddress testIp;
-    bool dnsOk = WiFi.hostByName("google.com", testIp);
-
-    if (!dnsOk) {
-      Serial.println("DNS Initial Check Failed. Applying Static DNS Fallback "
-                     "(8.8.8.8)...");
-      IPAddress dns1(8, 8, 8, 8);
-      IPAddress dns2(8, 8, 4, 4);
-      WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, dns1, dns2);
-
-      // Secondary check
-      if (WiFi.hostByName("google.com", testIp)) {
-        Serial.println("DNS OK (via Static Fallback)");
-      } else {
-        Serial.println("DNS CRITICAL: Still failing after static fallback.");
-      }
-    } else {
-      Serial.print("DNS OK (via DHCP) -> ");
-      Serial.println(testIp);
-    }
+    WiFi.begin(savedSSID.c_str(), savedPassword.c_str());
     backendIp = savedIp;
 
     // Blink LED while connecting
@@ -359,18 +339,23 @@ void setup() {
       display.setCursor(0, 0);
       display.println("WIFI CONNECTED!");
 
-      // Configure Static DNS for reliability (Google DNS)
-      IPAddress dns1(8, 8, 8, 8);
-      IPAddress dns2(8, 8, 4, 4);
-      WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, dns1, dns2);
-
-      // Verify DNS
+      // Check if DNS works (DHCP default)
       IPAddress testIp;
-      if (WiFi.hostByName("google.com", testIp)) {
-        Serial.print("DNS OK: google.com -> ");
-        Serial.println(testIp);
+      if (!WiFi.hostByName("google.com", testIp)) {
+        Serial.println(
+            "DNS Initial Check Failed. Applying Static Fallback (8.8.8.8)...");
+        IPAddress dns1(8, 8, 8, 8);
+        IPAddress dns2(8, 8, 4, 4);
+        WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, dns1, dns2);
+
+        if (WiFi.hostByName("google.com", testIp)) {
+          Serial.println("DNS OK (via Static Fallback)");
+        } else {
+          Serial.println("DNS CRITICAL: Name resolution still failing.");
+        }
       } else {
-        Serial.println("DNS Warning: Failed to resolve google.com");
+        Serial.print("DNS OK (via DHCP) -> ");
+        Serial.println(testIp);
       }
       display.println("IP: " + WiFi.localIP().toString());
       display.println("Backend: " + backendIp);
