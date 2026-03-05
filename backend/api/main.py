@@ -104,6 +104,12 @@ async def lifespan(app: FastAPI):
                             "env_mode": env_mode # Track active mode
                         })
 
+                    # Trigger physical buzzer via Serial if hazardous
+                    if alerts and (safety_score < 80 or any("CRITICAL" in a for a in alerts)):
+                        if not sensor.get("is_warming_up"):
+                            print("[Serial] Hazard Detected! Sending BUZZ command.")
+                            write_serial("BUZZ\n")
+
                     # Format alerts or say 'no'
                     alert_text = "|".join(alerts) if alerts else "no"
 
@@ -237,49 +243,57 @@ from fastapi import BackgroundTasks
 
 @app.post("/sensor-data")
 def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
-    global connection_mode
+    global connection_mode, env_mode
     if connection_mode != "WIFI":
         print(f"[Cloud API] Mode Conflict: Switching to WIFI for incoming hardware data.")
         connection_mode = "WIFI"
         
     sensor = data.dict()
-    background_tasks.add_task(process_wifi_data, sensor)
+    
+    # Update inference buffer synchronously for real-time alert check
+    inference_buffer_wifi.append(sensor)
+    
+    # Calculate alerts synchronously so we can tell the buzzer to fire immediately
+    alerts, safety_score, ttu = check_alerts(
+        sensor["oxygen"],
+        sensor["co"],
+        sensor["gas"],
+        sensor["temperature"],
+        sensor["humidity"],
+        env_mode,
+        list(inference_buffer_wifi)
+    )
+    
+    # Determine if buzzer should sound (Critical or Safety Score < 80)
+    should_buzz = len(alerts) > 0 and (safety_score < 80 or any("CRITICAL" in a for a in alerts))
+    
+    # Also send via Serial if in USB mode or mixed mode
+    if should_buzz and not sensor.get("is_warming_up"):
+        write_serial("BUZZ\n")
+    
+    # Background the logging and voice tasks to keep response fast
+    background_tasks.add_task(process_wifi_data, sensor, alerts, safety_score, ttu)
+    
     from fastapi import Response
     import json
-    # Return current mode so hardware can sync its local display
-    resp_body = json.dumps({"status": "ok", "env_mode": env_mode})
+    resp_body = json.dumps({
+        "status": "ok", 
+        "env_mode": env_mode,
+        "buzzer": should_buzz
+    })
     return Response(content=resp_body, media_type='application/json')
 
-def process_wifi_data(sensor):
+def process_wifi_data(sensor, alerts, safety_score, ttu):
     global latest_data
     try:
-        # Update dashboard immediately with raw sensor data
+        # Update dashboard with AI and alert results
         with data_lock:
             latest_data.update({
                 **sensor,
                 "connection_mode": "WIFI",
                 "last_updated": int(time.time()),
-                "env_mode": env_mode
-            })
-        
-        # AI Logic
-        inference_buffer_wifi.append(sensor)
-        escape_time = predict_escape(list(inference_buffer_wifi), env_mode)
-
-        alerts, safety_score, ttu = check_alerts(
-            sensor["oxygen"],
-            sensor["co"],
-            sensor["gas"],
-            sensor["temperature"],
-            sensor["humidity"],
-            env_mode,
-            list(inference_buffer_wifi)
-        )
-        
-        # Update with AI and alert results
-        with data_lock:
-            latest_data.update({
-                "escape_time": escape_time if not sensor.get("is_warming_up") else None,
+                "env_mode": env_mode,
+                "escape_time": ttu if not sensor.get("is_warming_up") else None, # Using TTU as proxy for escape
                 "ttu_estimate": ttu if not sensor.get("is_warming_up") else None,
                 "safety_score": safety_score if not sensor.get("is_warming_up") else 100,
                 "backend_alerts": alerts if not sensor.get("is_warming_up") else [],
@@ -299,7 +313,7 @@ def process_wifi_data(sensor):
             sensor["pressure"],
             sensor["oxygen"],
             alert_text,
-            escape_time
+            ttu # Store ttu in CSV
         ]
         log_to_csv(csv_data, env_mode)
 

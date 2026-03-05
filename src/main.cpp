@@ -12,6 +12,7 @@
 
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+#include <ArduinoJson.h>
 
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
@@ -25,6 +26,7 @@ WebServer server(80);
 
 /* ================= LED INDICATOR ================= */
 #define LED_PIN 2
+#define BUZZER_PIN 13
 
 /* ================= PIN CONFIG ================= */
 #define SDA_PIN 21
@@ -145,7 +147,15 @@ void sendCloudWarmupHeartbeat() {
 
 void startAPMode();
 
-// Replaced old float methods with mapAnalogToPPM
+void soundAlert() {
+  // Rapid double beep using tone() for both active and passive buzzers
+  for (int i = 0; i < 2; i++) {
+    tone(BUZZER_PIN, 2000); // 2kHz tone
+    delay(100);
+    noTone(BUZZER_PIN);
+    delay(50);
+  }
+}
 
 /* ================= SETUP ================= */
 void setup() {
@@ -154,6 +164,9 @@ void setup() {
 
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, LOW);
+
+  pinMode(BUZZER_PIN, OUTPUT);
+  digitalWrite(BUZZER_PIN, LOW);
 
   pinMode(MQ7_D_PIN, INPUT);
   pinMode(MQ135_D_PIN, INPUT);
@@ -611,6 +624,9 @@ void loop() {
       display.display();
       delay(2000);
       ESP.restart();
+    } else if (msg == "BUZZ") {
+      Serial.println("Manual Buzzer Trigger via Serial...");
+      soundAlert();
     }
   }
 
@@ -769,9 +785,21 @@ void loop() {
               break;
             delay(500);
           }
-          Serial.printf("HTTPS Output: %d | Free Heap: %u\n", httpResponseCode,
-                        ESP.getFreeHeap());
-          if (httpResponseCode < 0) {
+          if (httpResponseCode > 0) {
+            String respBody = https.getString();
+            Serial.println("Response: " + respBody);
+
+            StaticJsonDocument<200> doc;
+            DeserializationError error = deserializeJson(doc, respBody);
+            if (!error) {
+              if (doc["buzzer"] == true) {
+                soundAlert();
+              }
+              if (doc.containsKey("env_mode")) {
+                envMode = doc["env_mode"].as<String>();
+              }
+            }
+          } else {
             Serial.printf("HTTPS ERROR: %s\n",
                           https.errorToString(httpResponseCode).c_str());
           }
@@ -794,8 +822,15 @@ void loop() {
                        ",\"pressure\":" + String(pressure, 2) +
                        ",\"oxygen\":" + String(oxygenLevel, 2) + "}";
       int httpResponseCode = http.POST(payload);
-      Serial.print("HTTP Output: ");
-      Serial.println(httpResponseCode);
+      if (httpResponseCode > 0) {
+        String respBody = http.getString();
+        StaticJsonDocument<200> doc;
+        if (!deserializeJson(doc, respBody)) {
+          if (doc["buzzer"] == true) {
+            soundAlert();
+          }
+        }
+      }
       http.end();
     }
   }
