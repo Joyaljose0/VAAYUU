@@ -313,8 +313,9 @@ void setup() {
   String savedSSID = preferences.getString("ssid", "");
   String savedPassword = preferences.getString("password", "");
   String savedIp = preferences.getString("ip", "");
+  savedIp.trim();
 
-  if (savedSSID != "" && savedIp != "") {
+  if (savedSSID != "" && savedIp.length() > 0) {
     Serial.println("Found Saved WiFi Credentials. Connecting...");
     display.clearDisplay();
     display.setCursor(0, 0);
@@ -466,6 +467,7 @@ void loop() {
         String ssid = credentials.substring(0, firstComma);
         String password = credentials.substring(firstComma + 1, secondComma);
         backendIp = credentials.substring(secondComma + 1);
+        backendIp.trim();
 
         // Save to NVS
         preferences.putString("ssid", ssid);
@@ -747,7 +749,13 @@ void loop() {
                            ",\"humidity\":" + String(humidity, 2) +
                            ",\"pressure\":" + String(pressure, 2) +
                            ",\"oxygen\":" + String(oxygenLevel, 2) + "}";
-          int httpResponseCode = https.POST(payload);
+          int httpResponseCode = -1;
+          for (int r = 0; r < 3; r++) { // DNS/Connection Retry
+            httpResponseCode = https.POST(payload);
+            if (httpResponseCode > 0)
+              break;
+            delay(500);
+          }
           Serial.printf("HTTPS Output: %d | Free Heap: %u\n", httpResponseCode,
                         ESP.getFreeHeap());
           if (httpResponseCode < 0) {
