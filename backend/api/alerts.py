@@ -49,10 +49,42 @@ THRESHOLDS = {
     }
 }
 
+def estimate_ttu(o2, co, co2):
+    """ Estimates Time-to-Unconsciousness (TTU) in minutes based on physiological data. """
+    ttu_points = []
+
+    # 1. Hypoxia (Oxygen Deprivation) - TUC/EPT curves
+    if o2 < 6.0: ttu_points.append(0.5) # Immediate collapse
+    elif o2 < 10.0: ttu_points.append(1.0)
+    elif o2 < 15.0: ttu_points.append(5.0)
+    elif o2 < 17.0: ttu_points.append(20.0)
+    elif o2 < 19.5: ttu_points.append(60.0)
+    else: ttu_points.append(600.0)
+
+    # 2. CO Toxicity (Carboxyhemoglobin lethal levels)
+    # Using 3200ppm (~15m), 1600ppm (~45m), 800ppm (~2h)
+    if co >= 12800: ttu_points.append(0.2) # 2-3 breaths
+    elif co >= 3200: ttu_points.append(10.0)
+    elif co >= 1600: ttu_points.append(20.0)
+    elif co >= 800: ttu_points.append(45.0)
+    elif co >= 400: ttu_points.append(120.0)
+    elif co >= 100: ttu_points.append(240.0)
+    else: ttu_points.append(600.0)
+
+    # 3. CO2 (Hypercapnia)
+    if co2 >= 40000: ttu_points.append(5.0)
+    elif co2 >= 10000: ttu_points.append(30.0)
+    elif co2 >= 5000: ttu_points.append(120.0)
+    else: ttu_points.append(600.0)
+
+    return min(ttu_points)
+
 def calculate_safety_score(o2, co, co2, temp, hum, mode='BUILDING', trends=None):
     """ Calculates a 0-100 safety score based on cumulative risks and environmental stress. """
     score = 100
     t = THRESHOLDS.get(mode, THRESHOLDS['BUILDING'])
+    
+    ttu = estimate_ttu(o2, co, co2)
     
     # 1. Oxygen (Heavy impact)
     if o2 < 17.0: score -= 50
@@ -80,6 +112,11 @@ def calculate_safety_score(o2, co, co2, temp, hum, mode='BUILDING', trends=None)
         if trends.get('co_rate', 0) > 1.0: score -= 10 # CO rising >1ppm/sec is alarming
         if trends.get('co2_rate', 0) > 50.0: score -= 10 # CO2 rising >50ppm/sec
     
+    # 6. TTU Penalty
+    if ttu < 5: score -= 80
+    elif ttu < 15: score -= 40
+    elif ttu < 60: score -= 10
+
     return max(0, score)
 
 def check_alerts(o2, co, co2, temp, hum=50, mode='BUILDING', history=None):
@@ -102,6 +139,7 @@ def check_alerts(o2, co, co2, temp, hum=50, mode='BUILDING', history=None):
         trends['co2_rate'] = (co2 - prev.get('gas', co2)) / 5.0
         trends['o2_rate'] = (o2 - prev.get('oxygen', o2)) / 5.0
 
+    ttu = estimate_ttu(o2, co, co2)
     safety_score = calculate_safety_score(o2, co, co2, temp, hum, mode, trends)
 
     # 1. Oxygen Checks
@@ -156,10 +194,20 @@ def check_alerts(o2, co, co2, temp, hum=50, mode='BUILDING', history=None):
     elif safety_score < 70:
         alerts.append(f"Warning: Poor Safety Score {safety_score}%")
 
+    # 7. TTU Alerts
+    if ttu <= 60:
+        unit = "minutes" if ttu >= 1 else "seconds"
+        val = ttu if ttu >= 1 else ttu * 60
+        alerts.append(f"URGENT: Estimated {val} {unit} until unconsciousness")
+
     if alerts:
         # Non-blocking voice alert
         if speech_queue.empty():
-            if safety_score < 40 or "CRITICAL" in "".join(alerts):
+            if ttu < 5:
+                # Urgent countdown/warning
+                alert_msg = f"Incapacitation in {ttu} minutes. Escape now." if ttu >= 1 else "Incapacitation imminent. Escape immediately."
+                speech_queue.put(alert_msg)
+            elif safety_score < 40 or "CRITICAL" in "".join(alerts):
                 alert_msg = "Danger. Critical levels detected. Escape immediately."
                 speech_queue.put(alert_msg)
             elif safety_score < 80:
@@ -170,4 +218,4 @@ def check_alerts(o2, co, co2, temp, hum=50, mode='BUILDING', history=None):
                 else: hazard = "air quality"
                 speech_queue.put(f"Alert. {hazard} levels changing. Check dashboard.")
 
-    return alerts
+    return alerts, safety_score, ttu

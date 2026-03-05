@@ -79,7 +79,7 @@ async def lifespan(app: FastAPI):
                     inference_buffer_usb.append(sensor)
                     escape_time = predict_escape(list(inference_buffer_usb), env_mode)
                     
-                    alerts = check_alerts(
+                    alerts, safety_score, ttu = check_alerts(
                         sensor["oxygen"],
                         sensor["co"],
                         sensor["gas"],
@@ -96,6 +96,8 @@ async def lifespan(app: FastAPI):
                         latest_data.update({
                             **sensor,
                             "escape_time": escape_time if not sensor.get("is_warming_up") else None,
+                            "ttu_estimate": ttu if not sensor.get("is_warming_up") else None,
+                            "safety_score": safety_score if not sensor.get("is_warming_up") else 100,
                             "backend_alerts": alerts if not sensor.get("is_warming_up") else [],
                             "ai_metrics": get_ai_metrics(),
                             "last_updated": int(time.time()),
@@ -264,7 +266,7 @@ def process_wifi_data(sensor):
         inference_buffer_wifi.append(sensor)
         escape_time = predict_escape(list(inference_buffer_wifi), env_mode)
 
-        alerts = check_alerts(
+        alerts, safety_score, ttu = check_alerts(
             sensor["oxygen"],
             sensor["co"],
             sensor["gas"],
@@ -278,6 +280,8 @@ def process_wifi_data(sensor):
         with data_lock:
             latest_data.update({
                 "escape_time": escape_time if not sensor.get("is_warming_up") else None,
+                "ttu_estimate": ttu if not sensor.get("is_warming_up") else None,
+                "safety_score": safety_score if not sensor.get("is_warming_up") else 100,
                 "backend_alerts": alerts if not sensor.get("is_warming_up") else [],
                 "ai_metrics": get_ai_metrics(),
             })
