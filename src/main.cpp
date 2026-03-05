@@ -323,13 +323,6 @@ void setup() {
     display.println(savedSSID);
     display.display();
 
-    // Configure Static DNS for reliability (Google DNS)
-    IPAddress dns1(8, 8, 8, 8);
-    IPAddress dns2(8, 8, 4, 4);
-    if (!WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, dns1, dns2)) {
-      Serial.println("Error: Failed to configure Static DNS");
-    }
-
     WiFi.begin(savedSSID.c_str(), savedPassword.c_str());
     backendIp = savedIp;
 
@@ -349,6 +342,20 @@ void setup() {
       display.clearDisplay();
       display.setCursor(0, 0);
       display.println("WIFI CONNECTED!");
+
+      // Configure Static DNS for reliability (Google DNS)
+      IPAddress dns1(8, 8, 8, 8);
+      IPAddress dns2(8, 8, 4, 4);
+      WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, dns1, dns2);
+
+      // Verify DNS
+      IPAddress testIp;
+      if (WiFi.hostByName("google.com", testIp)) {
+        Serial.print("DNS OK: google.com -> ");
+        Serial.println(testIp);
+      } else {
+        Serial.println("DNS Warning: Failed to resolve google.com");
+      }
       display.println("IP: " + WiFi.localIP().toString());
       display.println("Backend: " + backendIp);
       display.display();
