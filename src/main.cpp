@@ -158,6 +158,7 @@ void setup() {
   pinMode(MQ135_D_PIN, INPUT);
 
   Wire.begin(SDA_PIN, SCL_PIN);
+  analogSetAttenuation(ADC_11db); // Enable full 0-3.3V range
 
   /* -------- BME280 -------- */
   if (!bme.begin(0x76)) {
@@ -188,44 +189,42 @@ void setup() {
   }
 
   // MQ and Oxygen sensors need a longer warm-up for a stable baseline
-  Serial.println("Warming up sensors for baseline stabilization (2m)...");
-  display.clearDisplay();
-  display.setCursor(0, 0);
-  display.println("SENSOR WARMUP (2m)");
-  display.display();
-
-  // Send warmup status to backend
-  Serial.println("STATUS:WARMING_UP");
-
   long mq7_cal = 0;
   long mq135_cal = 0;
-  int samples = 600; // 60 seconds (600 * 100ms) for MQ warmup
+  int samples = 1800; // 3 minutes (1800 * 100ms) for stable MQ warmup
   for (int i = 0; i < samples; i++) {
-    mq7_cal += analogRead(MQ7_A_PIN);
-    mq135_cal += analogRead(MQ135_A_PIN);
+    int r7 = analogRead(MQ7_A_PIN);
+    int r135 = analogRead(MQ135_A_PIN);
+    mq7_cal += r7;
+    mq135_cal += r135;
 
     if (i % 20 == 0) { // Every 2 seconds
       Serial.println("STATUS:WARMING_UP");
       sendCloudWarmupHeartbeat(); // WiFi Heartbeat
-      display.fillRect(0, 16, 128, 8, BLACK);
-      display.setCursor(0, 16);
-      display.print("MQ Warmup: ");
+      display.clearDisplay();
+      display.setCursor(0, 0);
+      display.println("SENSOR WARMUP (3m)");
+      display.print("Progress: ");
       display.print((i * 100) / samples);
       display.println("%");
+      display.print("ADC7: ");
+      display.println(r7);
+      display.print("ADC135: ");
+      display.println(r135);
       display.display();
     }
     delay(100);
   }
 
   // --- Post-Warmup Stabilization for Oxygen ---
-  Serial.println("Stabilizing Oxygen sensor (15s)...");
+  Serial.println("Stabilizing Oxygen sensor (30s)...");
   display.clearDisplay();
   display.setCursor(0, 0);
-  display.println("O2 STABILIZING (15s)");
+  display.println("O2 STABILIZING (30s)");
   display.display();
 
-  // 15 seconds for O2
-  for (int i = 0; i < 15; i++) {
+  // 30 seconds for O2
+  for (int i = 0; i < 30; i++) {
     Serial.println("STATUS:WARMING_UP"); // Keep backend informed
     sendCloudWarmupHeartbeat();          // WiFi Heartbeat
     delay(1000);
@@ -233,7 +232,7 @@ void setup() {
       display.fillRect(0, 16, 128, 8, BLACK);
       display.setCursor(0, 16);
       display.print("O2 Prep: ");
-      display.print((i * 100) / 15); // Fixed progress calc
+      display.print((i * 100) / 30);
       display.println("%");
       display.display();
     }
@@ -274,14 +273,22 @@ void setup() {
   float Rs135 = (3.3 - v_out135) / v_out135;
 
   // Set R0 as the actual resistance in current (clean) air
-  // This ensures ratio = Rs/R0 = 1.0 in clean air, yielding 0.5ppm/400ppm
-  MQ7_R0 = Rs7;
-  MQ135_R0 = Rs135;
+  // Sanity check: If ADC is too low (saturation), don't lock a broken baseline
+  if (v_out7 > 0.05) {
+    MQ7_R0 = Rs7;
+  } else {
+    MQ7_R0 = 1.0; // Fail-safe default
+    Serial.println(
+        "WARN: MQ7 ADC too low during calibration, using default R0");
+  }
 
-  if (MQ7_R0 < 0.1)
-    MQ7_R0 = 0.1;
-  if (MQ135_R0 < 0.1)
-    MQ135_R0 = 0.1;
+  if (v_out135 > 0.05) {
+    MQ135_R0 = Rs135;
+  } else {
+    MQ135_R0 = 1.0; // Fail-safe default
+    Serial.println(
+        "WARN: MQ135 ADC too low during calibration, using default R0");
+  }
 
   Serial.println("OK: Calibration complete. Baselines locked.");
   Serial.println("STATUS:READY");
