@@ -25,7 +25,7 @@ def estimate_escape_time(row):
     co = row.get('co', 0)
     co2 = row.get('gas', 400) # Using 'gas' as CO2 proxy if not explicitly labeled
     o2 = row.get('oxygen', 20.9)
-    temp = row.get('temperature', 25)
+    temp = row.get('temp', 25)
 
     times = []
     

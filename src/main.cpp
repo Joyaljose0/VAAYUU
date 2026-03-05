@@ -317,13 +317,29 @@ void setup() {
 
   if (savedSSID != "" && savedIp.length() > 0) {
     Serial.println("Found Saved WiFi Credentials. Connecting...");
-    display.clearDisplay();
-    display.setCursor(0, 0);
-    display.println("Connecting to:");
-    display.println(savedSSID);
     display.display();
 
-    WiFi.begin(savedSSID.c_str(), savedPassword.c_str());
+    // Check if default (DHCP) DNS works first
+    IPAddress testIp;
+    bool dnsOk = WiFi.hostByName("google.com", testIp);
+
+    if (!dnsOk) {
+      Serial.println("DNS Initial Check Failed. Applying Static DNS Fallback "
+                     "(8.8.8.8)...");
+      IPAddress dns1(8, 8, 8, 8);
+      IPAddress dns2(8, 8, 4, 4);
+      WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, dns1, dns2);
+
+      // Secondary check
+      if (WiFi.hostByName("google.com", testIp)) {
+        Serial.println("DNS OK (via Static Fallback)");
+      } else {
+        Serial.println("DNS CRITICAL: Still failing after static fallback.");
+      }
+    } else {
+      Serial.print("DNS OK (via DHCP) -> ");
+      Serial.println(testIp);
+    }
     backendIp = savedIp;
 
     // Blink LED while connecting
@@ -440,7 +456,8 @@ void startAPMode() {
     String pass = server.arg("pass");
     String ip = server.arg("ip");
 
-    if (ssid != "" && ip != "") {
+    ip.trim(); // Sanitization
+    if (ssid != "" && ip.length() > 0) {
       preferences.putString("ssid", ssid);
       preferences.putString("password", pass);
       preferences.putString("ip", ip);
@@ -728,6 +745,7 @@ void loop() {
                    backendIp.indexOf("onrender.com") != -1;
 
     // Auto-fix URL if only domain is provided
+    backendIp.trim();
     if (!backendIp.startsWith("http")) {
       url = (isHttps ? "https://" : "http://") + backendIp;
     } else {

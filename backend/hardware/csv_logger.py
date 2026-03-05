@@ -6,6 +6,9 @@ def log_to_csv(data, env_mode="BUILDING"):
     filename = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", f"air_quality_{suffix}.csv")
 
     file_exists = os.path.exists(filename)
+    
+    # Ensure data directory exists
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
 
     with open(filename, "a", newline="") as f:
         writer = csv.writer(f)

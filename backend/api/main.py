@@ -15,7 +15,7 @@ import threading
 import socket
 import time
 from collections import deque
-from ml.train_from_csv import train_model
+from ml.train_from_csv import train_model, MODES
 from pydantic import BaseModel
 
 def get_local_ip():
@@ -188,6 +188,21 @@ def set_env_mode(data: EnvMode):
         return {"status": "success", "mode": env_mode}
     from fastapi import HTTPException
     raise HTTPException(status_code=400, detail="Invalid environment mode")
+
+@app.post("/train")
+def trigger_training(data: EnvMode):
+    """Force a training run for a specific mode."""
+    if data.mode in MODES:
+        def run_training():
+            try:
+                print(f"[AI] Manual training triggered for {data.mode}...")
+                train_model(data.mode)
+            except Exception as e:
+                print(f"[AI Error] Manual training failed: {e}")
+        
+        threading.Thread(target=run_training, daemon=True).start()
+        return {"status": "training_started", "mode": data.mode}
+    raise HTTPException(status_code=400, detail="Invalid mode for training")
 
 @app.get("/")
 def read_root():
