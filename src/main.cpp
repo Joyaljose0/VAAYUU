@@ -319,9 +319,11 @@ void setup() {
     Serial.println("Found Saved WiFi Credentials. Connecting...");
     display.display();
 
+    WiFi.mode(WIFI_STA);
     WiFi.begin(savedSSID.c_str(), savedPassword.c_str());
     backendIp = savedIp;
 
+    Serial.println("WiFi Association Started...");
     // Blink LED while connecting
     int timeout = 0;
     while (WiFi.status() != WL_CONNECTED && timeout < 20) {
