@@ -9,7 +9,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from hardware.serial_reader import read_sensor, write_serial
 from hardware.csv_logger import log_to_csv
-from ml.lstm_predict import predict_escape, train_on_live_data, get_ai_metrics
+from ml.lstm_predict import predict_escape, get_ai_metrics
 from api.alerts import check_alerts
 import threading
 import socket
@@ -45,9 +45,6 @@ class SensorData(BaseModel):
     oxygen: float
     is_warming_up: bool = False
 
-# Virtual Oxygen calculation removed to prioritize real hardware calibration accuracy.
-
-
 # Shared control states
 latest_data = {}
 data_lock = threading.Lock()
@@ -55,10 +52,6 @@ data_lock = threading.Lock()
 connection_mode = "WIFI" if os.getenv("RENDER") else "USB" 
 env_mode = "BUILDING"   
 shutdown_event = threading.Event()
-
-# Background Training Queue
-training_queue = deque(maxlen=60) # Keep max 60 last frames
-training_lock = threading.Lock()
 
 # Inference buffers for sequence-based trend analysis
 inference_buffer_usb = deque(maxlen=30)
@@ -82,12 +75,10 @@ async def lifespan(app: FastAPI):
                     sensor = None
                 
                 if sensor:
-                    # Virtual oxygen removed to prioritize real hardware calibration accuracy.
-                    
-                    
-                    # Trend-based escape prediction using last 30 seconds
+                    # AI Trend Analysis
                     inference_buffer_usb.append(sensor)
-                    escape_time = predict_escape(list(inference_buffer_usb))
+                    escape_time = predict_escape(list(inference_buffer_usb), env_mode)
+                    
                     alerts = check_alerts(
                         sensor["oxygen"],
                         sensor["co"],
@@ -96,7 +87,7 @@ async def lifespan(app: FastAPI):
                         sensor["humidity"],
                         env_mode
                     )
-                    print(f"Hardware Data Received -> Temp: {sensor['temperature']}°C | CO: {sensor['co']}ppm | O2: {sensor['oxygen']}%")
+                    print(f"Hardware Data Received ({env_mode}) -> Temp: {sensor['temperature']}°C | CO: {sensor['co']}ppm | O2: {sensor['oxygen']}%")
 
                     # Thread-safe dictionary swap
                     with data_lock:
@@ -106,19 +97,18 @@ async def lifespan(app: FastAPI):
                             "escape_time": escape_time if not sensor.get("is_warming_up") else None,
                             "backend_alerts": alerts if not sensor.get("is_warming_up") else [],
                             "ai_metrics": get_ai_metrics(),
-                            "last_updated": int(time.time())
+                            "last_updated": int(time.time()),
+                            "env_mode": env_mode # Track active mode
                         })
 
                     # Format alerts or say 'no'
                     alert_text = "|".join(alerts) if alerts else "no"
 
                     # --- Prevent Stale Data Logging ---
-                    # Only log to CSV if the data is fresh (less than 5 seconds old)
                     with data_lock:
                         last_updated = latest_data.get("last_updated", 0)
                     
                     if time.time() - last_updated < 5.0:
-                        # Prepare the data array. We exclude escape time as requested
                         csv_data = [
                             sensor["co"],
                             sensor["gas"],
@@ -127,42 +117,37 @@ async def lifespan(app: FastAPI):
                             sensor["pressure"],
                             sensor["oxygen"],
                             alert_text,
-                            escape_time
+                            escape_time # Store prediction in CSV for future tuning
                         ]
                         
-                        log_to_csv(csv_data)
-                        
-                        with training_lock:
-                            training_queue.append(sensor)
+                        log_to_csv(csv_data, env_mode)
             
-            # Sleep 1s whether we read data or not (or if we skipped because of WIFI mode)
             time.sleep(1)
-            
+
     def periodic_training_loop():
-        """Periodic background training thread (User Request: Every 5-10 minutes)"""
-        print("[AI] Periodic Training Thread Started.")
+        """Periodic background training thread for BOTH modes."""
         while not shutdown_event.is_set():
             try:
-                # Wait 5 minutes between training (300 seconds)
+                # Wait 5 minutes between training
                 for _ in range(300):
                     if shutdown_event.is_set(): return
                     time.sleep(1)
                 
-                print("[AI] Starting periodic background retraining from CSV...")
-                train_model()
+                print("[AI] Starting periodic background retraining...")
+                for mode in ["BUILDING", "VEHICLE"]:
+                    train_model(mode)
             except Exception as e:
                 print(f"[AI] Training Thread Error: {e}")
-
+            
     threading.Thread(target=loop, daemon=True).start()
     
-    # Only run training thread if NOT on Render (Free tier 512MB RAM limit)
     if not os.getenv("RENDER"):
         threading.Thread(target=periodic_training_loop, daemon=True).start()
-    else:
-        print("[AI] Background training DISABLED for Render stability.")
+    
     yield
     print("Shutdown signal received. Stopping background threads...")
     shutdown_event.set()
+
 app = FastAPI(lifespan=lifespan)
 
 app.add_middleware(
@@ -179,6 +164,7 @@ def live_data():
         data_copy = latest_data.copy()
         data_copy["connection_mode"] = connection_mode
         data_copy["backend_ip"] = local_ip
+        data_copy["env_mode"] = env_mode
         return data_copy
 
 @app.post("/connection-mode")
@@ -205,7 +191,7 @@ def set_env_mode(data: EnvMode):
 
 @app.get("/")
 def read_root():
-    return {"message": "AuraGuard AI Backend is running. Access /live for data."}
+    return {"message": "VAAYUU AI Backend is running. Access /live for data."}
 
 class RawCommand(BaseModel):
     command: str
@@ -234,7 +220,6 @@ from fastapi import BackgroundTasks
 @app.post("/sensor-data")
 def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
     global connection_mode
-    # Auto-switch to WIFI mode if hardware is successfully calling this endpoint
     if connection_mode != "WIFI":
         print(f"[Cloud API] Mode Conflict: Switching to WIFI for incoming hardware data.")
         connection_mode = "WIFI"
@@ -247,23 +232,19 @@ def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
 def process_wifi_data(sensor):
     global latest_data
     try:
-        # STEP 1: Update dashboard immediately with raw sensor data
+        # Update dashboard immediately with raw sensor data
         with data_lock:
             latest_data.update({
                 **sensor,
                 "connection_mode": "WIFI",
-                "last_updated": int(time.time())
+                "last_updated": int(time.time()),
+                "env_mode": env_mode
             })
-        print(f"[Cloud API] Live Update Sent: Temp={sensor['temperature']}°C")
-
-        # STEP 2: Process heavy AI/Alerts in the background
+        
+        # AI Logic
         inference_buffer_wifi.append(sensor)
-        
-        start_ai = time.time()
-        print("[Cloud AI] Starting prediction...")
-        escape_time = predict_escape(list(inference_buffer_wifi))
-        ai_duration = time.time() - start_ai
-        
+        escape_time = predict_escape(list(inference_buffer_wifi), env_mode)
+
         alerts = check_alerts(
             sensor["oxygen"],
             sensor["co"],
@@ -273,7 +254,7 @@ def process_wifi_data(sensor):
             env_mode
         )
         
-        # STEP 3: Update again with AI results
+        # Update with AI and alert results
         with data_lock:
             latest_data.update({
                 "escape_time": escape_time if not sensor.get("is_warming_up") else None,
@@ -281,13 +262,6 @@ def process_wifi_data(sensor):
                 "ai_metrics": get_ai_metrics(),
             })
             
-        print(f"[Cloud AI] Done in {ai_duration:.2f}s. Prediction: {escape_time}m")
-
-        if not os.getenv("RENDER"):
-            with training_lock:
-                training_queue.append(sensor)
-        
-        # Explicitly clear RAM on Render
         import gc
         gc.collect()
 
@@ -303,12 +277,10 @@ def process_wifi_data(sensor):
             alert_text,
             escape_time
         ]
-        log_to_csv(csv_data)
+        log_to_csv(csv_data, env_mode)
 
     except Exception as e:
         print(f"[Cloud API ERROR] Critical failure in process_wifi_data: {e}")
-        import traceback
-        traceback.print_exc()
 
 
 if __name__ == "__main__":

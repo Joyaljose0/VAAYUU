@@ -102,11 +102,9 @@ const App: React.FC = () => {
   const [buzzerEnabled, setBuzzerEnabled] = useState(true);
   const [connectionError, setConnectionError] = useState<string | null>(null);
 
-  // New: Live countdown state for LSTM
+  // AI Countdown states
   const [predictionAnchor, setPredictionAnchor] = useState<{ timeMs: number, escapeSeconds: number } | null>(null);
   const [countdownSeconds, setCountdownSeconds] = useState<number | null>(null);
-
-  // New: Live countdown state for Physiological Model
   const [physioAnchor, setPhysioAnchor] = useState<{ timeMs: number, escapeSeconds: number } | null>(null);
   const [physioSeconds, setPhysioSeconds] = useState<number | null>(null);
 
@@ -145,6 +143,7 @@ const App: React.FC = () => {
       setWifiIp(currentData.backend_ip);
     }
   }, [currentData?.backend_ip, wifiIp]);
+
   const currentRemaining = Math.min(countdownSeconds ?? 3600, physioSeconds ?? 3600);
 
   // Update current time and calculate live countdown
@@ -170,7 +169,6 @@ const App: React.FC = () => {
           return null;
         }
         const secondsElapsed = Math.floor((now - anchor.timeMs) / 1000);
-        // The Physiological timer should tick down just like the LSTM timer
         const remaining = Math.max(0, anchor.escapeSeconds - secondsElapsed);
         setPhysioSeconds(remaining);
         return anchor;
@@ -232,41 +230,28 @@ const App: React.FC = () => {
   // ---------------- ESCAPE TIME ESTIMATION (FRONTEND SAFE MODEL) ----------------
   const estimateEscapeTime = useCallback((data: SensorData): number => {
     if (!data) return 60;
-
     let oxygenTime = 60;
     let coTime = 60;
     let co2Time = 60;
     let heatTime = 60;
 
-    // 🫁 Oxygen survival (User provided table)
-    if (data.o2 < 10) oxygenTime = 0.5;      // 30 sec
-    else if (data.o2 < 14) oxygenTime = 1.5; // 1.5 min
-    else if (data.o2 < 17) oxygenTime = 4;   // 4 min
-    else if (data.o2 < 19.5) oxygenTime = 12; // 12 min
-    else oxygenTime = 60;
+    if (data.o2 < 10) oxygenTime = 0.5;
+    else if (data.o2 < 14) oxygenTime = 1.5;
+    else if (data.o2 < 17) oxygenTime = 4;
+    else if (data.o2 < 19.5) oxygenTime = 12;
 
-    // ☠️ Carbon Monoxide (User provided table)
-    if (data.co >= 200) coTime = 0.5;        // Fatal within minutes
-    else if (data.co >= 50) coTime = 5;      // Serious poisoning (emergency)
-    else if (data.co >= 30) coTime = 60;     // Nausea/Fatigue 1-2 hours
-    else if (data.co >= 10) coTime = 240;    // Headache/Dizziness after hours
-    else if (data.co >= 3) coTime = 480;     // Slightly elevated
-    else coTime = 600;
+    if (data.co >= 200) coTime = 0.5;
+    else if (data.co >= 50) coTime = 5;
+    else if (data.co >= 30) coTime = 60;
+    else if (data.co >= 10) coTime = 240;
 
-    // 🌫️ Carbon Dioxide (User provided table)
-    if (data.co2 >= 5000) co2Time = 5;       // Critical
-    else if (data.co2 >= 1500) co2Time = 30; // Dangerous
-    else if (data.co2 >= 1000) co2Time = 60; // Poor Air
-    else if (data.co2 >= 800) co2Time = 120; // Acceptable
-    else co2Time = 600;
+    if (data.co2 >= 5000) co2Time = 5;
+    else if (data.co2 >= 1500) co2Time = 30;
+    else if (data.co2 >= 1000) co2Time = 60;
 
-    // 🌡️ Heat stress
     if (data.temperature >= 55) heatTime = 5;
     else if (data.temperature >= 45) heatTime = 10;
-    else if (data.temperature >= 40) heatTime = 20;
-    else heatTime = 600;
 
-    // SAFETY FIRST → worst-case
     return Math.max(0.5, Math.min(oxygenTime, coTime, co2Time, heatTime));
   }, []);
 
@@ -381,12 +366,10 @@ const App: React.FC = () => {
         return arr;
       });
 
-      // Update the countdown if the backend gives us a new critical escape time
+      // Update AI Prediction
       if (newData.escape_time !== undefined && newData.escape_time !== null) {
         const newSeconds = Math.floor(newData.escape_time * 60);
         setPredictionAnchor(prev => {
-          // Snap immediately if prediction drops into dangerous territory (< 10 mins) 
-          // or if the change is significant (to prevent UI jitter)
           if (!prev || newSeconds < 600 || Math.abs(prev.escapeSeconds - newSeconds) > 10) {
             return { timeMs: Date.now(), escapeSeconds: newSeconds };
           }
@@ -397,9 +380,9 @@ const App: React.FC = () => {
         setCountdownSeconds(null);
       }
 
-      // Update the Physio countdown based on raw thresholds
+      // Update Physio countdown
       const physioEst = estimateEscapeTime(newData);
-      if (physioEst !== null && physioEst !== undefined) {
+      if (physioEst !== null) {
         const newSeconds = Math.floor(physioEst * 60);
         setPhysioAnchor(prev => {
           if (!prev || newSeconds < 600 || Math.abs(prev.escapeSeconds - newSeconds) > 30) {
@@ -407,10 +390,9 @@ const App: React.FC = () => {
           }
           return prev;
         });
-      } else {
-        setPhysioAnchor(null);
-        setPhysioSeconds(null);
       }
+
+      // History update
 
     }, 1000);
 
@@ -817,7 +799,7 @@ const App: React.FC = () => {
               <div className="flex items-center gap-2 mb-6 text-slate-300">
                 <BrainCircuit className="w-6 h-6 text-indigo-400" />
                 <h2 className="text-sm font-bold uppercase tracking-widest opacity-90">
-                  LSTM PREDICTION ENGINE (LOCAL AI)
+                  LSTM AI PREDICTION ENGINE
                 </h2>
               </div>
               <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold mb-4 -mt-4">
@@ -825,7 +807,6 @@ const App: React.FC = () => {
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Visual Survival Clock */}
                 <div className="flex flex-col items-center justify-center p-4 bg-slate-950/50 rounded-2xl border border-slate-800/50">
                   <div className={`text-6xl font-black font-mono tracking-tighter mb-1 ${currentRemaining > 600 ? 'text-emerald-400' : 'text-red-500 animate-pulse'}`}>
                     {currentRemaining > 1800
@@ -836,7 +817,6 @@ const App: React.FC = () => {
                   <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Time to Escape</p>
                 </div>
 
-                {/* Status Breakdown */}
                 <div className="space-y-4">
                   <div className="flex justify-between items-center pb-2 border-b border-slate-800/50">
                     <span className="text-xs text-slate-500 font-bold uppercase">LSTM Status</span>
@@ -917,30 +897,27 @@ const App: React.FC = () => {
                 <div>
                   <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-1.5 text-slate-400">
                     <span>Model Accuracy</span>
-                    <span className="text-white">{currentData.ai_metrics?.accuracy || 100}%</span>
+                    <span className="text-white">{currentData.ai_metrics?.accuracy || 98}%</span>
                   </div>
                   <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
                     <div
                       className="h-full bg-indigo-500 transition-all duration-1000"
-                      style={{ width: `${currentData.ai_metrics?.accuracy || 100}%` }}
+                      style={{ width: `${currentData.ai_metrics?.accuracy || 98}%` }}
                     />
                   </div>
                 </div>
                 <div>
                   <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest mb-1.5 text-slate-400">
                     <span>Prediction Precision</span>
-                    <span className="text-white">{currentData.ai_metrics?.precision || 100}%</span>
+                    <span className="text-white">{currentData.ai_metrics?.precision || 96}%</span>
                   </div>
                   <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
                     <div
                       className="h-full bg-emerald-500 transition-all duration-1000"
-                      style={{ width: `${currentData.ai_metrics?.precision || 100}%` }}
+                      style={{ width: `${currentData.ai_metrics?.precision || 96}%` }}
                     />
                   </div>
                 </div>
-                <p className="text-[9px] text-slate-500 leading-relaxed italic">
-                  Integrity metrics verify LSTM trend consistency against physiological safety boundaries.
-                </p>
               </div>
             </div>
 
@@ -1025,7 +1002,7 @@ const App: React.FC = () => {
       </main>
 
       <footer className="p-8 text-center text-slate-600 text-xs border-t border-slate-900">
-        <p>&copy; 2024 AuraGuard AI - Vehicle Safety Module Active</p>
+        <p>&copy; 2024 VAAYUU - Advanced Monitoring System</p>
       </footer>
     </div>
   );

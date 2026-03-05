@@ -1,8 +1,9 @@
 import csv, os, datetime
 
-def log_to_csv(data):
-    # Log everything to a single master file as requested
-    filename = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", "air_quality.csv")
+def log_to_csv(data, env_mode="BUILDING"):
+    # Log to separate files for Building and Vehicle to allow independent training
+    suffix = "building" if env_mode.upper() == "BUILDING" else "vehicle"
+    filename = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data", f"air_quality_{suffix}.csv")
 
     file_exists = os.path.exists(filename)
 

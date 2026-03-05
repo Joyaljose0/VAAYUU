@@ -1,0 +1,507 @@
+CO,Gas,Temp,Humidity,Pressure,Oxygen,Alert,Escape_Time
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0.44,371.73,29.69,74.58,1012.74,20.64,Warning: High Humidity (Respiratory Risk),60.0
+0.46,374.53,29.69,74.57,1012.77,20.62,Warning: High Humidity (Respiratory Risk),60.0
+0.44,381.63,29.69,74.56,1012.74,20.6,Warning: High Humidity (Respiratory Risk),60.0
+0.43,371.73,29.69,74.56,1012.75,20.54,Warning: High Humidity (Respiratory Risk),60.0
+0.44,364.8,29.69,74.55,1012.78,20.55,Warning: High Humidity (Respiratory Risk),60.0
+0.41,355.3,29.69,74.55,1012.78,20.67,Warning: High Humidity (Respiratory Risk),60.0
+0.44,366.18,29.69,74.54,1012.78,20.82,Warning: High Humidity (Respiratory Risk),60.0
+0.44,362.06,29.7,74.54,1012.79,20.8,Warning: High Humidity (Respiratory Risk),60.0
+0.43,362.06,29.7,74.53,1012.78,20.74,Warning: High Humidity (Respiratory Risk),60.0
+0.42,362.06,29.7,74.53,1012.76,20.74,Warning: High Humidity (Respiratory Risk),60.0
+0.43,364.8,29.7,74.52,1012.79,20.85,Warning: High Humidity (Respiratory Risk),60.0
+0.39,364.8,29.7,74.52,1012.77,20.9,Warning: High Humidity (Respiratory Risk),60.0
+0.43,366.18,29.7,74.52,1012.76,21.0,Warning: High Humidity (Respiratory Risk),60.0
+0.42,381.63,29.7,74.52,1012.77,21.08,Warning: High Humidity (Respiratory Risk),60.0
+0.44,385.95,29.69,74.52,1012.78,21.08,Warning: High Humidity (Respiratory Risk),60.0
+0.45,388.85,29.69,74.53,1012.79,21.04,Warning: High Humidity (Respiratory Risk),60.0
+0.45,388.85,29.69,74.53,1012.78,20.95,Warning: High Humidity (Respiratory Risk),60.0
+0.44,397.68,29.69,74.53,1012.79,20.78,Warning: High Humidity (Respiratory Risk),60.0
+0.44,391.77,29.69,74.54,1012.77,20.61,Warning: High Humidity (Respiratory Risk),60.0
+0.45,388.85,29.69,74.55,1012.78,20.55,Warning: High Humidity (Respiratory Risk),60.0
+0.43,399.17,29.69,74.55,1012.79,20.48,Warning: High Humidity (Respiratory Risk),60.0
+0.46,393.24,29.69,74.56,1012.8,20.25,Warning: High Humidity (Respiratory Risk),60.0
+0.47,408.21,29.69,74.56,1012.78,20.11,Warning: High Humidity (Respiratory Risk),60.0
+0.44,394.72,29.69,74.57,1012.79,20.13,Warning: High Humidity (Respiratory Risk),60.0
+0.44,399.17,29.69,74.58,1012.79,20.33,Warning: High Humidity (Respiratory Risk),60.0
+0.44,406.69,29.69,74.58,1012.78,20.37,Warning: High Humidity (Respiratory Risk),60.0
+0.47,403.67,29.69,74.57,1012.79,20.36,Warning: High Humidity (Respiratory Risk),60.0
+0.46,408.21,29.7,74.57,1012.78,20.31,Warning: High Humidity (Respiratory Risk),60.0
+0.48,415.89,29.7,74.56,1012.79,20.27,Warning: High Humidity (Respiratory Risk),60.0
+0.47,408.21,29.7,74.56,1012.77,20.27,Warning: High Humidity (Respiratory Risk),60.0
+0.47,425.28,29.7,74.55,1012.79,20.22,Warning: High Humidity (Respiratory Risk),60.0
+0.47,423.7,29.7,74.55,1012.78,20.15,Warning: High Humidity (Respiratory Risk),60.0
+0.46,426.86,29.7,74.56,1012.79,20.06,Warning: High Humidity (Respiratory Risk),60.0
+0.48,426.86,29.7,74.57,1012.78,20.06,Warning: High Humidity (Respiratory Risk),60.0
+0.48,430.05,29.7,74.58,1012.77,20.05,Warning: High Humidity (Respiratory Risk),60.0
+0.48,423.7,29.7,74.59,1012.8,20.11,Warning: High Humidity (Respiratory Risk),60.0
+0.49,425.28,29.7,74.59,1012.77,20.3,Warning: High Humidity (Respiratory Risk),60.0
+0.46,419.0,29.7,74.6,1012.79,20.71,Warning: High Humidity (Respiratory Risk),60.0
+0.48,428.45,29.7,74.6,1012.78,20.88,Warning: High Humidity (Respiratory Risk),60.0
+0.48,428.45,29.7,74.62,1012.72,20.86,Warning: High Humidity (Respiratory Risk),60.0
+0.48,417.44,29.71,74.64,1012.74,20.61,Warning: High Humidity (Respiratory Risk),60.0
+0.48,425.28,29.71,74.65,1012.72,20.48,Warning: High Humidity (Respiratory Risk),60.0
+0.48,441.36,29.71,74.67,1012.72,20.45,Warning: High Humidity (Respiratory Risk),60.0
+0.48,433.25,29.71,74.68,1012.75,20.49,Warning: High Humidity (Respiratory Risk),60.0
+0.48,425.28,29.71,74.68,1012.74,20.54,Warning: High Humidity (Respiratory Risk),60.0
+0.5,419.0,29.71,74.67,1012.74,20.62,Warning: High Humidity (Respiratory Risk),60.0
+0.48,425.28,29.71,74.68,1012.73,20.72,Warning: High Humidity (Respiratory Risk),60.0
+0.51,433.25,29.72,74.69,1012.74,20.79,Warning: High Humidity (Respiratory Risk),60.0
+0.49,434.86,29.72,74.7,1012.76,20.64,Warning: High Humidity (Respiratory Risk),60.0
+0.48,438.1,29.72,74.7,1012.73,20.47,Warning: High Humidity (Respiratory Risk),60.0
+0.5,433.25,29.73,74.69,1012.79,20.32,Warning: High Humidity (Respiratory Risk),60.0
+0.49,433.25,29.73,74.69,1012.75,20.32,Warning: High Humidity (Respiratory Risk),60.0
+0.49,439.73,29.73,74.68,1012.75,20.2,Warning: High Humidity (Respiratory Risk),60.0
+0.49,436.48,29.73,74.68,1012.73,20.07,Warning: High Humidity (Respiratory Risk),60.0
+0.49,433.25,29.74,74.68,1012.75,19.93,Warning: High Humidity (Respiratory Risk),60.0
+0.51,438.1,29.74,74.68,1012.72,19.91,Warning: High Humidity (Respiratory Risk),60.0
+0.49,441.36,29.74,74.67,1012.77,20.05,Warning: High Humidity (Respiratory Risk),60.0
+0.49,451.28,29.75,74.66,1012.74,20.41,Warning: High Humidity (Respiratory Risk),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0.42,324.84,29.83,74.31,1012.73,20.54,Warning: High Humidity (Respiratory Risk),60.0
+0.42,327.27,29.83,74.3,1012.72,20.77,Warning: High Humidity (Respiratory Risk),60.0
+0.44,329.71,29.83,74.29,1012.72,21.0,Warning: High Humidity (Respiratory Risk),60.0
+0.44,329.71,29.83,74.28,1012.7,21.16,Warning: High Humidity (Respiratory Risk),60.0
+0.42,328.49,29.83,74.27,1012.7,21.07,Warning: High Humidity (Respiratory Risk),60.0
+0.44,324.84,29.83,74.26,1012.73,20.81,Warning: High Humidity (Respiratory Risk),60.0
+0.44,332.18,29.83,74.25,1012.73,20.7,Warning: High Humidity (Respiratory Risk),60.0
+0.45,334.66,29.83,74.25,1012.71,20.81,Warning: High Humidity (Respiratory Risk),60.0
+0.43,333.42,29.83,74.24,1012.73,20.84,Warning: High Humidity (Respiratory Risk),60.0
+0.43,338.41,29.83,74.24,1012.71,20.91,Warning: High Humidity (Respiratory Risk),60.0
+0.45,334.66,29.83,74.24,1012.71,20.86,Warning: High Humidity (Respiratory Risk),60.0
+0.44,338.41,29.83,74.22,1012.7,20.72,Warning: High Humidity (Respiratory Risk),60.0
+0.45,329.71,29.83,74.21,1012.72,20.53,Warning: High Humidity (Respiratory Risk),60.0
+0.43,339.67,29.84,74.19,1012.72,20.37,Warning: High Humidity (Respiratory Risk),60.0
+0.44,333.42,29.84,74.17,1012.7,20.36,Warning: High Humidity (Respiratory Risk),60.0
+0.44,339.67,29.84,74.17,1012.72,20.38,Warning: High Humidity (Respiratory Risk),60.0
+0.17,159.39,29.84,74.17,1012.7,20.36,Warning: High Humidity (Respiratory Risk),60.0
+0.64,429.86,29.84,74.17,1012.72,20.41,Warning: High Humidity (Respiratory Risk),60.0
+0.64,463.98,29.84,74.18,1012.7,20.3,Warning: High Humidity (Respiratory Risk),60.0
+0.7,495.22,29.84,74.19,1012.72,20.13,Warning: High Humidity (Respiratory Risk),60.0
+0.72,511.56,29.84,74.19,1012.74,19.77,Warning: High Humidity (Respiratory Risk),60.0
+0.69,517.12,29.84,74.2,1012.71,19.56,Warning: High Humidity (Respiratory Risk),60.0
+0.72,517.12,29.84,74.19,1012.7,19.59,Warning: High Humidity (Respiratory Risk),60.0
+0.71,513.41,29.84,74.17,1012.74,19.6,Warning: High Humidity (Respiratory Risk),60.0
+0.72,537.99,29.85,74.15,1012.72,19.59,Warning: High Humidity (Respiratory Risk),60.0
+0.7,530.31,29.85,74.15,1012.71,19.57,Warning: High Humidity (Respiratory Risk),60.0
+0.76,534.14,29.85,74.13,1012.74,19.48,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.74,532.22,29.85,74.13,1012.72,19.37,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.74,549.71,29.85,74.13,1012.73,19.3,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.71,543.82,29.85,74.12,1012.71,19.34,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.73,537.99,29.85,74.16,1012.71,19.39,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.76,549.71,29.85,74.19,1012.73,19.37,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.76,555.66,29.86,74.21,1012.72,19.29,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.75,536.06,29.86,74.23,1012.71,19.2,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.73,543.82,29.86,74.24,1012.74,19.18,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.75,532.22,29.86,74.24,1012.72,19.44,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.77,652.45,29.87,74.25,1012.76,20.9,Warning: High Humidity (Respiratory Risk),60.0
+0.72,629.65,29.87,74.26,1012.75,20.9,Warning: High Humidity (Respiratory Risk),60.0
+0.75,631.9,29.88,74.25,1012.76,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.7,625.19,29.89,74.25,1012.75,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0.47,355.51,30.02,73.61,1012.76,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.46,356.78,30.02,73.61,1012.78,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.46,358.06,30.02,73.6,1012.78,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.45,360.63,30.02,73.6,1012.76,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.45,358.06,30.03,73.59,1012.77,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.45,358.06,30.03,73.58,1012.78,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.45,352.98,30.03,73.56,1012.77,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.45,364.51,30.04,73.55,1012.8,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.45,358.06,30.04,73.53,1012.78,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.45,349.21,30.04,73.51,1012.79,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.43,352.98,30.05,73.49,1012.77,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.44,352.98,30.05,73.48,1012.79,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.46,350.46,30.05,73.47,1012.76,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.44,351.72,30.05,73.47,1012.83,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.43,345.48,30.05,73.47,1012.87,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.44,347.96,30.05,73.46,1012.8,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.43,343.01,30.05,73.45,1012.82,19.26,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.45,339.35,30.05,73.43,1012.81,19.6,Warning: High Humidity (Respiratory Risk),60.0
+0.43,343.01,30.05,73.43,1012.82,19.75,Warning: High Humidity (Respiratory Risk),60.0
+0.43,341.79,30.05,73.44,1012.84,19.73,Warning: High Humidity (Respiratory Risk),60.0
+0.43,343.01,30.05,73.45,1012.81,19.58,Warning: High Humidity (Respiratory Risk),60.0
+0.46,350.46,30.04,73.46,1012.81,19.61,Warning: High Humidity (Respiratory Risk),60.0
+0.44,347.96,30.04,73.46,1012.81,19.64,Warning: High Humidity (Respiratory Risk),60.0
+0.43,336.92,30.04,73.47,1012.83,19.66,Warning: High Humidity (Respiratory Risk),60.0
+0.43,336.92,30.03,73.48,1012.82,19.6,Warning: High Humidity (Respiratory Risk),60.0
+0.43,341.79,30.03,73.48,1012.83,19.52,Warning: High Humidity (Respiratory Risk),60.0
+0.43,346.72,30.03,73.48,1012.84,19.46,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.41,341.79,30.03,73.47,1012.84,19.45,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.44,335.72,30.03,73.45,1012.8,19.44,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.42,338.13,30.03,73.44,1012.78,19.41,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.43,333.32,30.04,73.42,1012.78,19.41,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.42,332.12,30.04,73.41,1012.78,19.39,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.41,335.72,30.04,73.39,1012.79,19.32,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.42,329.75,30.05,73.37,1012.81,19.24,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.42,329.75,30.05,73.35,1012.81,19.19,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.43,340.57,30.06,73.33,1012.79,19.18,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.43,330.93,30.06,73.31,1012.8,19.2,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.41,328.57,30.06,73.3,1012.83,19.25,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.41,329.75,30.06,73.29,1012.8,19.33,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.41,335.72,30.07,73.29,1012.79,19.37,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.42,326.21,30.07,73.28,1012.8,19.38,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.41,318.11,30.07,73.26,1012.8,19.39,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.4,327.39,30.07,73.26,1012.79,19.44,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.41,326.21,30.08,73.24,1012.82,19.52,Warning: High Humidity (Respiratory Risk),60.0
+0.4,325.04,30.08,73.23,1012.79,19.58,Warning: High Humidity (Respiratory Risk),60.0
+0.41,325.04,30.08,73.23,1012.81,19.66,Warning: High Humidity (Respiratory Risk),60.0
+0.4,314.69,30.08,73.22,1012.78,19.72,Warning: High Humidity (Respiratory Risk),60.0
+0.4,321.56,30.08,73.22,1012.82,19.67,Warning: High Humidity (Respiratory Risk),60.0
+0.41,323.88,30.08,73.22,1012.8,19.54,Warning: High Humidity (Respiratory Risk),60.0
+0.38,313.56,30.09,73.22,1012.8,19.41,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.4,314.69,30.09,73.2,1012.81,19.37,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,311.31,30.09,73.2,1012.81,19.36,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,311.31,30.09,73.19,1012.82,19.31,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,319.25,30.09,73.18,1012.82,19.23,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,311.31,30.09,73.18,1012.79,19.18,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,307.96,30.09,73.19,1012.79,19.18,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,313.56,30.08,73.19,1012.79,19.17,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,311.31,30.08,73.2,1012.83,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,311.31,30.08,73.2,1012.81,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,309.07,30.07,73.2,1012.81,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,313.56,30.07,73.22,1012.81,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,311.31,30.06,73.23,1012.8,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,311.31,30.05,73.25,1012.81,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,311.31,30.04,73.28,1012.81,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,309.07,30.04,73.3,1012.83,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.4,311.31,30.03,73.32,1012.84,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,309.07,30.02,73.34,1012.86,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,304.64,30.02,73.35,1012.87,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,304.64,30.01,73.37,1012.86,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,299.19,30.01,73.38,1012.84,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,304.64,30.0,73.39,1012.84,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,304.64,30.0,73.41,1012.84,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,301.36,30.0,73.42,1012.84,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,301.36,29.99,73.43,1012.89,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,310.19,29.99,73.44,1012.85,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,305.74,29.99,73.45,1012.83,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,304.64,29.99,73.46,1012.86,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,307.96,29.99,73.47,1012.84,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,305.74,29.98,73.48,1012.85,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,303.55,29.98,73.5,1012.84,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,305.74,29.98,73.51,1012.82,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,295.97,29.97,73.52,1012.85,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,295.97,29.97,73.53,1012.85,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,292.77,29.97,73.55,1012.87,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,300.28,29.97,73.56,1012.86,19.19,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,303.55,29.97,73.58,1012.85,19.18,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,293.83,29.96,73.6,1012.85,19.18,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,293.83,29.96,73.61,1012.85,19.19,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,293.83,29.96,73.63,1012.85,19.21,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,294.9,29.95,73.64,1012.85,19.19,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,304.64,29.95,73.66,1012.85,19.17,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.39,301.36,29.95,73.68,1012.84,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,293.83,29.95,73.69,1012.83,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,299.19,29.95,73.7,1012.85,19.17,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,298.11,29.95,73.69,1012.85,19.17,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,295.97,29.95,73.7,1012.85,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,293.83,29.95,73.7,1012.86,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,294.9,29.95,73.7,1012.86,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,297.04,29.95,73.7,1012.86,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,294.9,29.95,73.7,1012.8,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,293.83,29.95,73.7,1012.79,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,289.61,29.95,73.71,1012.81,19.22,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,284.41,29.95,73.71,1012.83,19.32,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,288.56,29.95,73.72,1012.81,19.32,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,290.66,29.94,73.72,1012.8,19.25,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,284.41,29.94,73.73,1012.81,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,282.36,29.93,73.74,1012.8,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,281.33,29.93,73.75,1012.79,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,280.32,29.93,73.76,1012.8,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,260.64,29.92,73.77,1012.79,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,279.3,29.92,73.78,1012.8,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.32,260.64,29.92,73.79,1012.79,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,282.36,29.91,73.8,1012.81,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,260.64,29.92,73.8,1012.79,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,284.41,29.92,73.79,1012.79,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,283.38,29.92,73.79,1012.83,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,280.32,29.93,73.78,1012.83,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,284.41,29.93,73.77,1012.83,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,280.32,29.93,73.76,1012.83,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,281.33,29.94,73.76,1012.82,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.38,283.38,29.94,73.76,1012.82,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,289.61,29.95,73.75,1012.83,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,282.36,29.95,73.73,1012.84,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,280.32,29.95,73.72,1012.82,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,286.48,29.96,73.71,1012.82,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,260.64,29.96,73.71,1012.85,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,287.52,29.96,73.7,1012.84,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,260.64,29.97,73.68,1012.85,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,286.48,29.97,73.67,1012.83,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,288.56,29.97,73.66,1012.83,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,284.41,29.97,73.64,1012.85,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,260.64,29.97,73.63,1012.82,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,284.41,29.98,73.62,1012.82,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,288.56,29.98,73.61,1012.85,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,281.33,29.98,73.6,1012.82,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,260.64,29.98,73.59,1012.81,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,284.41,29.98,73.58,1012.83,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,279.3,29.98,73.58,1012.83,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,290.66,29.98,73.58,1012.83,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,284.41,29.98,73.59,1012.85,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,284.41,29.98,73.59,1012.83,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,294.9,29.98,73.6,1012.84,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,297.04,29.98,73.6,1012.84,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,290.66,29.98,73.61,1012.85,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,291.71,29.97,73.65,1012.86,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,282.36,29.97,73.66,1012.88,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,279.3,29.96,73.71,1012.88,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,260.64,29.96,73.73,1012.94,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,286.48,29.96,73.76,1012.89,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,287.52,29.96,73.79,1012.93,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,282.36,29.95,73.8,1012.91,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.37,293.83,29.95,73.81,1012.95,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,294.9,29.95,73.82,1012.95,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,291.71,29.94,73.83,1012.92,19.18,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,282.36,29.94,73.84,1012.93,19.17,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,280.32,29.94,73.86,1012.93,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.94,73.88,1012.91,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,260.64,29.93,73.89,1012.92,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,260.64,29.93,73.9,1012.92,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,281.33,29.93,73.91,1012.9,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.93,73.92,1012.87,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,260.64,29.93,73.93,1012.89,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.36,260.64,29.93,73.95,1012.93,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,282.36,29.93,73.96,1012.93,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,260.64,29.93,73.97,1012.94,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,278.29,29.94,73.97,1012.92,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.94,73.97,1012.91,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.33,260.64,29.94,73.98,1012.93,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,284.41,29.94,73.98,1012.93,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.93,73.99,1012.93,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,260.64,29.93,74.02,1012.93,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.93,74.04,1012.95,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.94,74.06,1012.93,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.32,280.32,29.94,74.05,1012.93,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.94,74.05,1012.96,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,260.64,29.94,74.04,1012.95,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,279.3,29.95,74.05,1012.92,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,283.38,29.95,74.06,1012.93,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.95,74.07,1012.91,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.95,74.09,1012.91,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,280.32,29.95,74.1,1012.93,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.35,279.3,29.95,74.09,1012.91,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.95,74.1,1012.91,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.33,286.48,29.95,74.1,1012.89,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.33,260.64,29.94,74.09,1012.92,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.94,74.11,1012.93,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.32,260.64,29.93,74.13,1012.87,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.33,260.64,29.93,74.16,1012.89,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.34,260.64,29.92,74.2,1012.9,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.33,260.64,29.92,74.21,1012.91,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.33,280.32,29.91,74.24,1012.93,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.33,260.64,29.91,74.26,1012.94,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.32,260.64,29.91,74.29,1012.97,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.32,283.38,29.92,74.28,1012.98,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.32,288.56,29.93,74.26,1012.99,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.31,260.64,29.94,74.25,1013.0,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.32,260.64,29.95,74.22,1012.96,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.31,260.64,29.96,74.16,1012.99,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.3,260.64,29.96,74.11,1013.04,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.29,260.64,29.97,74.07,1012.97,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.31,260.64,29.98,74.05,1013.01,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.3,260.64,29.98,74.04,1012.99,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.29,260.64,29.99,74.04,1013.02,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.29,260.64,29.99,74.03,1013.0,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.29,260.64,30.0,74.02,1013.02,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.27,260.64,30.01,74.03,1013.06,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.29,258.75,30.02,74.02,1013.02,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.27,251.3,30.02,74.0,1013.03,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.29,258.75,30.04,73.98,1013.02,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.28,256.87,30.05,73.97,1013.05,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.27,251.3,30.05,73.95,1013.05,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.27,255.93,30.06,73.95,1013.02,19.18,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.27,249.47,30.06,73.96,1013.03,19.2,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.29,258.75,30.07,73.95,1013.05,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.29,260.64,30.08,73.93,1013.1,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.27,258.75,30.08,73.93,1013.06,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.27,249.47,30.08,73.94,1013.07,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.27,246.74,30.08,73.93,1013.09,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.29,260.64,30.09,73.9,1013.08,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.28,247.65,30.1,73.89,1013.09,19.19,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.27,253.14,30.1,73.89,1013.11,19.23,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.28,255.0,30.1,73.94,1013.09,19.26,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.3,260.64,30.09,73.99,1013.07,19.2,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.29,260.64,30.08,74.03,1013.03,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.29,260.64,30.08,74.04,1013.04,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.3,260.64,30.08,74.04,1013.04,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0.3,260.64,30.08,74.02,1013.05,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0.31,196.56,31.09,67.73,1012.02,19.24,Warning: Oxygen Fatigue (Low O2),60.0
+0.29,189.95,31.09,67.74,1012.0,19.22,Warning: Oxygen Fatigue (Low O2),60.0
+0.28,195.89,31.09,67.74,1012.02,19.21,Warning: Oxygen Fatigue (Low O2),60.0
+0.29,189.95,31.08,67.75,1011.99,19.18,Warning: Oxygen Fatigue (Low O2),60.0
+0.27,191.91,31.08,67.75,1012.02,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.27,202.71,31.08,67.76,1012.02,19.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.25,187.37,31.07,67.77,1011.99,19.18,Warning: Oxygen Fatigue (Low O2),60.0
+0.26,187.37,31.07,67.78,1012.0,19.19,Warning: Oxygen Fatigue (Low O2),60.0
+0.25,189.95,31.07,67.78,1012.02,19.19,Warning: Oxygen Fatigue (Low O2),60.0
+0.25,193.89,31.06,67.79,1012.01,19.23,Warning: Oxygen Fatigue (Low O2),60.0
+0.24,185.46,31.06,67.81,1012.02,19.23,Warning: Oxygen Fatigue (Low O2),60.0
+0.23,164.51,31.06,67.81,1012.04,19.23,Warning: Oxygen Fatigue (Low O2),60.0
+0.23,173.78,31.06,67.81,1012.0,19.2,Warning: Oxygen Fatigue (Low O2),60.0
+0.24,169.08,31.06,67.81,1012.03,19.2,Warning: Oxygen Fatigue (Low O2),60.0
+0.25,167.35,31.06,67.82,1012.01,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.23,163.95,31.06,67.82,1012.01,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.23,164.51,31.05,67.83,1012.0,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.22,172.0,31.05,67.83,1012.0,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.22,163.39,31.05,67.83,1012.02,19.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.22,162.27,31.05,67.83,1012.03,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.22,160.06,31.05,67.85,1012.01,19.18,Warning: Oxygen Fatigue (Low O2),60.0
+0.22,163.39,31.04,67.86,1012.02,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.21,156.26,31.04,67.86,1012.01,19.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.21,157.88,31.04,67.87,1012.03,19.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.2,158.42,31.04,67.88,1012.01,19.19,Warning: Oxygen Fatigue (Low O2),60.0
+0.19,158.42,31.04,67.88,1012.04,19.19,Warning: Oxygen Fatigue (Low O2),60.0
+0.2,154.66,31.04,67.88,1012.04,19.18,Warning: Oxygen Fatigue (Low O2),60.0
+0.2,154.13,31.04,67.88,1011.98,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.19,154.66,31.04,67.87,1011.98,19.14,Warning: Oxygen Fatigue (Low O2),60.0
+0.18,155.73,31.05,67.86,1012.01,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.18,149.96,31.05,67.84,1012.01,19.18,Warning: Oxygen Fatigue (Low O2),60.0
+0.16,149.96,31.05,67.83,1012.01,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.16,149.96,31.05,67.82,1011.98,19.14,Warning: Oxygen Fatigue (Low O2),60.0
+0.16,147.92,31.04,67.82,1012.01,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.16,165.07,31.04,67.81,1012.01,19.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.16,143.42,31.04,67.81,1011.99,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.16,156.8,31.04,67.8,1012.01,19.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.15,147.92,31.04,67.8,1012.02,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.14,133.43,31.03,67.8,1012.0,19.18,Warning: Oxygen Fatigue (Low O2),60.0
+0.14,132.51,31.03,67.8,1012.01,19.18,Warning: Oxygen Fatigue (Low O2),60.0
+0.14,132.97,31.03,67.81,1012.01,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.14,132.51,31.02,67.81,1012.03,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.14,131.15,31.02,67.82,1012.0,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.12,126.72,31.01,67.84,1012.03,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.12,127.15,31.01,67.85,1011.97,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.12,120.33,31.01,67.86,1012.0,19.14,Warning: Oxygen Fatigue (Low O2),60.0
+0.12,123.7,31.01,67.88,1012.02,19.14,Warning: Oxygen Fatigue (Low O2),60.0
+0.12,128.47,31.01,67.89,1012.01,19.18,Warning: Oxygen Fatigue (Low O2),60.0
+0.12,125.85,31.01,67.9,1011.99,19.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.12,126.72,31.01,67.91,1011.99,19.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.12,125.85,31.01,67.91,1012.01,19.13,Warning: Oxygen Fatigue (Low O2),60.0
+0.12,125.41,31.01,67.91,1011.98,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.12,124.55,31.01,67.9,1012.02,19.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.11,123.7,31.01,67.89,1012.02,19.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.11,124.12,31.01,67.89,1012.01,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.11,120.75,31.01,67.89,1011.99,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.11,121.16,31.01,67.89,1012.0,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.11,121.58,31.02,67.88,1012.03,19.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.1,119.92,31.02,67.88,1012.02,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.1,113.08,31.02,67.87,1012.02,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.1,113.87,31.01,67.86,1012.0,19.14,Warning: Oxygen Fatigue (Low O2),60.0
+0.1,112.69,31.01,67.87,1012.04,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.09,109.24,31.01,67.87,1012.01,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.09,108.87,31.01,67.87,1012.05,19.19,Warning: Oxygen Fatigue (Low O2),60.0
+0.09,108.87,31.0,67.88,1012.0,19.18,Warning: Oxygen Fatigue (Low O2),60.0
+0.09,108.49,31.0,67.88,1012.0,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.09,103.72,30.99,67.89,1012.0,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.09,103.36,30.99,67.9,1012.01,19.14,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,101.23,30.98,67.91,1012.01,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.09,103.36,30.98,67.93,1012.01,19.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.09,103.36,30.97,67.94,1012.0,19.14,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,104.8,30.97,67.96,1011.99,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,103.72,30.97,67.99,1012.01,19.13,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,101.58,30.97,68.01,1012.02,19.18,Warning: Oxygen Fatigue (Low O2),60.0
+0.09,101.58,30.97,68.03,1012.03,19.19,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,100.53,30.97,68.05,1011.99,19.18,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,99.84,30.97,68.07,1011.98,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,103.36,30.97,68.09,1011.98,19.11,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,101.23,30.97,68.11,1012.01,18.16,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,101.58,30.97,68.13,1012.0,18.14,Warning: Oxygen Fatigue (Low O2),60.0
+0.09,107.37,30.97,68.15,1012.01,18.17,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,107.37,30.97,68.17,1012.0,19.1,Warning: Oxygen Fatigue (Low O2),60.0
+0.09,100.53,30.97,68.19,1012.0,19.11,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,101.58,30.98,68.2,1011.94,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,103.72,30.98,68.21,1012.0,19.11,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,99.84,30.98,68.21,1011.97,19.13,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,96.77,30.98,68.2,1011.99,19.13,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,97.44,30.98,68.2,1011.99,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,97.44,30.98,68.2,1011.99,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,96.1,30.98,68.2,1012.02,19.14,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,97.44,30.98,68.2,1012.01,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,96.43,30.99,68.19,1011.99,19.1,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,98.12,30.99,68.18,1011.99,19.04,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,95.43,30.99,68.17,1011.97,19.05,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,94.12,30.99,68.16,1011.99,19.04,Warning: Oxygen Fatigue (Low O2),60.0
+0.08,98.12,30.99,68.15,1011.99,19.09,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,96.77,31.0,68.14,1011.99,19.1,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,93.79,31.0,68.14,1012.0,19.1,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,95.77,31.0,68.13,1011.96,19.08,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,93.79,31.0,68.12,1011.99,19.06,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,94.12,31.0,68.1,1012.03,19.09,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,95.43,31.01,68.08,1012.04,19.11,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,93.79,31.01,68.07,1012.03,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,94.12,31.01,68.07,1012.0,19.11,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,91.85,31.02,68.09,1011.99,19.05,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,90.9,31.02,68.08,1012.0,19.03,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,94.12,31.03,68.06,1012.0,19.04,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,89.64,31.03,68.04,1012.0,19.09,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,95.43,31.03,68.02,1012.02,19.1,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,90.58,31.03,68.01,1012.01,19.09,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,90.58,31.03,67.97,1011.98,19.1,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,90.58,31.03,67.94,1012.03,19.11,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,88.71,31.03,67.91,1012.0,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,87.48,31.02,67.89,1012.02,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.07,88.4,31.02,67.87,1012.02,19.13,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,84.19,31.01,67.86,1012.01,19.09,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,85.37,31.01,67.84,1011.99,19.1,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,86.88,31.01,67.83,1012.02,19.08,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,85.37,31.0,67.83,1012.01,19.09,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,82.45,31.0,67.84,1012.0,19.08,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,82.73,31.0,67.84,1012.0,19.09,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,83.61,31.0,67.86,1012.0,19.08,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,84.19,31.0,67.87,1012.01,19.07,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,82.73,31.0,67.87,1011.98,19.09,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,91.85,31.0,67.87,1012.01,19.13,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,85.08,31.0,67.87,1011.99,19.15,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,81.02,31.0,67.88,1011.99,19.11,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,82.45,31.0,67.88,1011.98,19.1,Warning: Oxygen Fatigue (Low O2),60.0
+0.05,81.02,31.01,67.89,1011.98,19.07,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,81.02,31.01,67.89,1011.98,19.12,Warning: Oxygen Fatigue (Low O2),60.0
+0.05,81.3,31.01,67.89,1011.99,19.13,Warning: Oxygen Fatigue (Low O2),60.0
+0.05,77.14,31.01,67.88,1012.01,19.11,Warning: Oxygen Fatigue (Low O2),60.0
+0.06,81.02,31.01,67.88,1011.99,19.11,Warning: Oxygen Fatigue (Low O2),60.0
