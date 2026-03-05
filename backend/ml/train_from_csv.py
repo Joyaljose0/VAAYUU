@@ -63,7 +63,7 @@ def train_model(env_mode="BUILDING"):
         return
 
     print(f"[{env_mode}] Loading data for training...")
-    df = pd.read_csv(config["csv"], names=['co', 'gas', 'temp', 'hum', 'pres', 'oxygen', 'alert', 'legacy_escape'])
+    df = pd.read_csv(config["csv"], names=['co', 'gas', 'temp', 'hum', 'pres', 'oxygen', 'alert', 'legacy_escape'], header=0)
     
     if len(df) < 50:
         print(f"[{env_mode}] Skipping: Insufficient data ({len(df)} rows)")
