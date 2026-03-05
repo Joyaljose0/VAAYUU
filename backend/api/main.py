@@ -85,7 +85,8 @@ async def lifespan(app: FastAPI):
                         sensor["gas"],
                         sensor["temperature"],
                         sensor["humidity"],
-                        env_mode
+                        env_mode,
+                        list(inference_buffer_usb)
                     )
                     print(f"Hardware Data Received ({env_mode}) -> Temp: {sensor['temperature']}°C | CO: {sensor['co']}ppm | O2: {sensor['oxygen']}%")
 
@@ -269,7 +270,8 @@ def process_wifi_data(sensor):
             sensor["gas"],
             sensor["temperature"],
             sensor["humidity"],
-            env_mode
+            env_mode,
+            list(inference_buffer_wifi)
         )
         
         # Update with AI and alert results

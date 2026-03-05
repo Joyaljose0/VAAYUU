@@ -33,102 +33,141 @@ def speech_worker():
 threading.Thread(target=speech_worker, daemon=True).start()
 
 
-# Threshold Constants (Synced with User Physiology Tables)
+# Threshold Constants (WHO & OSHA Aligned)
 THRESHOLDS = {
     'BUILDING': {
-        'o2_warn': 19.5,   # Fatigue
-        'o2_crit': 17.0,   # Dizziness
-        'co_elevated': 3,  # Slightly elevated
-        'co_unsafe': 10,   # Headache/Dizziness
-        'co_danger': 30,   # Nausea/Fatigue
-        'co_fatal': 50,    # Serious poisoning
-        'co2_warn': 800,   # Mild drowsiness
-        'co2_poor': 1000,  # Fatigue/Concentration
-        'co2_danger': 1500,# Headache/Sleepiness
-        'co2_crit': 5000,  # Oxygen deprivation risk
-        'temp_max': 35
+        'o2': {'low': 19.5, 'crit': 17.0, 'fail': 10.0},
+        'co': {'elevated': 9, 'unsafe': 35, 'danger': 100, 'crit': 200},
+        'co2': {'warn': 800, 'poor': 1000, 'danger': 2500, 'crit': 5000},
+        'temp': {'max': 35}
     },
     'VEHICLE': {
-        'o2_warn': 19.5,
-        'o2_crit': 17.0,
-        'co_elevated': 5,  # Higher ambient allowance for vehicles
-        'co_unsafe': 15,
-        'co_danger': 40,
-        'co_fatal': 70,
-        'co2_warn': 1000,
-        'co2_poor': 1200,
-        'co2_danger': 2000,
-        'co2_crit': 5000,
-        'temp_max': 45
+        'o2': {'low': 19.5, 'crit': 17.0, 'fail': 10.0},
+        'co': {'elevated': 15, 'unsafe': 50, 'danger': 150, 'crit': 400},
+        'co2': {'warn': 1000, 'poor': 1200, 'danger': 3000, 'crit': 5000},
+        'temp': {'max': 45}
     }
 }
 
-def check_alerts(o2, co, co2, temp, hum=50, mode='BUILDING'):
+def calculate_safety_score(o2, co, co2, temp, hum, mode='BUILDING', trends=None):
+    """ Calculates a 0-100 safety score based on cumulative risks and environmental stress. """
+    score = 100
+    t = THRESHOLDS.get(mode, THRESHOLDS['BUILDING'])
+    
+    # 1. Oxygen (Heavy impact)
+    if o2 < 17.0: score -= 50
+    elif o2 < 19.5: score -= 20
+    
+    # 2. Carbon Monoxide (Lethal)
+    if co >= t['co']['crit']: score -= 100
+    elif co >= t['co']['danger']: score -= 60
+    elif co >= t['co']['unsafe']: score -= 30
+    elif co >= t['co']['elevated']: score -= 10
+    
+    # 3. Carbon Dioxide (Cognitive)
+    if co2 >= t['co2']['crit']: score -= 80
+    elif co2 >= t['co2']['danger']: score -= 40
+    elif co2 >= t['co2']['poor']: score -= 20
+    elif co2 >= t['co2']['warn']: score -= 5
+    
+    # 4. Temperature & Humidity (Comfort/Heat Stress)
+    if temp > t['temp']['max']: score -= 15
+    if hum > 80 or hum < 20: score -= 5
+
+    # 5. Environmental Stress (Trend Analysis)
+    if trends:
+        # Penalty for rapidly rising toxins
+        if trends.get('co_rate', 0) > 1.0: score -= 10 # CO rising >1ppm/sec is alarming
+        if trends.get('co2_rate', 0) > 50.0: score -= 10 # CO2 rising >50ppm/sec
+    
+    return max(0, score)
+
+def check_alerts(o2, co, co2, temp, hum=50, mode='BUILDING', history=None):
     alerts = []
     t = THRESHOLDS.get(mode, THRESHOLDS['BUILDING'])
+    
+    # Calculate trends and baselines if history is available
+    trends = {}
+    baseline_co = 0
+    baseline_co2 = 400
+    
+    if history and len(history) >= 5:
+        # Use average of early samples as baseline (auto-calibration)
+        baseline_co = sum(h.get('co', 0) for h in list(history)[:10]) / min(len(history), 10)
+        baseline_co2 = sum(h.get('gas', 400) for h in list(history)[:10]) / min(len(history), 10)
+        
+        # Calculate rate of change (last sample vs 5 samples ago)
+        prev = history[-5]
+        trends['co_rate'] = (co - prev.get('co', co)) / 5.0
+        trends['co2_rate'] = (co2 - prev.get('gas', co2)) / 5.0
+        trends['o2_rate'] = (o2 - prev.get('oxygen', o2)) / 5.0
 
-    # 1. Oxygen Checks (Physiology Table)
+    safety_score = calculate_safety_score(o2, co, co2, temp, hum, mode, trends)
+
+    # 1. Oxygen Checks
     if o2 < 10:
         alerts.append("CRITICAL: Oxygen Collapse Risk")
     elif o2 < 14:
         alerts.append("CRITICAL: Oxygen Fainting Risk")
     elif o2 < 17:
         alerts.append("CRITICAL: Oxygen Dizziness (Escape Now)")
-    elif o2 < t['o2_warn']:
+    elif o2 < t['o2']['low']:
         alerts.append("Warning: Oxygen Fatigue (Low O2)")
+    elif trends.get('o2_rate', 0) < -0.2: # Oxygen dropping faster than 0.2%/sec
+        alerts.append("Notice: Oxygen levels dropping rapidly")
 
-    # 2. Carbon Monoxide Checks (Physiology Table)
-    if co >= 200:
+    # 2. Carbon Monoxide Checks
+    if co >= t['co']['crit']:
         alerts.append("CRITICAL: Fatal CO levels - Life Threatening")
-    elif co >= 50:
+    elif co >= t['co']['danger']:
         alerts.append("CRITICAL: CO Poisoning Emergency")
-    elif co >= t['co_danger']:
+    elif co >= t['co']['unsafe']:
         alerts.append("Severe: Dangerous CO (Nausea/Fatigue)")
-    elif co >= t['co_unsafe']:
-        alerts.append("Warning: Unsafe CO (Headache/Dizziness)")
-    elif co >= t['co_elevated']:
-        alerts.append("Notice: Slightly elevated CO")
+    elif co >= t['co']['elevated']:
+        alerts.append("Warning: Elevated CO levels")
+    elif co > (baseline_co + 5) and trends.get('co_rate', 0) > 0.5:
+        alerts.append("Notice: CO rising significantly above ambient")
 
-    # 3. Carbon Dioxide Checks (Physiology Table)
-    if co2 >= t['co2_crit']:
+    # 3. Carbon Dioxide Checks
+    if co2 >= t['co2']['crit']:
         alerts.append("CRITICAL: CO2 Suffocation Risk")
-    elif co2 >= t['co2_danger']:
+    elif co2 >= t['co2']['danger']:
         alerts.append("Severe: Dangerous CO2 (Sleepiness)")
-    elif co2 >= t['co2_poor']:
+    elif co2 >= t['co2']['poor']:
         alerts.append("Warning: Poor Air Quality (Fatigue)")
-    elif co2 >= t['co2_warn']:
+    elif co2 >= t['co2']['warn']:
         alerts.append("Notice: Acceptable CO2 (Mild Drowsiness)")
+    elif co2 > (baseline_co2 + 200) and trends.get('co2_rate', 0) > 20.0:
+         alerts.append("Notice: CO2 levels increasing rapidly")
 
     # 4. Temperature Checks
-    if temp > t['temp_max']:
+    if temp > t['temp']['max']:
         alerts.append("Warning: Heat Stress Risk")
 
-    # 5. Humidity Checks (Human Comfort/Health)
+    # 5. Humidity Checks
     if hum > 70.0:
         alerts.append("Warning: High Humidity (Respiratory Risk)")
     elif hum < 30.0:
         alerts.append("Warning: Low Humidity (Dry Air Discomfort)")
 
-    # 6. Sensor Fault Detection
-    if o2 > 23.0:
-        alerts.append("CRITICAL: O2 Sensor Unstable - Recalibrate")
-    if co < -0.5:
-        alerts.append("CRITICAL: CO Sensor Baseline Error")
-    if o2 < 10.0:
-        alerts.append("CRITICAL: Oxygen Sensor Hardware Failure")
-    if hum > 99.0:
-        alerts.append("Warning: Humidity Sensor Saturation")
+    # 6. Safety Score Alert
+    if safety_score < 30:
+        alerts.append(f"CRITICAL: SAFETY SCORE {safety_score}% - EVACUATE")
+    elif safety_score < 70:
+        alerts.append(f"Warning: Poor Safety Score {safety_score}%")
 
     if alerts:
-        # Non-blocking: only queue a voice alert if not already speaking
+        # Non-blocking voice alert
         if speech_queue.empty():
-            # If critical levels are hit, speak more urgently
-            if "CRITICAL" in "".join(alerts):
+            if safety_score < 40 or "CRITICAL" in "".join(alerts):
                 alert_msg = "Danger. Critical levels detected. Escape immediately."
                 speech_queue.put(alert_msg)
-            else:
-                # Use the lowest alert thresholds for hazards
-                hazard = "gas" if co > t['co_elevated'] or co2 > t['co2_warn'] else "oxygen"
-                speech_queue.put(f"Alert. {hazard} levels unsafe. Check dashboard.")
+            elif safety_score < 80:
+                # Use trend to predict hazard type
+                if trends.get('co_rate', 0) > 0.3: hazard = "carbon monoxide"
+                elif trends.get('co2_rate', 0) > 10: hazard = "carbon dioxide"
+                elif trends.get('o2_rate', 0) < -0.1: hazard = "oxygen"
+                else: hazard = "air quality"
+                speech_queue.put(f"Alert. {hazard} levels changing. Check dashboard.")
 
     return alerts

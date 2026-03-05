@@ -21,37 +21,41 @@ MODES = {
 }
 
 def estimate_escape_time(row):
-    """Refined physiological ground truth for training labels."""
+    """Refined physiological ground truth for training labels (Synchronized with alerts.py)."""
     co = row.get('co', 0)
-    co2 = row.get('gas', 400) # Using 'gas' as CO2 proxy if not explicitly labeled
+    co2 = row.get('gas', 400)
     o2 = row.get('oxygen', 20.9)
     temp = row.get('temp', 25)
 
     times = []
     
-    # O2 survival (User provided thresholds)
+    # 1. Oxygen (Survival Time in minutes)
     if o2 < 10: times.append(0.5)
-    elif o2 < 14: times.append(1.5)
-    elif o2 < 17: times.append(4)
-    elif o2 < 19.5: times.append(12)
+    elif o2 < 14: times.append(2)
+    elif o2 < 17: times.append(5)
+    elif o2 < 19.5: times.append(15)
     else: times.append(60)
 
-    # CO survival
-    if co >= 200: times.append(0.5)
-    elif co >= 50: times.append(5)
-    elif co >= 30: times.append(60)
-    elif co >= 10: times.append(240)
+    # 2. Carbon Monoxide (Survival Time in minutes)
+    # Using thresholds: crit(200), danger(100), unsafe(35), elevated(9)
+    if co >= 200: times.append(1)
+    elif co >= 100: times.append(5)
+    elif co >= 35: times.append(30)
+    elif co >= 9: times.append(120)
     else: times.append(600)
 
-    # CO2 survival (Proxy)
+    # 3. Carbon Dioxide (Survival Time in minutes)
+    # Using thresholds: crit(5000), danger(2500), poor(1000), warn(800)
     if co2 >= 5000: times.append(5)
-    elif co2 >= 1500: times.append(30)
+    elif co2 >= 2500: times.append(15)
     elif co2 >= 1000: times.append(60)
+    elif co2 >= 800: times.append(120)
     else: times.append(600)
 
-    # Heat survival
+    # 4. Temperature (Stability in minutes)
     if temp >= 55: times.append(5)
-    elif temp >= 45: times.append(10)
+    elif temp >= 45: times.append(15)
+    elif temp >= 35: times.append(60)
     else: times.append(600)
 
     return min(times)
