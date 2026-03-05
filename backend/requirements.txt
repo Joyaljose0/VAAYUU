@@ -6,3 +6,5 @@ tensorflow
 numpy
 python-dotenv
 gunicorn
+joblib
+scikit-learn
