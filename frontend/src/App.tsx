@@ -83,7 +83,8 @@ const fetchLiveReading = async (source: 'RENDER' | 'LOCAL'): Promise<{ data: Sen
       co: extract(data.co),
       o2: extract(data.oxygen),
       last_updated: data.last_updated || 0,
-      is_warming_up: !!data.is_warming_up
+      is_warming_up: !!data.is_warming_up,
+      env_mode: data.env_mode as EnvironmentType
     } as SensorData;
 
     return { data: reading, status: 'ok' };
@@ -145,6 +146,14 @@ const App: React.FC = () => {
   }, [currentData?.backend_ip, wifiIp]);
 
   const currentRemaining = Math.min(countdownSeconds ?? 3600, physioSeconds ?? 3600);
+
+  // Automatically sync local UI mode from backend state
+  useEffect(() => {
+    if (currentData?.env_mode && currentData.env_mode !== env) {
+      console.log(`[Sync] Local UI mode updated from backend: ${currentData.env_mode}`);
+      setEnv(currentData.env_mode);
+    }
+  }, [currentData?.env_mode, env]);
 
   // Update current time and calculate live countdown
   useEffect(() => {

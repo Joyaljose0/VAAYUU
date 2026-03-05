@@ -15,6 +15,7 @@ export interface SensorData {
   last_updated?: number;
   connection_mode?: string;
   backend_ip?: string;
+  env_mode?: EnvironmentType;
   ai_metrics?: {
     accuracy: number;
     precision: number;
