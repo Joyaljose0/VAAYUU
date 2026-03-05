@@ -638,39 +638,78 @@ const App: React.FC = () => {
             </button>
           </div>
 
-          <div className="flex bg-slate-900/50 p-1 rounded-full border border-slate-800">
-            <button
-              onClick={async () => {
-                setEnv('BUILDING');
-                const backendUrl = getBackendUrl(backendSource);
-                try {
-                  await fetch(`${backendUrl}/env-mode`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ mode: 'BUILDING' })
-                  });
-                } catch (e) { console.error("Failed to sync mode BUILDING"); }
-              }}
-              className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium transition-all ${env === 'BUILDING' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300'}`}
-            >
-              <Building2 className="w-4 h-4" /> Building
-            </button>
-            <button
-              onClick={async () => {
-                setEnv('VEHICLE');
-                const backendUrl = getBackendUrl(backendSource);
-                try {
-                  await fetch(`${backendUrl}/env-mode`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ mode: 'VEHICLE' })
-                  });
-                } catch (e) { console.error("Failed to sync mode VEHICLE"); }
-              }}
-              className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium transition-all ${env === 'VEHICLE' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300'}`}
-            >
-              <Car className="w-4 h-4" /> Vehicle
-            </button>
+          <div className="flex bg-slate-900/50 p-1 rounded-full border border-slate-800 gap-2">
+            <div className="flex bg-slate-800/50 rounded-full p-1 gap-1">
+              <button
+                onClick={async () => {
+                  setEnv('BUILDING');
+                  const backendUrl = getBackendUrl(backendSource);
+                  try {
+                    await fetch(`${backendUrl}/env-mode`, {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ mode: 'BUILDING' })
+                    });
+                  } catch (e) { console.error("Failed to sync mode BUILDING"); }
+                }}
+                className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium transition-all ${env === 'BUILDING' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300'}`}
+              >
+                <Building2 className="w-4 h-4" /> Building
+              </button>
+              <button
+                onClick={async () => {
+                  if (!window.confirm("Trigger LSTM Training for BUILDING?")) return;
+                  const backendUrl = getBackendUrl(backendSource);
+                  try {
+                    await fetch(`${backendUrl}/train`, {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ mode: 'BUILDING' })
+                    });
+                    alert("Training started for Building mode.");
+                  } catch (e) { alert("Training failed to start."); }
+                }}
+                className="px-3 text-[10px] font-bold text-indigo-400 hover:text-indigo-300 uppercase border-l border-slate-700"
+              >
+                Train
+              </button>
+            </div>
+
+            <div className="flex bg-slate-800/50 rounded-full p-1 gap-1">
+              <button
+                onClick={async () => {
+                  setEnv('VEHICLE');
+                  const backendUrl = getBackendUrl(backendSource);
+                  try {
+                    await fetch(`${backendUrl}/env-mode`, {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ mode: 'VEHICLE' })
+                    });
+                  } catch (e) { console.error("Failed to sync mode VEHICLE"); }
+                }}
+                className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium transition-all ${env === 'VEHICLE' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300'}`}
+              >
+                <Car className="w-4 h-4" /> Vehicle
+              </button>
+              <button
+                onClick={async () => {
+                  if (!window.confirm("Trigger LSTM Training for VEHICLE?")) return;
+                  const backendUrl = getBackendUrl(backendSource);
+                  try {
+                    await fetch(`${backendUrl}/train`, {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ mode: 'VEHICLE' })
+                    });
+                    alert("Training started for Vehicle mode.");
+                  } catch (e) { alert("Training failed to start."); }
+                }}
+                className="px-3 text-[10px] font-bold text-indigo-400 hover:text-indigo-300 uppercase border-l border-slate-700"
+              >
+                Train
+              </button>
+            </div>
           </div>
 
           {/* Connection Mode Toggle */}
