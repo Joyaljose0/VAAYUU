@@ -184,7 +184,7 @@ def set_env_mode(data: EnvMode):
     global env_mode
     if data.mode in ["BUILDING", "VEHICLE"]:
         env_mode = data.mode
-        print(f"Environment Mode Updated: {env_mode}")
+        print(f"\n[MODE CHANGE] Environment set to: {env_mode}")
         return {"status": "success", "mode": env_mode}
     from fastapi import HTTPException
     raise HTTPException(status_code=400, detail="Invalid environment mode")
@@ -242,7 +242,10 @@ def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
     sensor = data.dict()
     background_tasks.add_task(process_wifi_data, sensor)
     from fastapi import Response
-    return Response(content='{"status": "ok"}', media_type='application/json', headers={"Connection": "close"})
+    import json
+    # Return current mode so hardware can sync its local display
+    resp_body = json.dumps({"status": "ok", "env_mode": env_mode})
+    return Response(content=resp_body, media_type='application/json')
 
 def process_wifi_data(sensor):
     global latest_data

@@ -19,6 +19,7 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 String backendIp = "vaayuu-backend.onrender.com"; // Default cloud fallback
+String envMode = "BUILDING";                      // Synced from backend
 Preferences preferences;
 WebServer server(80);
 

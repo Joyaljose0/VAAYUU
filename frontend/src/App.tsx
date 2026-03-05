@@ -686,7 +686,8 @@ const App: React.FC = () => {
                       headers: { 'Content-Type': 'application/json' },
                       body: JSON.stringify({ mode: 'VEHICLE' })
                     });
-                  } catch (e) { console.error("Failed to sync mode VEHICLE"); }
+                    console.log(`Backend ${backendSource} synced to VEHICLE`);
+                  } catch (e) { console.error("Failed to sync mode VEHICLE", e); }
                 }}
                 className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium transition-all ${env === 'VEHICLE' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300'}`}
               >
