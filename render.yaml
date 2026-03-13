@@ -4,8 +4,8 @@ services:
     name: vaayuu-backend
     runtime: python
     rootDir: backend
-    buildCommand: pip install -r requirements.txt
-    # Forced to 1 worker for data consistency on free tier (no shared cache)
+    buildCommand: pip install --no-cache-dir -r requirements.txt
+    # Forced to 1 worker for data consistency and memory optimization on free tier
     startCommand: gunicorn api.main:app -w 1 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
     envVars:
       - key: PORT
