@@ -647,79 +647,55 @@ const App: React.FC = () => {
             </button>
           </div>
 
-          <div className="flex bg-slate-900/50 p-1 rounded-full border border-slate-800 gap-2">
-            <div className="flex bg-slate-800/50 rounded-full p-1 gap-1">
-              <button
-                onClick={async () => {
-                  setEnv('BUILDING');
-                  const backendUrl = getBackendUrl(backendSource);
-                  try {
-                    await fetch(`${backendUrl}/env-mode`, {
-                      method: 'POST',
-                      headers: { 'Content-Type': 'application/json' },
-                      body: JSON.stringify({ mode: 'BUILDING' })
-                    });
-                  } catch (e) { console.error("Failed to sync mode BUILDING"); }
-                }}
-                className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium transition-all ${env === 'BUILDING' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300'}`}
-              >
-                <Building2 className="w-4 h-4" /> Building
-              </button>
-              <button
-                onClick={async () => {
-                  if (!window.confirm("Trigger LSTM Training for BUILDING?")) return;
-                  const backendUrl = getBackendUrl(backendSource);
-                  try {
-                    await fetch(`${backendUrl}/train`, {
-                      method: 'POST',
-                      headers: { 'Content-Type': 'application/json' },
-                      body: JSON.stringify({ mode: 'BUILDING' })
-                    });
-                    alert("Training started for Building mode.");
-                  } catch (e) { alert("Training failed to start."); }
-                }}
-                className="px-3 text-[10px] font-bold text-indigo-400 hover:text-indigo-300 uppercase border-l border-slate-700"
-              >
-                Train
-              </button>
-            </div>
-
-            <div className="flex bg-slate-800/50 rounded-full p-1 gap-1">
-              <button
-                onClick={async () => {
-                  setEnv('VEHICLE');
-                  const backendUrl = getBackendUrl(backendSource);
-                  try {
-                    await fetch(`${backendUrl}/env-mode`, {
-                      method: 'POST',
-                      headers: { 'Content-Type': 'application/json' },
-                      body: JSON.stringify({ mode: 'VEHICLE' })
-                    });
-                    console.log(`Backend ${backendSource} synced to VEHICLE`);
-                  } catch (e) { console.error("Failed to sync mode VEHICLE", e); }
-                }}
-                className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium transition-all ${env === 'VEHICLE' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300'}`}
-              >
-                <Car className="w-4 h-4" /> Vehicle
-              </button>
-              <button
-                onClick={async () => {
-                  if (!window.confirm("Trigger LSTM Training for VEHICLE?")) return;
-                  const backendUrl = getBackendUrl(backendSource);
-                  try {
-                    await fetch(`${backendUrl}/train`, {
-                      method: 'POST',
-                      headers: { 'Content-Type': 'application/json' },
-                      body: JSON.stringify({ mode: 'VEHICLE' })
-                    });
-                    alert("Training started for Vehicle mode.");
-                  } catch (e) { alert("Training failed to start."); }
-                }}
-                className="px-3 text-[10px] font-bold text-indigo-400 hover:text-indigo-300 uppercase border-l border-slate-700"
-              >
-                Train
-              </button>
-            </div>
+          <div className="flex bg-slate-900/50 p-1 rounded-full border border-slate-800 relative">
+            <button
+              onClick={async () => {
+                if (env === 'BUILDING') return;
+                setEnv('BUILDING');
+                const backendUrl = getBackendUrl(backendSource);
+                const localUrl = `http://${window.location.hostname}:8000`;
+                try {
+                  // Sync mode to BOTH local machine (for USB logging) and current active backend
+                  fetch(`${localUrl}/env-mode`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ mode: 'BUILDING' }) }).catch(e=>console.error(e));
+                  await fetch(`${backendUrl}/env-mode`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ mode: 'BUILDING' }) });
+                  
+                  await fetch(`${backendUrl}/train`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ mode: 'BUILDING' }) });
+                  
+                  // Keep local backend trained as well if testing locally
+                  if (backendUrl !== localUrl) {
+                      fetch(`${localUrl}/train`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ mode: 'BUILDING' }) }).catch(e=>console.error(e));
+                  }
+                  alert("Switched to Building. Training started.");
+                } catch (e) { console.error("Failed to switch and train BUILDING", e); }
+              }}
+              className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium transition-all ${env === 'BUILDING' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300'}`}
+            >
+              <Building2 className="w-4 h-4" /> Building
+            </button>
+            <button
+              onClick={async () => {
+                if (env === 'VEHICLE') return;
+                setEnv('VEHICLE');
+                const backendUrl = getBackendUrl(backendSource);
+                const localUrl = `http://${window.location.hostname}:8000`;
+                try {
+                  // Sync mode to BOTH local machine (for USB logging) and current active backend
+                  fetch(`${localUrl}/env-mode`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ mode: 'VEHICLE' }) }).catch(e=>console.error(e));
+                  await fetch(`${backendUrl}/env-mode`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ mode: 'VEHICLE' }) });
+                  
+                  await fetch(`${backendUrl}/train`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ mode: 'VEHICLE' }) });
+                  
+                  // Keep local backend trained as well if testing locally
+                  if (backendUrl !== localUrl) {
+                      fetch(`${localUrl}/train`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ mode: 'VEHICLE' }) }).catch(e=>console.error(e));
+                  }
+                  alert("Switched to Vehicle. Training started.");
+                } catch (e) { console.error("Failed to switch and train VEHICLE", e); }
+              }}
+              className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-medium transition-all ${env === 'VEHICLE' ? 'bg-indigo-600 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300'}`}
+            >
+              <Car className="w-4 h-4" /> Vehicle
+            </button>
           </div>
 
           {/* Connection Mode Toggle */}
