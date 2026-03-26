@@ -4281,3 +4281,492 @@ CO,Gas,Temp,Humidity,Pressure,Oxygen,Alert,Escape_Time
 1.66,413.88,29.84,70.71,1011.34,20.92,Warning: High Humidity (Respiratory Risk),58.5
 1.52,415.32,29.84,70.69,1011.36,20.89,Warning: High Humidity (Respiratory Risk),58.5
 1.66,428.47,29.84,70.68,1011.37,20.91,Warning: High Humidity (Respiratory Risk),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0.18,7.11,31.12,71.82,1009.52,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,55.6
+0.17,7.39,31.12,71.81,1009.48,19.02,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,47.8
+0.16,6.6,31.12,71.81,1009.49,19.02,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,40.0
+0.16,7.22,31.12,71.81,1009.49,19.0,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,34.2
+0.16,6.31,31.12,71.81,1009.51,19.01,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,31.1
+0.16,7.39,31.13,71.8,1009.51,19.0,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,30.4
+0.17,7.39,31.12,71.8,1009.49,18.98,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,31.4
+0.17,7.22,31.13,71.8,1009.52,18.96,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,31.3
+0.17,7.79,31.13,71.8,1009.5,18.93,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,28.9
+0.16,8.1,31.13,71.79,1009.48,18.41,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,25.7
+0.16,6.9,31.13,71.79,1009.5,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,23.2
+0.16,7.22,31.13,71.78,1009.49,19.89,Warning: High Humidity (Respiratory Risk),21.6
+0.16,7.79,31.13,71.77,1009.5,21.04,Warning: High Humidity (Respiratory Risk),21.2
+0.16,6.4,31.13,71.77,1009.48,21.05,Warning: High Humidity (Respiratory Risk),23.3
+0.15,7.79,31.13,71.76,1009.49,21.07,Warning: High Humidity (Respiratory Risk),28.8
+0.15,7.79,31.14,71.75,1009.46,21.07,Warning: High Humidity (Respiratory Risk),36.3
+0.15,6.85,31.14,71.74,1009.48,21.05,Warning: High Humidity (Respiratory Risk),42.7
+0.15,7.11,31.14,71.73,1009.49,21.06,Warning: High Humidity (Respiratory Risk),47.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.5
+0.41,262.16,31.07,72.23,1009.64,19.01,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,55.6
+0.41,245.26,31.07,72.24,1009.61,19.08,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,47.7
+0.41,255.97,31.07,72.24,1009.63,19.1,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,39.9
+0.37,233.96,31.08,72.23,1009.62,19.12,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,34.1
+0.37,235.06,31.08,72.22,1009.65,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,31.1
+0.37,223.25,31.08,72.22,1009.62,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,30.7
+0.37,226.4,31.08,72.21,1009.62,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,32.0
+0.37,220.15,31.08,72.21,1009.62,19.01,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,32.3
+0.37,223.25,31.08,72.21,1009.61,19.01,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,30.4
+0.37,214.09,31.08,72.22,1009.64,19.01,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,27.1
+0.37,207.26,31.08,72.23,1009.67,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,24.7
+0.37,203.48,31.08,72.24,1009.65,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,23.0
+0.37,198.85,31.08,72.24,1009.64,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.9
+0.37,204.42,31.08,72.26,1009.61,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.37,203.48,31.08,72.28,1009.63,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.4
+0.37,188.23,31.08,72.29,1009.65,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.1
+0.37,187.38,31.08,72.29,1009.65,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.36,187.38,31.08,72.29,1009.65,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.35,175.86,31.08,72.29,1009.62,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.6
+0.35,187.38,31.08,72.29,1009.65,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.6
+0.34,168.88,31.09,72.29,1009.64,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.6
+0.34,177.46,31.08,72.28,1009.65,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.6
+0.34,179.88,31.09,72.28,1009.65,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.6
+0.34,176.66,31.09,72.28,1009.62,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.34,168.88,31.09,72.27,1009.65,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.34,157.94,31.09,72.26,1009.64,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.34,151.77,31.09,72.26,1009.63,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.9
+0.34,155.85,31.09,72.26,1009.66,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.1
+0.33,165.88,31.09,72.24,1009.65,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.2
+0.32,152.44,31.09,72.23,1009.66,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.3
+0.32,151.1,31.09,72.22,1009.69,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.4
+0.32,153.79,31.09,72.24,1009.65,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.4
+0.32,157.24,31.09,72.25,1009.65,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.5
+0.33,156.55,31.09,72.28,1009.64,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.5
+0.32,153.12,31.09,72.29,1009.63,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.4
+0.32,153.79,31.09,72.3,1009.64,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.3
+0.32,153.12,31.09,72.31,1009.66,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.2
+0.32,154.48,31.09,72.31,1009.65,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.2
+0.31,148.45,31.1,72.32,1009.64,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.1
+0.3,148.45,31.1,72.33,1009.64,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.0
+0.31,152.44,31.1,72.34,1009.66,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.9
+0.31,147.15,31.1,72.34,1009.63,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.9
+0.32,153.12,31.1,72.35,1009.64,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.31,148.45,31.1,72.35,1009.66,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.31,143.95,31.1,72.35,1009.66,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.31,143.95,31.1,72.35,1009.64,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.3,147.15,31.1,72.36,1009.65,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.3,142.7,31.1,72.36,1009.64,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.3,137.19,31.1,72.35,1009.63,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.6
+0.3,137.19,31.1,72.33,1009.66,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.6
+0.3,133.08,31.1,72.32,1009.62,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.29,133.08,31.09,72.32,1009.65,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.29,132.5,31.09,72.32,1009.63,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.28,123.65,31.09,72.31,1009.65,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.6
+0.27,121.02,31.09,72.31,1009.63,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.27,119.47,31.09,72.3,1009.65,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.28,115.95,31.09,72.29,1009.64,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.27,115.95,31.09,72.27,1009.65,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.0
+0.27,110.65,31.09,72.27,1009.62,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.1
+0.27,114.48,31.09,72.26,1009.67,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.2
+0.27,109.25,31.09,72.26,1009.67,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.2
+0.27,105.62,31.09,72.26,1009.67,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.3
+0.27,101.7,31.08,72.26,1009.66,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.4
+0.27,102.56,31.08,72.27,1009.66,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.5
+0.27,102.56,31.08,72.28,1009.65,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.6
+0.27,105.62,31.08,72.3,1009.67,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.7
+0.26,104.3,31.07,72.31,1009.65,19.23,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.7
+0.27,106.07,31.07,72.32,1009.65,19.26,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.9
+0.28,111.12,31.07,72.32,1009.65,19.26,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.1
+0.28,113.03,31.07,72.34,1009.65,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.4
+0.29,115.46,31.07,72.34,1009.62,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.7
+0.29,111.12,31.07,72.35,1009.68,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.7
+0.3,115.46,31.06,72.35,1009.65,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.7
+0.29,115.95,31.06,72.35,1009.66,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.6
+0.29,118.96,31.06,72.36,1009.66,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.5
+0.29,116.45,31.06,72.39,1009.69,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.4
+0.29,122.59,31.06,72.41,1009.68,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.2
+0.29,115.95,31.05,72.44,1009.67,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.29,114.48,31.05,72.47,1009.66,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.7
+0.28,115.95,31.05,72.5,1009.66,19.04,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.5
+0.29,112.55,31.05,72.52,1009.65,19.03,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.3
+0.29,112.55,31.05,72.54,1009.69,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.1
+0.29,111.6,31.05,72.56,1009.66,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.9
+0.28,110.65,31.05,72.57,1009.66,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.28,111.6,31.05,72.59,1009.62,19.03,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.28,108.33,31.04,72.61,1009.67,19.04,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),23.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),33.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),41.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),46.9
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),50.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),52.2
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),54.9
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.9
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),56.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),57.2
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),57.6
+0.46,367.54,31.01,72.28,1009.63,19.02,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,55.0
+0.44,355.31,31.01,72.28,1009.64,19.06,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,47.2
+0.44,339.22,31.01,72.28,1009.64,19.07,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,39.5
+0.44,337.8,31.0,72.28,1009.64,19.07,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,33.9
+0.44,346.43,31.0,72.3,1009.65,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,30.8
+0.43,336.39,31.0,72.31,1009.67,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,30.3
+0.43,346.43,31.0,72.33,1009.66,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,31.4
+0.42,337.8,31.0,72.34,1009.65,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,31.6
+0.43,337.8,31.0,72.37,1009.65,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,29.7
+0.42,334.98,30.99,72.4,1009.66,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,26.7
+0.42,328.04,30.99,72.42,1009.64,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,24.6
+0.41,334.98,30.99,72.43,1009.63,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,23.1
+0.42,318.59,30.99,72.43,1009.65,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,22.1
+0.41,309.45,30.99,72.44,1009.64,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.4
+0.41,314.64,30.99,72.44,1009.68,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.41,313.33,30.99,72.44,1009.66,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.7
+0.41,308.17,30.99,72.44,1009.66,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.5
+0.41,312.03,30.99,72.45,1009.62,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.4
+0.4,300.6,30.99,72.45,1009.66,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.4
+0.4,294.46,30.99,72.46,1009.7,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.4
+0.39,294.46,30.99,72.47,1009.69,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.5
+0.39,288.45,30.98,72.48,1009.69,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.5
+0.38,281.42,30.98,72.48,1009.7,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.5
+0.38,283.74,30.98,72.49,1009.71,19.03,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.4
+0.39,282.58,30.98,72.51,1009.72,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.3
+0.38,279.12,30.97,72.52,1009.68,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.1
+0.38,274.58,30.97,72.54,1009.69,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.0
+0.38,273.46,30.97,72.56,1009.68,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.9
+0.37,269.02,30.97,72.57,1009.69,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.37,264.67,30.96,72.58,1009.7,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.37,259.33,30.96,72.59,1009.74,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.9
+0.37,257.23,30.96,72.59,1009.7,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.0
+0.36,254.12,30.96,72.6,1009.7,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.1
+0.37,247.01,30.95,72.6,1009.7,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.3
+0.36,245.02,30.95,72.6,1009.7,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.4
+0.32,213.79,30.95,72.59,1009.71,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.6
+0.31,231.59,30.95,72.59,1009.72,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.7
+0.3,203.04,30.95,72.58,1009.7,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.9
+0.34,224.28,30.95,72.57,1009.73,19.14,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.9
+0.33,218.09,30.95,72.56,1009.72,19.15,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.34,218.09,30.95,72.55,1009.68,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.34,222.49,30.94,72.55,1009.67,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.34,218.09,30.94,72.54,1009.72,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.33,219.84,30.94,72.54,1009.7,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.33,210.42,30.94,72.53,1009.69,19.18,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.33,208.75,30.94,72.53,1009.7,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.33,213.79,30.94,72.52,1009.71,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.32,213.79,30.93,72.52,1009.71,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.32,205.46,30.93,72.52,1009.73,19.16,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.9
+0.32,209.58,30.92,72.52,1009.73,19.17,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.9
+0.32,202.23,30.92,72.53,1009.68,19.17,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.9
+0.32,198.28,30.91,72.56,1009.7,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.9
+0.31,197.49,30.91,72.59,1009.68,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.32,194.4,30.91,72.61,1009.69,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.32,192.12,30.9,72.63,1009.7,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.9
+0.32,195.94,30.9,72.65,1009.71,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.8
+0.31,188.38,30.9,72.67,1009.71,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.8
+0.32,192.88,30.9,72.69,1009.71,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.7
+0.31,188.38,30.9,72.7,1009.71,18.38,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,20.4
+0.29,166.26,30.9,72.7,1009.74,18.91,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.9
+0.3,172.85,30.9,72.7,1009.71,19.5,Warning: High Humidity (Respiratory Risk),19.4
+0.3,176.94,30.91,72.71,1009.72,20.79,Warning: High Humidity (Respiratory Risk),19.4
+0.3,174.88,30.91,72.7,1009.71,20.73,Warning: High Humidity (Respiratory Risk),21.2
+0.31,176.25,30.91,72.69,1009.69,20.7,Warning: High Humidity (Respiratory Risk),25.5
+0.3,173.52,30.91,72.69,1009.7,20.72,Warning: High Humidity (Respiratory Risk),32.1
+0.3,176.25,30.9,72.67,1009.7,20.76,Warning: High Humidity (Respiratory Risk),38.9
+0.29,171.51,30.9,72.68,1009.68,20.79,Warning: High Humidity (Respiratory Risk),44.4
+0.3,168.2,30.9,72.68,1009.72,20.77,Warning: High Humidity (Respiratory Risk),48.5
+0.3,166.9,30.89,72.68,1009.71,20.78,Warning: High Humidity (Respiratory Risk),51.4
+0.3,168.2,30.89,72.68,1009.68,20.78,Warning: High Humidity (Respiratory Risk),53.5
+0.3,170.18,30.88,72.68,1009.7,20.77,Warning: High Humidity (Respiratory Risk),55.2
+0.3,166.9,30.88,72.68,1009.7,20.76,Warning: High Humidity (Respiratory Risk),56.3
+0.31,174.88,30.87,72.69,1009.69,20.75,Warning: High Humidity (Respiratory Risk),57.1
+0.3,172.85,30.87,72.7,1009.7,20.77,Warning: High Humidity (Respiratory Risk),57.7
+0.3,174.2,30.87,72.71,1009.7,20.76,Warning: High Humidity (Respiratory Risk),58.1
+0.3,168.86,30.87,72.71,1009.7,20.78,Warning: High Humidity (Respiratory Risk),58.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0.39,303.78,30.9,72.45,1009.77,19.14,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,57.1
+0.39,294.54,30.9,72.46,1009.77,19.14,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,51.0
+0.38,276.98,30.9,72.47,1009.8,19.11,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,41.7
+0.38,261.56,30.9,72.48,1009.78,19.08,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,38.0
+0.38,244.27,30.9,72.48,1009.79,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,36.9
+0.37,208.58,30.9,72.49,1009.76,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,36.2
+0.37,197.97,30.91,72.5,1009.74,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,35.5
+0.36,179.79,30.91,72.51,1009.79,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,33.7
+0.37,173.92,30.91,72.52,1009.76,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,29.9
+0.35,152.43,30.91,72.54,1009.76,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,26.0
+0.36,152.43,30.91,72.56,1009.77,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,23.2
+0.35,152.43,30.91,72.57,1009.78,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.3
+0.35,149.67,30.91,72.59,1009.8,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.9
+0.35,150.22,30.91,72.6,1009.8,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.0
+0.35,148.05,30.91,72.62,1009.79,19.04,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,18.3
+0.34,149.13,30.91,72.65,1009.8,19.04,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.8
+0.35,144.85,30.91,72.67,1009.81,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.5
+0.33,144.33,30.91,72.69,1009.8,19.03,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.3
+0.34,144.33,30.9,72.72,1009.79,19.04,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.33,143.81,30.9,72.73,1009.81,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.33,141.22,30.9,72.74,1009.79,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.33,136.69,30.9,72.74,1009.82,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.33,134.73,30.9,72.74,1009.8,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.33,132.79,30.89,72.73,1009.77,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.32,128.09,30.89,72.72,1009.78,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.31,127.17,30.88,72.72,1009.78,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.33,125.8,30.88,72.73,1009.78,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.31,126.26,30.87,72.74,1009.8,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.31,121.8,30.87,72.74,1009.79,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.31,121.36,30.87,72.73,1009.79,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0.31,120.92,30.86,72.74,1009.81,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.31,119.2,30.86,72.75,1009.84,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.31,118.35,30.86,72.76,1009.81,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.3,115.83,30.86,72.77,1009.83,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.3,114.59,30.86,72.78,1009.79,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.31,115.0,30.86,72.78,1009.8,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.3,114.18,30.86,72.79,1009.77,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.3,111.76,30.86,72.8,1009.77,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.3,109.0,30.86,72.81,1009.79,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0.3,110.97,30.86,72.83,1009.81,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0.3,108.61,30.87,72.85,1009.78,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0.44,318.87,30.86,72.47,1009.87,19.09,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,57.1
+0.43,303.88,30.86,72.47,1009.89,19.1,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,51.0
+0.45,301.8,30.86,72.47,1009.87,19.08,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,41.6
+0.43,301.8,30.86,72.47,1009.89,19.07,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,37.8
+0.44,300.76,30.86,72.47,1009.89,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,36.5
+0.42,298.7,30.86,72.47,1009.87,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,35.7
+0.44,305.98,30.86,72.46,1009.86,19.04,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,34.9
+0.42,302.84,30.86,72.45,1009.89,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,32.9
+0.45,294.63,30.86,72.45,1009.85,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,29.2
+0.43,301.8,30.86,72.44,1009.89,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,25.4
+0.42,297.68,30.87,72.44,1009.89,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,22.8
+0.43,301.8,30.87,72.45,1009.86,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.43,289.61,30.87,72.45,1009.86,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.43,289.61,30.87,72.45,1009.88,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,18.9
+0.43,286.64,30.87,72.46,1009.92,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,18.3
+0.43,284.68,30.87,72.46,1009.91,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.9
+0.43,284.68,30.87,72.48,1009.91,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.42,285.66,30.87,72.49,1009.89,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.4
+0.44,284.68,30.87,72.5,1009.9,19.04,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.3
+0.43,284.68,30.87,72.51,1009.85,19.02,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.43,277.93,30.87,72.52,1009.91,19.04,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0.44,286.64,30.87,72.53,1009.91,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.43,285.66,30.87,72.55,1009.91,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.44,284.68,30.87,72.56,1009.85,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.43,294.63,30.87,72.57,1009.91,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.46,293.62,30.87,72.58,1009.9,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.45,294.63,30.86,72.6,1009.85,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.44,295.64,30.86,72.63,1009.86,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.43,293.62,30.86,72.65,1009.87,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.45,293.62,30.86,72.67,1009.91,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.44,287.63,30.86,72.67,1009.89,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.45,288.62,30.86,72.69,1009.9,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.44,286.64,30.86,72.71,1009.9,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0.53,390.09,30.82,73.01,1009.9,19.11,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,57.1
+0.47,388.74,30.82,73.01,1009.93,19.11,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,51.0
+0.48,396.95,30.82,73.01,1009.91,19.08,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,41.6
+0.47,386.04,30.82,73.01,1009.89,19.08,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,37.8
+0.48,388.74,30.82,73.02,1009.9,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,36.5
+0.45,387.39,30.82,73.02,1009.88,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,35.8
+0.45,384.7,30.82,73.03,1009.91,19.04,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,34.9
+0.47,386.04,30.82,73.03,1009.93,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,33.0
+0.45,384.7,30.81,73.03,1009.9,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,29.3
+0.44,384.7,30.82,73.03,1009.92,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,25.5
+0.47,378.06,30.81,73.03,1009.94,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,22.8
+0.45,384.7,30.82,73.02,1009.9,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.45,384.7,30.81,73.01,1009.91,19.07,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.46,376.75,30.81,73.0,1009.89,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,18.8
+0.42,386.04,30.81,72.98,1009.91,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,18.2
+0.43,384.7,30.8,72.96,1009.92,19.12,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.8
+0.42,379.38,30.8,72.95,1009.9,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.5
+0.43,376.75,30.79,72.94,1009.92,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.4
+0.4,372.84,30.79,72.93,1009.94,19.13,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.3
+0.31,285.62,30.79,72.95,1009.91,19.1,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.3
+0.31,242.97,30.79,72.97,1009.91,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.3
+0.4,294.62,30.79,72.96,1009.88,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.2
+0.31,200.52,30.8,72.95,1009.91,19.05,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.2
+0.33,234.77,30.8,72.93,1009.92,19.09,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.2
+0.34,220.71,30.81,72.95,1009.93,19.11,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.36,233.16,30.83,72.93,1009.91,19.08,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.1
+0.6,366.42,30.84,72.91,1009.91,19.04,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0.24,200.52,30.85,72.87,1009.92,19.02,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0.44,498.4,30.86,72.83,1009.92,19.02,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+1.36,734.38,30.88,72.83,1009.97,18.98,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+1.28,678.64,30.89,72.83,1009.99,18.99,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+3.02,729.11,30.91,72.81,1009.98,19.02,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+3.04,563.95,30.93,72.77,1009.99,19.06,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.3
+2.34,477.81,30.95,72.77,1009.94,18.99,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.2
+1.16,563.95,30.97,72.72,1009.95,18.92,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.1
+2.21,588.46,30.99,72.71,1009.99,18.88,Warning: Oxygen Fatigue (Low O2)|Warning: High Humidity (Respiratory Risk)|URGENT: Estimated 60.0 minutes until unconsciousness,16.0
+3.67,873.63,31.01,72.72,1009.98,18.9,Warning: Oxygen Fatigue (Low O2)|Notice: Acceptable CO2 (Mild Drowsiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 65%|URGENT: Estimated 60.0 minutes until unconsciousness,15.9
+3.55,1468.99,31.03,72.73,1009.99,18.95,Warning: Oxygen Fatigue (Low O2)|Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 50%|URGENT: Estimated 60.0 minutes until unconsciousness,15.8
+3.17,1603.48,31.05,72.78,1009.99,18.97,Warning: Oxygen Fatigue (Low O2)|Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 50%|URGENT: Estimated 60.0 minutes until unconsciousness,15.7
+1.92,2544.02,31.07,72.83,1009.99,18.96,Warning: Oxygen Fatigue (Low O2)|Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 30%|URGENT: Estimated 60.0 minutes until unconsciousness,15.6
+1.21,1792.58,31.1,72.85,1009.99,18.92,Warning: Oxygen Fatigue (Low O2)|Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 50%|URGENT: Estimated 60.0 minutes until unconsciousness,15.5
+1.45,1666.1,31.12,72.88,1009.98,18.93,Warning: Oxygen Fatigue (Low O2)|Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%|URGENT: Estimated 60.0 minutes until unconsciousness,15.4
+1.47,1491.47,31.14,72.88,1010.03,18.97,Warning: Oxygen Fatigue (Low O2)|Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%|URGENT: Estimated 60.0 minutes until unconsciousness,15.3
+1.51,1403.75,31.15,72.81,1010.0,18.98,Warning: Oxygen Fatigue (Low O2)|Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%|URGENT: Estimated 60.0 minutes until unconsciousness,15.3
+1.56,1367.15,31.16,72.71,1009.98,18.99,Warning: Oxygen Fatigue (Low O2)|Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%|URGENT: Estimated 60.0 minutes until unconsciousness,15.3
+1.87,1765.1,31.17,72.61,1009.98,19.22,Warning: Oxygen Fatigue (Low O2)|Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%|URGENT: Estimated 60.0 minutes until unconsciousness,15.3
+2.52,3052.33,31.17,72.5,1010.0,19.9,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 50%,15.4
+2.79,3511.75,31.17,72.4,1010.0,20.54,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 50%,15.6
+3.17,3801.92,31.17,72.31,1009.98,20.84,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 50%,16.3
+3.17,4015.96,31.16,72.25,1010.0,20.87,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 50%,18.0
+3.15,3948.69,31.15,72.19,1009.98,20.89,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 50%,21.8
+3.02,4015.96,31.15,72.14,1009.98,20.89,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 50%,28.8
+1.25,7039.41,31.14,72.1,1009.97,20.85,CRITICAL: CO2 Suffocation Risk|Warning: High Humidity (Respiratory Risk)|CRITICAL: SAFETY SCORE 10% - EVACUATE,36.5
+1.12,2564.5,31.14,72.07,1009.96,20.84,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,42.8
+0.93,2544.02,31.14,72.09,1009.94,20.83,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,47.4
+0.43,2415.25,31.14,72.07,1009.95,20.83,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),50.9
+0.42,3232.83,31.14,72.04,1009.95,20.84,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,53.4
+0.48,4603.08,31.13,72.01,1009.99,20.83,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 50%,55.1
+0.46,5406.29,31.13,71.98,1009.97,20.83,CRITICAL: CO2 Suffocation Risk|Warning: High Humidity (Respiratory Risk)|CRITICAL: SAFETY SCORE 10% - EVACUATE,56.3
+0.48,6175.4,31.12,71.96,1009.97,20.85,CRITICAL: CO2 Suffocation Risk|Warning: High Humidity (Respiratory Risk)|CRITICAL: SAFETY SCORE 10% - EVACUATE,57.1
+0.49,6546.81,31.11,71.95,1009.97,20.85,CRITICAL: CO2 Suffocation Risk|Warning: High Humidity (Respiratory Risk)|CRITICAL: SAFETY SCORE 10% - EVACUATE,57.6
+0.48,6203.1,31.11,71.93,1009.98,20.85,CRITICAL: CO2 Suffocation Risk|Warning: High Humidity (Respiratory Risk)|CRITICAL: SAFETY SCORE 10% - EVACUATE,58.0
+0.47,6343.75,31.1,71.93,1009.98,20.86,CRITICAL: CO2 Suffocation Risk|Warning: High Humidity (Respiratory Risk)|CRITICAL: SAFETY SCORE 10% - EVACUATE,58.4
+0.44,5700.07,31.09,71.93,1010.0,20.87,CRITICAL: CO2 Suffocation Risk|Warning: High Humidity (Respiratory Risk)|CRITICAL: SAFETY SCORE 20% - EVACUATE,58.7
+0.44,5776.31,31.09,71.94,1009.99,20.9,CRITICAL: CO2 Suffocation Risk|Warning: High Humidity (Respiratory Risk)|CRITICAL: SAFETY SCORE 20% - EVACUATE,58.9
+0.43,5550.97,31.08,71.95,1010.01,20.9,CRITICAL: CO2 Suffocation Risk|Warning: High Humidity (Respiratory Risk)|CRITICAL: SAFETY SCORE 20% - EVACUATE,59.0
+0.42,5478.09,31.08,71.97,1009.98,20.9,CRITICAL: CO2 Suffocation Risk|Warning: High Humidity (Respiratory Risk)|CRITICAL: SAFETY SCORE 20% - EVACUATE,59.1
+0.4,5219.99,31.08,71.99,1009.99,20.89,CRITICAL: CO2 Suffocation Risk|Warning: High Humidity (Respiratory Risk)|CRITICAL: SAFETY SCORE 20% - EVACUATE,59.1
+0.4,4889.95,31.07,72.0,1010.0,20.89,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,59.1
+0.38,4683.05,31.06,72.01,1010.0,20.89,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,59.2
+0.37,4524.64,31.06,72.02,1010.05,20.87,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,59.2
+0.37,4316.61,31.05,72.04,1010.05,20.87,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,59.2
+0.37,4261.76,31.05,72.05,1010.03,20.88,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,59.2
+0.36,4119.29,31.05,72.06,1010.06,20.88,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,59.2
+0.8,4243.64,31.04,72.06,1010.05,20.88,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,59.2
+0.55,3692.0,31.04,72.07,1010.04,20.88,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,59.2
+0.34,3817.92,31.04,72.08,1010.05,20.85,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,59.2
+0.38,2266.57,31.04,72.09,1010.06,20.84,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.3
+0.38,2779.68,31.04,72.12,1010.03,20.85,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,59.3
+0.5,2790.95,31.05,72.15,1010.04,20.86,Severe: Dangerous CO2 (Sleepiness)|Warning: High Humidity (Respiratory Risk)|Warning: Poor Safety Score 60%,59.3
+0.67,2405.65,31.05,72.14,1010.04,20.88,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.3
+0.73,2266.57,31.06,72.12,1010.06,20.88,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.3
+0.74,2178.8,31.06,72.11,1010.05,20.88,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.3
+0.78,2094.76,31.06,72.09,1010.04,20.88,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.4
+0.76,2030.1,31.06,72.07,1010.03,20.91,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.4
+0.73,1975.33,31.07,72.06,1010.06,20.9,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.4
+0.74,1885.18,31.07,72.05,1010.08,20.89,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.4
+0.71,1870.59,31.07,72.03,1010.05,20.9,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.4
+0.71,1771.93,31.07,72.02,1010.06,20.91,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.5
+0.71,1731.4,31.07,72.02,1010.08,20.9,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.5
+0.69,1647.04,31.07,72.02,1010.05,20.9,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.5
+0.69,1585.2,31.06,72.04,1010.03,20.9,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.6
+0.68,1561.18,31.06,72.06,1010.04,20.91,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.6
+0.68,1514.32,31.06,72.08,1010.03,20.91,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.6
+0.65,1480.19,31.06,72.1,1010.05,20.96,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.6
+0.67,1419.76,31.06,72.13,1010.03,20.96,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.7
+0.65,1367.15,31.06,72.15,1010.04,20.96,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.7
+0.62,1367.15,31.06,72.16,1010.02,20.93,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.7
+0.63,1316.66,31.06,72.18,1010.05,20.93,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.7
+0.62,1263.44,31.06,72.19,1010.03,20.93,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.7
+0.62,1226.21,31.06,72.2,1010.05,20.93,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.7
+0.62,1203.54,31.06,72.2,1010.05,20.94,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.7
+0.61,1172.56,31.05,72.19,1010.01,20.94,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.8
+0.61,1142.45,31.06,72.18,1010.05,20.92,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.8
+0.6,1113.16,31.06,72.17,1010.05,20.88,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.8
+0.58,1084.69,31.06,72.15,1010.05,20.9,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.8
+0.58,1064.83,31.06,72.16,1010.04,20.89,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.8
+0.59,1037.69,31.06,72.16,1010.02,20.89,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.8
+0.6,1026.29,31.06,72.15,1010.01,20.87,Warning: Poor Air Quality (Fatigue)|Warning: High Humidity (Respiratory Risk),59.8
+0.58,989.23,31.06,72.15,1010.04,20.87,Notice: Acceptable CO2 (Mild Drowsiness)|Warning: High Humidity (Respiratory Risk),59.8
+0.58,899.46,31.07,72.13,1010.04,20.86,Notice: Acceptable CO2 (Mild Drowsiness)|Warning: High Humidity (Respiratory Risk),59.8
+0.57,899.46,31.07,72.11,1010.03,20.86,Notice: Acceptable CO2 (Mild Drowsiness)|Warning: High Humidity (Respiratory Risk),59.8
+0.57,899.46,31.07,72.1,1010.03,20.85,Notice: Acceptable CO2 (Mild Drowsiness)|Warning: High Humidity (Respiratory Risk),59.8
+0.57,896.19,31.07,72.1,1010.04,20.87,Notice: Acceptable CO2 (Mild Drowsiness)|Warning: High Humidity (Respiratory Risk),59.8
+0.57,867.3,31.07,72.09,1010.03,20.88,Notice: Acceptable CO2 (Mild Drowsiness)|Warning: High Humidity (Respiratory Risk),59.8
+0.55,854.78,31.07,72.09,1010.05,20.89,Notice: Acceptable CO2 (Mild Drowsiness)|Warning: High Humidity (Respiratory Risk),59.8
+0.56,842.45,31.07,72.09,1010.02,20.92,Notice: Acceptable CO2 (Mild Drowsiness)|Warning: High Humidity (Respiratory Risk),59.8
+0.54,824.32,31.07,72.09,1010.05,20.9,Notice: Acceptable CO2 (Mild Drowsiness)|Warning: High Humidity (Respiratory Risk),59.8
+0.55,809.52,31.07,72.09,1010.04,20.9,Notice: Acceptable CO2 (Mild Drowsiness)|Warning: High Humidity (Respiratory Risk),59.8
+0.55,786.44,31.07,72.09,1010.04,20.89,Warning: High Humidity (Respiratory Risk),59.7
+0.53,766.81,31.08,72.09,1010.03,20.91,Warning: High Humidity (Respiratory Risk),59.7
+0.52,745.02,31.08,72.08,1010.02,20.86,Warning: High Humidity (Respiratory Risk),59.7
+0.52,729.11,31.09,72.06,1010.05,20.85,Warning: High Humidity (Respiratory Risk),59.7
+0.51,705.92,31.1,72.04,1010.02,20.87,Warning: High Humidity (Respiratory Risk),59.7
+0.48,688.43,31.1,72.02,1010.0,20.93,Warning: High Humidity (Respiratory Risk),59.8
+0.47,673.8,31.11,71.98,1010.03,20.94,Warning: High Humidity (Respiratory Risk),59.8
+0.47,664.23,31.11,71.95,1010.05,20.95,Warning: High Humidity (Respiratory Risk),59.8
+0.47,645.52,31.12,71.92,1010.02,20.94,Warning: High Humidity (Respiratory Risk),59.8
+0.47,638.65,31.13,71.89,1010.04,20.95,Warning: High Humidity (Respiratory Risk),59.8
+0.46,631.85,31.14,71.86,1010.0,20.96,Warning: High Humidity (Respiratory Risk),59.8
+0.46,618.49,31.14,71.83,1010.03,20.94,Warning: High Humidity (Respiratory Risk),59.8
+0.46,603.28,31.15,71.8,1010.02,20.95,Warning: High Humidity (Respiratory Risk),59.8
+0.45,599.01,31.16,71.77,1010.06,20.94,Warning: High Humidity (Respiratory Risk),59.8
+0.45,584.3,31.17,71.74,1010.04,20.93,Warning: High Humidity (Respiratory Risk),59.8
+0.44,582.23,31.17,71.72,1010.05,20.91,Warning: High Humidity (Respiratory Risk),59.9
+0.44,561.96,31.18,71.7,1010.05,20.92,Warning: High Humidity (Respiratory Risk),59.9
+0.45,569.98,31.18,71.68,1010.04,20.93,Warning: High Humidity (Respiratory Risk),59.9
+0.45,572.0,31.19,71.66,1010.04,20.93,Warning: High Humidity (Respiratory Risk),59.9
+0.45,565.95,31.19,71.64,1010.04,20.92,Warning: High Humidity (Respiratory Risk),59.9
+0.45,559.97,31.2,71.62,1010.05,20.94,Warning: High Humidity (Respiratory Risk),59.9
+0.45,544.34,31.2,71.6,1010.06,20.95,Warning: High Humidity (Respiratory Risk),59.9
+0.44,536.7,31.21,71.59,1010.04,20.93,Warning: High Humidity (Respiratory Risk),59.9
+0.44,521.76,31.21,71.58,1010.07,20.91,Warning: High Humidity (Respiratory Risk),59.9
+0.44,510.84,31.22,71.58,1010.04,20.87,Warning: High Humidity (Respiratory Risk),59.9
+0.43,507.25,31.22,71.58,1010.03,20.87,Warning: High Humidity (Respiratory Risk),59.9
+0.43,503.69,31.22,71.57,1010.03,20.87,Warning: High Humidity (Respiratory Risk),59.9
+0.42,482.87,31.22,71.56,1010.04,20.89,Warning: High Humidity (Respiratory Risk),59.9

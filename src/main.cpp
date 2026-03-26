@@ -19,8 +19,8 @@
 #define OLED_RESET -1
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-String backendIp = "vaayuu-backend.onrender.com"; // Default cloud fallback
-String envMode = "BUILDING";                      // Synced from backend
+String backendIp = "vaayuu.onrender.com"; // Default cloud fallback
+String envMode = "BUILDING";              // Synced from backend
 Preferences preferences;
 WebServer server(80);
 
@@ -148,12 +148,16 @@ void sendCloudWarmupHeartbeat() {
 void startAPMode();
 
 void soundAlert() {
-  // Rapid double beep using tone() for both active and passive buzzers
-  for (int i = 0; i < 2; i++) {
-    tone(BUZZER_PIN, 2000); // 2kHz tone
-    delay(100);
-    noTone(BUZZER_PIN);
-    delay(50);
+  // Universal Tone Generator (bypasses ESP32 PWM/LEDC completely)
+  // Generates a ~2kHz square wave manually, audibly working for BOTH active and passive buzzers
+  for (int beep = 0; beep < 2; beep++) {
+    for (int i = 0; i < 200; i++) { // 200 cycles @ 500us = 100ms tone
+      digitalWrite(BUZZER_PIN, HIGH);
+      delayMicroseconds(250);
+      digitalWrite(BUZZER_PIN, LOW);
+      delayMicroseconds(250);
+    }
+    delay(50); // Pause between beeps
   }
 }
 
@@ -205,7 +209,7 @@ void setup() {
   // MQ and Oxygen sensors need a longer warm-up for a stable baseline
   long mq7_cal = 0;
   long mq135_cal = 0;
-  int samples = 1800; // 3 minutes (1800 * 100ms) for stable MQ warmup
+  int samples = 600; // 1 minute (600 * 100ms) for stable MQ warmup
   for (int i = 0; i < samples; i++) {
     int r7 = analogRead(MQ7_A_PIN);
     int r135 = analogRead(MQ135_A_PIN);
@@ -217,7 +221,7 @@ void setup() {
       sendCloudWarmupHeartbeat(); // WiFi Heartbeat
       display.clearDisplay();
       display.setCursor(0, 0);
-      display.println("SENSOR WARMUP (3m)");
+      display.println("SENSOR WARMUP (1m)");
       display.print("Progress: ");
       display.print((i * 100) / samples);
       display.println("%");
@@ -446,7 +450,7 @@ void startAPMode() {
     html += "<input type='password' name='pass' placeholder='Password'>";
     html += "<label>Backend (e.g. vaayuu-backend.onrender.com):</label>";
     html += "<input type='text' name='ip' placeholder='Backend URL' "
-            "value='vaayuu-backend.onrender.com'>";
+            "value='vaayuu.onrender.com'>";
     html += "<input type='submit' value='Save & Connect'>";
     html += "</form></body></html>";
     server.send(200, "text/html", html);
@@ -789,13 +793,13 @@ void loop() {
             String respBody = https.getString();
             Serial.println("Response: " + respBody);
 
-            StaticJsonDocument<200> doc;
+            JsonDocument doc;
             DeserializationError error = deserializeJson(doc, respBody);
             if (!error) {
               if (doc["buzzer"] == true) {
                 soundAlert();
               }
-              if (doc.containsKey("env_mode")) {
+              if (doc["env_mode"].is<String>()) {
                 envMode = doc["env_mode"].as<String>();
               }
             }
@@ -824,7 +828,7 @@ void loop() {
       int httpResponseCode = http.POST(payload);
       if (httpResponseCode > 0) {
         String respBody = http.getString();
-        StaticJsonDocument<200> doc;
+        JsonDocument doc;
         if (!deserializeJson(doc, respBody)) {
           if (doc["buzzer"] == true) {
             soundAlert();

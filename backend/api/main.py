@@ -105,7 +105,7 @@ async def lifespan(app: FastAPI):
                         })
 
                     # Trigger physical buzzer via Serial if hazardous
-                    if alerts and (safety_score < 80 or any("CRITICAL" in a for a in alerts)):
+                    if alerts and (safety_score <= 80 or any("CRITICAL" in a or "Severe" in a for a in alerts)):
                         if not sensor.get("is_warming_up"):
                             print("[Serial] Hazard Detected! Sending BUZZ command.")
                             write_serial("BUZZ\n")
@@ -264,8 +264,8 @@ def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
         list(inference_buffer_wifi)
     )
     
-    # Determine if buzzer should sound (Critical or Safety Score < 80)
-    should_buzz = len(alerts) > 0 and (safety_score < 80 or any("CRITICAL" in a for a in alerts))
+    # Determine if buzzer should sound (Critical or Safety Score <= 80)
+    should_buzz = len(alerts) > 0 and (safety_score <= 80 or any("CRITICAL" in a or "Severe" in a for a in alerts))
     
     # Also send via Serial if in USB mode or mixed mode
     if should_buzz and not sensor.get("is_warming_up"):
