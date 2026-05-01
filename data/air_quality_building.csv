@@ -5450,3 +5450,1734 @@ CO,Gas,Temp,Humidity,Pressure,Oxygen,Alert,Escape_Time
 0.29,358.34,31.37,73.48,1012.02,20.97,Warning: High Humidity (Respiratory Risk),60.0
 0.29,344.35,31.36,73.45,1012.0,20.96,Warning: High Humidity (Respiratory Risk),60.0
 0.3,350.64,31.36,73.43,1012.01,20.95,Warning: High Humidity (Respiratory Risk),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.6
+0.46,400.0,33.28,56.53,1009.6,19.12,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,51.0
+0.44,400.0,33.28,56.52,1009.63,19.15,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,41.5
+1.54,400.0,33.28,56.52,1009.64,20.18,Notice: CO2 levels increasing rapidly,34.3
+1.51,400.0,33.28,56.52,1009.63,20.38,Notice: CO2 levels increasing rapidly,29.5
+1.28,400.0,33.29,56.51,1009.6,20.91,no,27.5
+1.36,400.0,33.29,56.53,1009.6,20.63,no,29.1
+1.37,400.0,33.29,56.56,1009.6,20.87,no,34.7
+1.38,400.0,33.3,56.6,1009.62,20.86,no,41.3
+1.37,400.0,33.3,56.64,1009.61,20.86,no,46.3
+1.36,400.0,33.3,56.66,1009.6,20.89,no,49.9
+1.41,400.0,33.3,56.67,1009.59,20.9,no,52.5
+1.42,400.0,33.31,56.68,1009.59,20.92,no,54.5
+1.42,400.0,33.31,56.7,1009.59,20.93,no,55.9
+1.46,400.0,33.31,56.7,1009.59,20.9,no,57.0
+1.39,400.0,33.31,56.72,1009.62,20.85,no,57.6
+1.41,400.0,33.32,56.73,1009.63,20.82,no,58.1
+1.39,400.0,33.32,56.75,1009.65,20.83,no,58.5
+1.39,400.0,33.32,56.75,1009.64,20.84,no,58.7
+1.39,400.0,33.32,56.75,1009.64,20.86,no,58.8
+1.38,400.0,33.32,56.73,1009.59,20.88,no,59.0
+1.41,400.0,33.33,56.7,1009.61,20.9,no,59.1
+1.41,400.0,33.33,56.69,1009.61,20.88,no,59.2
+1.36,400.0,33.33,56.67,1009.62,20.87,no,59.3
+1.37,400.0,33.33,56.64,1009.62,20.86,no,59.3
+1.37,400.0,33.33,56.6,1009.61,20.86,no,59.3
+1.38,400.0,33.33,56.58,1009.58,20.85,no,59.3
+1.52,400.0,33.33,56.56,1009.57,20.85,no,59.3
+1.47,400.0,33.33,56.57,1009.55,20.86,no,59.3
+1.56,400.0,33.34,56.56,1009.59,20.88,no,59.3
+1.65,400.0,33.34,56.54,1009.53,20.88,no,59.3
+1.52,400.0,33.34,56.53,1009.55,20.87,no,59.3
+1.57,400.0,33.35,56.52,1009.57,20.86,no,59.3
+1.6,400.0,33.35,56.52,1009.54,20.86,no,59.3
+1.6,400.0,33.36,56.52,1009.54,20.84,no,59.3
+1.54,400.0,33.36,56.51,1009.52,20.83,no,59.3
+1.6,400.0,33.37,56.51,1009.54,20.82,no,59.3
+1.61,400.0,33.37,56.5,1009.5,20.85,no,59.3
+1.66,400.0,33.38,56.48,1009.52,20.83,no,59.3
+1.57,400.0,33.38,56.47,1009.54,20.86,no,59.3
+1.56,400.0,33.38,56.46,1009.53,20.87,no,59.3
+1.54,400.0,33.39,56.45,1009.55,20.93,no,59.3
+1.53,400.0,33.39,56.44,1009.53,20.92,no,59.3
+1.56,400.0,33.39,56.43,1009.56,20.93,no,59.4
+1.57,400.0,33.4,56.44,1009.52,20.92,no,59.4
+1.61,400.0,33.4,56.44,1009.53,20.93,no,59.4
+1.63,400.0,33.4,56.43,1009.52,20.9,no,59.4
+1.61,400.0,33.41,56.44,1009.56,20.91,no,59.4
+1.55,400.0,33.41,56.44,1009.53,20.89,no,59.4
+1.59,400.0,33.41,56.45,1009.52,20.89,no,59.4
+1.45,400.0,33.42,56.46,1009.54,20.88,no,59.4
+1.5,400.0,33.42,56.47,1009.5,20.87,no,59.4
+1.58,400.0,33.42,56.48,1009.5,20.87,no,59.4
+1.52,400.0,33.42,56.5,1009.51,20.86,no,59.4
+1.58,400.0,33.43,56.52,1009.53,20.87,no,59.4
+1.57,400.0,33.43,56.54,1009.52,20.9,no,59.4
+1.54,400.0,33.43,56.57,1009.5,20.91,no,59.4
+1.5,400.0,33.43,56.61,1009.52,20.88,no,59.4
+1.57,400.0,33.44,56.64,1009.51,20.87,no,59.4
+1.53,400.0,33.44,56.67,1009.49,20.88,no,59.4
+1.6,400.0,33.44,56.68,1009.5,20.89,no,59.4
+1.5,400.0,33.44,56.7,1009.51,20.85,no,59.4
+1.56,400.0,33.45,56.72,1009.52,20.83,no,59.4
+1.56,400.0,33.45,56.74,1009.5,20.82,no,59.3
+1.52,400.0,33.45,56.75,1009.52,20.83,no,59.3
+1.54,400.0,33.45,56.76,1009.49,20.84,no,59.3
+1.48,400.0,33.46,56.77,1009.46,20.84,no,59.3
+1.61,400.0,33.46,56.77,1009.45,20.85,no,59.3
+1.57,400.0,33.46,56.77,1009.49,20.87,no,59.3
+1.48,400.0,33.46,56.79,1009.48,20.88,no,59.3
+1.56,400.0,33.46,56.8,1009.5,20.87,no,59.4
+1.55,400.0,33.46,56.83,1009.48,20.85,no,59.4
+1.55,400.0,33.46,56.85,1009.47,20.88,no,59.4
+1.57,400.0,33.47,56.87,1009.47,20.89,no,59.3
+1.43,400.0,33.47,56.88,1009.47,20.87,no,59.3
+1.53,400.0,33.47,56.89,1009.47,20.85,no,59.3
+1.54,400.0,33.47,56.89,1009.51,20.84,no,59.3
+1.49,400.0,33.47,56.89,1009.5,20.86,no,59.3
+1.53,400.0,33.47,56.92,1009.51,20.84,no,59.3
+1.46,400.0,33.47,56.92,1009.5,20.83,no,59.3
+1.56,400.0,33.47,56.92,1009.5,20.89,no,59.3
+1.52,400.0,33.48,56.94,1009.5,20.91,no,59.3
+1.5,400.0,33.48,56.94,1009.48,20.91,no,59.4
+1.57,400.0,33.48,56.94,1009.47,20.9,no,59.4
+1.58,400.0,33.48,56.94,1009.49,20.9,no,59.4
+1.5,400.0,33.47,56.93,1009.52,20.9,no,59.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),52.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),52.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),52.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),52.8
+0.55,461.42,33.32,56.83,1009.38,19.17,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,44.8
+0.55,503.5,33.32,56.85,1009.36,19.2,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,37.0
+0.5,498.05,33.32,56.88,1009.38,19.44,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,31.9
+0.92,571.31,33.32,56.92,1009.38,20.03,Notice: CO2 levels increasing rapidly,28.2
+0.95,575.43,33.32,56.92,1009.38,20.61,Notice: CO2 levels increasing rapidly,25.9
+0.99,611.61,33.33,56.91,1009.36,20.89,Notice: CO2 levels increasing rapidly,25.7
+0.97,804.0,33.33,56.92,1009.4,20.89,Notice: Acceptable CO2 (Mild Drowsiness),27.7
+0.38,545.18,33.33,56.93,1009.37,20.9,no,31.9
+0.42,549.13,33.33,56.9,1009.4,20.92,no,36.4
+0.44,583.75,33.33,56.88,1009.37,20.93,no,41.4
+0.42,583.75,33.34,56.86,1009.35,20.94,no,46.1
+0.42,613.8,33.34,56.86,1009.35,20.94,no,49.9
+0.42,618.21,33.34,56.81,1009.37,20.94,no,52.6
+0.44,631.61,33.34,56.77,1009.37,20.93,no,54.4
+0.43,649.91,33.34,56.72,1009.38,20.93,no,55.7
+0.38,581.66,33.34,56.68,1009.37,20.93,no,56.6
+0.41,618.21,33.34,56.64,1009.37,20.94,no,57.2
+0.4,607.24,33.34,56.61,1009.35,20.91,no,57.6
+0.41,611.61,33.34,56.58,1009.34,20.87,no,57.9
+0.38,605.07,33.34,56.56,1009.34,20.87,no,58.1
+0.38,620.42,33.34,56.54,1009.34,20.89,no,58.3
+0.41,633.87,33.34,56.53,1009.34,20.92,no,58.4
+0.36,605.07,33.34,56.52,1009.33,20.93,no,58.5
+0.42,461.42,33.34,56.82,1009.33,20.89,no,58.6
+0.5,350.0,33.35,56.93,1009.34,20.81,no,58.6
+0.5,350.0,33.35,56.96,1009.34,20.77,no,58.7
+0.26,365.97,33.35,56.98,1009.33,20.81,no,58.6
+0.28,350.0,33.35,56.98,1009.33,20.84,no,58.6
+0.29,350.0,33.35,56.97,1009.32,20.85,no,58.6
+0.29,350.0,33.35,56.97,1009.33,20.86,no,58.6
+0.28,350.0,33.35,56.97,1009.3,20.9,no,58.7
+0.28,350.0,33.34,56.97,1009.3,20.91,no,58.7
+0.24,350.0,33.35,57.21,1009.27,20.89,no,58.7
+0.18,350.0,33.35,57.46,1009.29,20.79,no,58.7
+0.22,350.0,33.35,57.58,1009.33,20.74,no,58.6
+0.25,350.0,33.34,57.63,1009.31,20.73,no,58.5
+0.3,350.0,33.34,57.65,1009.28,20.8,no,58.4
+0.28,350.0,33.34,57.66,1009.29,20.82,no,58.4
+0.27,350.0,33.33,57.67,1009.33,20.83,no,58.5
+0.26,350.0,33.33,57.68,1009.33,20.85,no,58.5
+0.3,350.0,33.33,57.69,1009.32,20.87,no,58.6
+0.28,350.0,33.32,57.69,1009.32,20.88,no,58.6
+0.28,350.0,33.32,57.7,1009.31,20.86,no,58.7
+0.27,350.0,33.31,57.72,1009.31,20.85,no,58.6
+0.31,350.0,33.31,57.74,1009.35,20.85,no,58.6
+0.31,350.0,33.3,57.76,1009.34,20.85,no,58.6
+0.31,350.0,33.3,57.77,1009.29,20.86,no,58.6
+0.29,350.0,33.3,57.79,1009.33,20.87,no,58.5
+0.31,350.0,33.29,57.81,1009.29,20.88,no,58.5
+0.3,350.0,33.29,57.83,1009.33,20.86,no,58.5
+0.3,350.0,33.28,57.85,1009.33,20.87,no,58.5
+0.27,350.0,33.28,57.88,1009.28,20.87,no,58.5
+0.25,350.0,33.28,57.9,1009.33,20.87,no,58.5
+0.27,361.91,33.28,57.92,1009.32,20.89,no,58.5
+0.3,350.0,33.28,57.94,1009.33,20.89,no,58.5
+0.27,350.0,33.27,57.95,1009.32,20.91,no,58.5
+0.27,350.0,33.27,57.97,1009.3,20.88,no,58.5
+0.26,381.19,33.27,57.97,1009.3,20.87,no,58.5
+0.31,350.0,33.26,57.98,1009.32,20.87,no,58.5
+0.28,350.0,33.26,57.99,1009.32,20.88,no,58.5
+0.27,367.33,33.26,57.99,1009.31,20.87,no,58.5
+0.29,350.0,33.26,57.98,1009.31,20.87,no,58.5
+0.28,364.61,33.25,57.97,1009.31,20.86,no,58.5
+0.27,365.97,33.25,57.96,1009.33,20.86,no,58.5
+0.28,363.26,33.25,57.94,1009.3,20.83,no,58.5
+0.27,381.19,33.24,57.93,1009.31,20.85,no,58.4
+0.28,368.69,33.24,57.93,1009.32,20.86,no,58.4
+0.28,350.0,33.24,57.92,1009.3,20.86,no,58.5
+0.27,350.0,33.24,57.92,1009.29,20.86,no,58.5
+0.27,350.0,33.23,57.91,1009.33,20.83,no,58.5
+0.27,350.0,33.23,57.9,1009.33,20.84,no,58.5
+0.28,350.0,33.23,57.89,1009.33,20.85,no,58.5
+0.27,350.0,33.23,57.88,1009.32,20.88,no,58.5
+0.27,350.0,33.23,57.88,1009.3,20.87,no,58.5
+0.27,350.0,33.23,57.88,1009.31,20.87,no,58.5
+0.27,350.0,33.23,57.88,1009.3,20.85,no,58.5
+0.27,350.0,33.22,57.89,1009.31,20.85,no,58.5
+0.26,359.23,33.22,57.91,1009.31,20.84,no,58.5
+0.27,353.93,33.22,57.92,1009.3,20.82,no,58.5
+0.27,365.97,33.22,57.94,1009.33,20.79,no,58.4
+0.26,378.38,33.22,57.95,1009.31,20.8,no,58.4
+0.27,367.33,33.22,57.97,1009.3,20.82,no,58.4
+0.27,372.82,33.22,57.98,1009.27,20.83,no,58.4
+0.28,365.97,33.22,57.99,1009.23,20.84,no,58.4
+0.29,379.79,33.22,58.0,1009.24,20.84,no,58.5
+0.27,352.61,33.22,58.01,1009.23,20.85,no,58.5
+0.28,389.74,33.22,58.02,1009.24,20.84,no,58.5
+0.28,382.61,33.22,58.01,1009.26,20.83,no,58.5
+0.29,388.31,33.22,58.0,1009.25,20.83,no,58.5
+0.26,435.21,33.22,57.98,1009.22,20.83,no,58.5
+0.29,388.31,33.22,57.96,1009.24,20.81,no,58.5
+0.27,350.0,33.22,57.95,1009.21,20.81,no,58.5
+0.27,350.0,33.23,57.93,1009.25,20.82,no,58.5
+0.27,350.0,33.23,57.92,1009.22,20.82,no,58.5
+0.28,350.0,33.23,57.91,1009.26,20.82,no,58.5
+0.28,350.0,33.24,57.9,1009.24,20.79,no,58.5
+0.28,350.0,33.24,57.9,1009.26,20.8,no,58.5
+0.29,350.0,33.24,57.9,1009.26,20.81,no,58.5
+0.3,350.0,33.25,57.9,1009.25,20.82,no,58.5
+0.28,350.0,33.25,57.9,1009.24,20.85,no,58.5
+0.29,350.0,33.25,57.89,1009.22,20.86,no,58.5
+0.28,350.0,33.25,57.89,1009.24,20.87,no,58.6
+0.29,350.0,33.26,57.89,1009.24,20.85,no,58.6
+0.27,350.0,33.26,57.88,1009.22,20.87,no,58.6
+0.29,351.3,33.26,57.87,1009.22,20.86,no,58.6
+0.28,350.0,33.26,57.87,1009.25,20.84,no,58.5
+0.3,350.0,33.26,57.88,1009.23,20.81,no,58.5
+0.28,350.0,33.26,57.89,1009.23,20.82,no,58.5
+0.3,361.91,33.26,57.9,1009.22,20.86,no,58.5
+0.28,352.61,33.26,57.91,1009.23,20.87,no,58.5
+0.28,350.0,33.26,57.91,1009.26,20.88,no,58.5
+0.27,350.0,33.26,57.9,1009.24,20.85,no,58.5
+0.29,364.61,33.26,57.88,1009.23,20.82,no,58.5
+0.28,372.82,33.26,57.87,1009.22,20.82,no,58.5
+0.3,359.23,33.26,57.87,1009.24,20.84,no,58.5
+0.28,350.0,33.26,57.87,1009.22,20.86,no,58.5
+0.3,350.0,33.26,57.86,1009.21,20.82,no,58.5
+0.3,353.93,33.26,57.84,1009.21,20.81,no,58.5
+0.28,350.0,33.26,57.82,1009.19,20.81,no,58.5
+0.3,350.0,33.26,57.79,1009.25,20.82,no,58.5
+0.29,357.9,33.26,57.75,1009.23,20.83,no,58.5
+0.3,368.69,33.26,57.72,1009.23,20.82,no,58.5
+0.31,361.91,33.26,57.69,1009.22,20.83,no,58.5
+0.31,361.91,33.26,57.66,1009.21,20.83,no,58.5
+0.29,350.0,33.26,57.62,1009.21,20.82,no,58.5
+0.31,357.9,33.25,57.59,1009.21,20.82,no,58.5
+0.3,351.3,33.25,57.55,1009.23,20.81,no,58.5
+0.3,350.0,33.25,57.52,1009.22,20.82,no,58.5
+0.3,353.93,33.25,57.5,1009.22,20.8,no,58.5
+0.31,350.0,33.25,57.48,1009.2,20.81,no,58.5
+0.3,350.0,33.25,57.46,1009.24,20.83,no,58.5
+0.31,350.0,33.25,57.43,1009.26,20.84,no,58.5
+0.31,350.0,33.25,57.4,1009.25,20.85,no,58.5
+0.31,350.0,33.24,57.39,1009.2,20.81,no,58.6
+0.32,350.0,33.24,57.38,1009.19,20.83,no,58.6
+0.31,350.0,33.24,57.37,1009.18,20.85,no,58.5
+0.28,350.0,33.24,57.36,1009.2,20.87,no,58.5
+0.3,350.0,33.24,57.38,1009.15,20.86,no,58.5
+0.3,352.61,33.23,57.38,1009.17,20.84,no,58.5
+0.31,357.9,33.23,57.38,1009.19,20.84,no,58.5
+0.31,364.61,33.23,57.41,1009.25,20.84,no,58.5
+0.31,364.61,33.23,57.42,1009.21,20.82,no,58.5
+0.3,436.81,33.23,57.41,1009.24,20.81,no,58.5
+0.31,350.0,33.23,57.4,1009.24,20.82,no,58.4
+0.33,350.0,33.22,57.38,1009.26,20.84,no,58.4
+0.31,356.57,33.22,57.36,1009.21,20.83,no,58.5
+0.31,351.3,33.22,57.31,1009.2,20.82,no,58.5
+0.31,375.59,33.21,57.27,1009.21,20.82,no,58.5
+0.31,372.82,33.21,57.23,1009.19,20.85,no,58.5
+0.32,371.44,33.21,57.18,1009.21,20.88,no,58.5
+0.33,386.87,33.21,57.14,1009.16,20.88,no,58.5
+0.33,386.87,33.2,57.09,1009.16,20.82,no,58.6
+0.33,388.31,33.2,57.04,1009.18,20.78,no,58.5
+0.31,388.31,33.2,56.99,1009.17,20.76,no,58.5
+0.35,433.62,33.2,56.94,1009.17,20.77,no,58.4
+0.32,453.08,33.2,56.9,1009.17,20.77,no,58.4
+0.33,448.14,33.2,56.86,1009.15,20.81,no,58.4
+0.31,441.63,33.2,56.82,1009.18,20.82,no,58.4
+0.32,416.47,33.2,56.79,1009.16,20.84,no,58.5
+0.34,427.31,33.2,56.76,1009.2,20.85,no,58.5
+0.32,441.63,33.19,56.74,1009.21,20.86,no,58.6
+0.33,435.21,33.19,56.7,1009.22,20.83,no,58.6
+0.33,436.81,33.19,56.67,1009.19,20.79,no,58.6
+0.34,441.63,33.19,56.63,1009.21,20.8,no,58.6
+0.3,458.07,33.19,56.6,1009.19,20.83,no,58.5
+0.32,436.81,33.18,56.57,1009.18,20.87,no,58.5
+0.34,454.73,33.18,56.55,1009.2,20.88,no,58.5
+0.33,440.02,33.18,56.52,1009.19,20.86,no,58.6
+0.33,427.31,33.18,56.5,1009.18,20.83,no,58.6
+0.32,446.5,33.18,56.48,1009.23,20.8,no,58.6
+0.33,461.42,33.17,56.47,1009.17,20.8,no,58.5
+0.33,440.02,33.18,56.44,1009.15,20.8,no,58.5
+0.32,432.03,33.17,56.43,1009.13,20.81,no,58.5
+0.33,436.81,33.17,56.4,1009.16,20.82,no,58.5
+0.33,397.0,33.17,56.38,1009.15,20.81,no,58.5
+0.33,402.9,33.17,56.36,1009.15,20.8,no,58.5
+0.31,394.08,33.17,56.35,1009.15,20.83,no,58.5
+0.34,398.47,33.17,56.34,1009.13,20.83,no,58.6
+0.32,425.74,33.17,56.34,1009.15,20.85,no,58.6
+0.32,410.38,33.17,56.35,1009.15,20.81,no,58.6
+0.34,425.74,33.17,56.34,1009.12,20.81,no,58.6
+0.31,436.81,33.18,56.35,1009.12,20.82,no,58.5
+0.33,436.81,33.18,56.36,1009.15,20.81,no,58.5
+0.33,419.54,33.18,56.37,1009.11,20.82,no,58.5
+0.34,435.21,33.18,56.38,1009.12,20.79,no,58.5
+0.34,421.08,33.18,56.39,1009.13,20.8,no,58.5
+0.33,414.94,33.19,56.39,1009.13,20.79,no,58.5
+0.34,413.41,33.19,56.4,1009.13,20.8,no,58.5
+0.32,421.08,33.19,56.41,1009.11,20.78,no,58.5
+0.34,428.88,33.19,56.42,1009.1,20.81,no,58.5
+0.32,427.31,33.19,56.42,1009.11,20.81,no,58.5
+0.33,425.74,33.19,56.41,1009.1,20.84,no,58.5
+0.33,425.74,33.19,56.4,1009.11,20.83,no,58.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.4
+128.74,350.0,30.28,59.28,1010.7,19.1,Warning: Oxygen Fatigue (Low O2)|CRITICAL: CO Poisoning Emergency|Notice: CO2 levels increasing rapidly|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 60.0 minutes until unconsciousness,50.6
+131.8,350.0,30.28,59.29,1010.72,19.11,Warning: Oxygen Fatigue (Low O2)|CRITICAL: CO Poisoning Emergency|Notice: CO2 levels increasing rapidly|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 60.0 minutes until unconsciousness,41.2
+115.35,350.0,30.28,59.3,1010.73,19.12,Warning: Oxygen Fatigue (Low O2)|CRITICAL: CO Poisoning Emergency|Notice: CO2 levels increasing rapidly|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 60.0 minutes until unconsciousness,35.2
+0.5,350.0,30.28,59.32,1010.72,19.14,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,30.7
+0.5,350.0,30.28,59.33,1010.71,19.14,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,27.3
+0.5,350.0,30.28,59.34,1010.73,19.14,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,25.2
+0.5,350.0,30.29,59.34,1010.73,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,23.6
+0.5,350.0,30.29,59.35,1010.73,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,21.6
+0.5,350.0,30.29,59.35,1010.71,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,19.5
+0.5,350.0,30.29,59.36,1010.73,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.9
+0.5,350.0,30.29,59.36,1010.72,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.5,350.0,30.29,59.36,1010.73,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.1
+0.5,350.0,30.29,59.37,1010.7,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,15.6
+0.5,350.0,30.29,59.37,1010.74,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,15.2
+0.5,350.0,30.29,59.36,1010.71,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,15.0
+0.5,350.0,30.28,59.37,1010.73,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.8
+0.5,350.0,30.28,59.38,1010.71,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.7
+0.5,350.0,30.28,59.4,1010.75,19.14,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.6
+0.5,350.0,30.28,59.42,1010.74,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),17.3
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),30.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),39.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),45.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),48.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),51.2
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),54.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.9
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),56.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),57.2
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),57.5
+0.5,350.0,30.31,59.65,1010.76,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,50.7
+0.5,350.0,30.31,59.65,1010.79,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,41.5
+0.5,350.0,30.31,59.65,1010.77,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,35.3
+0.5,350.0,30.31,59.65,1010.74,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,30.8
+198.9,350.0,30.31,59.81,1010.78,19.1,Warning: Oxygen Fatigue (Low O2)|CRITICAL: CO Poisoning Emergency|CRITICAL: SAFETY SCORE 10% - EVACUATE|URGENT: Estimated 60.0 minutes until unconsciousness,27.1
+0.5,350.0,30.31,59.85,1010.8,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,25.0
+0.5,350.0,30.32,59.87,1010.81,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,23.7
+0.5,350.0,30.32,59.87,1010.79,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,22.3
+0.5,350.0,30.32,59.86,1010.79,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,20.3
+0.5,350.0,30.32,59.83,1010.82,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.5
+2000.0,350.0,30.32,59.79,1010.79,19.37,Warning: Oxygen Fatigue (Low O2)|CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,19.4
+2000.0,350.0,30.31,59.78,1010.78,19.48,Warning: Oxygen Fatigue (Low O2)|CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,29.2
+2000.0,350.0,30.31,59.76,1010.79,19.53,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,38.5
+2000.0,350.0,30.3,59.77,1010.79,19.39,Warning: Oxygen Fatigue (Low O2)|CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,44.9
+2000.0,350.0,30.3,59.78,1010.78,19.37,Warning: Oxygen Fatigue (Low O2)|CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,49.4
+2000.0,350.0,30.3,59.86,1010.78,19.34,Warning: Oxygen Fatigue (Low O2)|CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.6
+2000.0,350.0,30.29,59.89,1010.78,19.53,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,54.8
+2000.0,350.0,30.29,59.91,1010.78,20.13,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,56.4
+2000.0,350.0,30.29,59.93,1010.78,20.81,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,57.5
+2000.0,350.0,30.29,59.96,1010.79,21.29,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,58.2
+2000.0,350.0,30.29,60.01,1010.78,21.38,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,58.8
+2000.0,350.0,30.29,60.05,1010.77,21.3,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,59.1
+2000.0,350.0,30.29,60.09,1010.77,21.14,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,59.4
+2000.0,350.0,30.29,60.13,1010.78,20.99,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,59.5
+2000.0,350.0,30.28,60.14,1010.78,20.98,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,58.4
+2000.0,350.0,30.28,60.22,1010.75,20.99,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,56.7
+2000.0,350.0,30.28,60.21,1010.78,21.0,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,55.1
+2000.0,350.0,30.28,60.23,1010.78,20.98,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.7
+2000.0,350.0,30.27,60.26,1010.79,20.97,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.8
+2000.0,350.0,30.27,60.25,1010.81,20.98,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.3
+2000.0,350.0,30.26,60.25,1010.79,20.95,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.0
+2000.0,350.0,30.26,60.25,1010.8,20.88,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,51.9
+2000.0,350.0,30.26,60.28,1010.8,20.82,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,51.8
+2000.0,350.0,30.26,60.32,1010.77,20.8,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,51.8
+2000.0,350.0,30.25,60.29,1010.81,20.78,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,51.7
+2000.0,350.0,30.25,60.26,1010.78,20.78,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,51.7
+2000.0,350.0,30.25,60.26,1010.78,20.78,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,51.7
+2000.0,350.0,30.24,60.26,1010.76,20.8,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,51.8
+2000.0,350.0,30.25,60.35,1010.75,20.79,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.0
+2000.0,350.0,30.25,60.35,1010.77,20.78,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.2
+2000.0,350.0,30.25,60.35,1010.79,20.77,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.3
+2000.0,350.0,30.25,60.33,1010.75,20.78,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.5
+2000.0,350.0,30.25,60.33,1010.73,20.76,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.6
+2000.0,350.0,30.25,60.3,1010.75,20.72,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.6
+2000.0,350.0,30.24,60.27,1010.76,20.74,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.7
+2000.0,350.0,30.23,60.26,1010.72,20.76,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.7
+2000.0,350.0,30.22,60.27,1010.73,20.76,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.7
+2000.0,350.0,30.22,60.32,1010.72,20.74,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.8
+2000.0,350.0,30.22,60.35,1010.73,20.74,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.9
+2000.0,350.0,30.21,60.39,1010.77,20.75,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.9
+2000.0,350.0,30.22,60.48,1010.73,20.74,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.9
+2000.0,350.0,30.22,60.51,1010.76,20.71,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.0
+2000.0,350.0,30.22,60.5,1010.75,20.71,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.0
+2000.0,350.0,30.22,60.49,1010.74,20.72,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.0
+2000.0,350.0,30.22,60.49,1010.76,20.73,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.0
+2000.0,350.0,30.22,60.48,1010.74,20.75,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.0
+2000.0,350.0,30.22,60.41,1010.75,20.75,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.1
+2000.0,350.0,30.22,60.38,1010.76,20.75,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.1
+2000.0,350.0,30.21,60.32,1010.74,20.72,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.1
+2000.0,350.0,30.21,60.29,1010.72,20.73,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.2
+2000.0,350.0,30.21,60.29,1010.78,20.74,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.2
+2000.0,350.0,30.2,60.29,1010.73,20.73,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.1
+2000.0,350.0,30.2,60.29,1010.75,20.7,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.1
+2000.0,350.0,30.2,60.25,1010.75,20.69,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.1
+2000.0,350.0,30.2,60.29,1010.74,20.73,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.1
+2000.0,350.0,30.2,60.3,1010.73,20.75,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.1
+2000.0,350.0,30.21,60.29,1010.74,20.82,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.1
+2000.0,350.0,30.2,60.24,1010.72,20.86,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.2
+2000.0,350.0,30.19,60.2,1010.75,20.88,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.3
+2000.0,350.0,30.19,60.18,1010.72,20.82,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.4
+2000.0,350.0,30.19,60.14,1010.71,20.78,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.4
+2000.0,350.0,30.18,60.1,1010.74,20.77,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.3
+2000.0,350.0,30.17,60.06,1010.73,20.76,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.1
+2000.0,350.0,30.17,60.07,1010.72,20.76,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.0
+2000.0,350.0,30.17,60.05,1010.72,20.78,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.8
+2000.0,350.0,30.16,60.03,1010.7,20.79,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.8
+2000.0,350.0,30.16,60.01,1010.72,20.8,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.8
+2000.0,350.0,30.15,59.99,1010.71,20.77,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.8
+2000.0,350.0,30.15,59.98,1010.73,20.73,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.8
+2000.0,400.0,30.15,60.01,1010.75,20.76,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.9
+2000.0,400.0,30.15,59.98,1010.75,20.78,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.9
+2000.0,350.0,30.15,59.96,1010.74,20.8,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.9
+2000.0,350.0,30.15,59.93,1010.76,20.77,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,52.9
+2000.0,350.0,30.14,59.91,1010.73,20.75,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.0
+2000.0,350.0,30.14,59.88,1010.72,20.7,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.0
+633.71,350.0,30.14,59.85,1010.74,20.65,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE,54.0
+0.5,350.0,30.13,59.82,1010.74,20.64,no,55.8
+0.5,350.0,30.13,59.8,1010.75,20.65,no,57.1
+0.5,350.0,30.13,59.78,1010.73,20.64,no,53.2
+2000.0,350.0,30.13,59.79,1010.71,20.64,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,48.5
+2000.0,350.0,30.13,59.93,1010.72,20.61,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,50.0
+2000.0,350.0,30.14,59.96,1010.72,20.64,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.0
+2000.0,350.0,30.14,59.96,1010.72,20.63,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,55.1
+2000.0,350.0,30.15,59.96,1010.7,20.69,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,56.6
+2000.0,350.0,30.16,59.99,1010.73,20.66,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,57.6
+2000.0,350.0,30.17,60.11,1010.74,20.61,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,58.3
+2000.0,350.0,30.18,60.13,1010.72,20.57,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,58.8
+2000.0,350.0,30.18,60.09,1010.74,20.57,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,59.2
+2000.0,350.0,30.19,60.03,1010.72,20.58,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,57.4
+2000.0,350.0,30.2,60.02,1010.73,20.57,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,56.2
+2000.0,350.0,30.21,60.02,1010.75,20.58,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,55.4
+2000.0,350.0,30.21,59.98,1010.71,20.61,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,54.9
+2000.0,350.0,30.21,59.92,1010.78,20.63,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,54.5
+2000.0,350.0,30.21,59.87,1010.76,20.6,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,54.3
+2000.0,350.0,30.21,59.82,1010.77,20.58,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,54.2
+2000.0,350.0,30.21,59.77,1010.77,20.59,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,54.1
+2000.0,350.0,30.21,59.74,1010.79,20.6,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,54.0
+2000.0,350.0,30.21,59.7,1010.81,20.59,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.9
+2000.0,350.0,30.22,59.66,1010.81,20.59,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.9
+2000.0,350.0,30.22,59.64,1010.8,20.6,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.8
+2000.0,350.0,30.22,59.61,1010.78,20.61,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.8
+2000.0,350.0,30.22,59.59,1010.77,20.63,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.8
+2000.0,350.0,30.22,59.58,1010.74,20.64,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.8
+2000.0,350.0,30.22,59.56,1010.74,20.67,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.8
+2000.0,350.0,30.23,59.57,1010.73,20.69,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.9
+2000.0,350.0,30.24,59.64,1010.76,20.7,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.9
+2000.0,350.0,30.24,59.65,1010.75,20.66,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.9
+2000.0,350.0,30.25,59.62,1010.76,20.65,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.8
+2000.0,350.0,30.25,59.58,1010.76,20.66,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.8
+2000.0,350.0,30.26,59.55,1010.76,20.66,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.7
+2000.0,350.0,30.27,59.55,1010.76,20.65,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.6
+2000.0,350.0,30.27,59.57,1010.78,20.62,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.5
+2000.0,350.0,30.28,59.58,1010.74,20.59,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.5
+2000.0,350.0,30.28,59.57,1010.73,20.57,CRITICAL: Fatal CO levels - Life Threatening|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 20.0 minutes until unconsciousness,53.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),56.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),57.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),56.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),57.3
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),57.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.3
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),58.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),52.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),54.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),56.5
+67.03,350.0,29.96,59.63,1010.8,19.05,Warning: Oxygen Fatigue (Low O2)|Severe: Dangerous CO (Nausea/Fatigue)|Warning: Poor Safety Score 30%|URGENT: Estimated 60.0 minutes until unconsciousness,49.6
+64.48,350.0,29.97,59.6,1010.79,19.06,Warning: Oxygen Fatigue (Low O2)|Severe: Dangerous CO (Nausea/Fatigue)|Warning: Poor Safety Score 30%|URGENT: Estimated 60.0 minutes until unconsciousness,40.6
+75.1,350.0,29.97,59.58,1010.82,19.44,Warning: Oxygen Fatigue (Low O2)|Severe: Dangerous CO (Nausea/Fatigue)|Warning: Poor Safety Score 30%|URGENT: Estimated 60.0 minutes until unconsciousness,34.8
+75.59,350.0,29.98,59.57,1010.71,20.04,Severe: Dangerous CO (Nausea/Fatigue)|Warning: Poor Safety Score 50%,30.5
+76.74,350.0,29.99,59.52,1010.75,20.67,Severe: Dangerous CO (Nausea/Fatigue)|Warning: Poor Safety Score 60%,27.7
+76.59,350.0,30.0,59.52,1010.74,20.9,Severe: Dangerous CO (Nausea/Fatigue)|Warning: Poor Safety Score 60%,28.7
+75.27,350.0,30.02,59.47,1010.73,20.94,Severe: Dangerous CO (Nausea/Fatigue),33.7
+74.96,350.0,30.04,59.46,1010.71,20.97,Severe: Dangerous CO (Nausea/Fatigue),40.6
+67.08,350.0,30.06,59.43,1010.73,20.94,Severe: Dangerous CO (Nausea/Fatigue),46.1
+70.53,350.0,30.08,59.4,1010.75,20.9,Severe: Dangerous CO (Nausea/Fatigue),49.9
+70.64,350.0,30.08,59.38,1010.76,20.94,Severe: Dangerous CO (Nausea/Fatigue),52.5
+70.01,350.0,30.09,59.35,1010.76,20.95,Severe: Dangerous CO (Nausea/Fatigue),54.5
+68.7,350.0,30.08,59.32,1010.8,20.99,Severe: Dangerous CO (Nausea/Fatigue),56.1
+68.48,350.0,30.08,59.3,1010.77,20.96,Severe: Dangerous CO (Nausea/Fatigue),57.3
+68.49,350.0,30.07,59.28,1010.81,21.01,Severe: Dangerous CO (Nausea/Fatigue),58.1
+68.27,350.0,30.06,59.27,1010.77,21.03,Severe: Dangerous CO (Nausea/Fatigue),58.7
+68.64,350.0,30.05,59.28,1010.73,21.01,Severe: Dangerous CO (Nausea/Fatigue),59.1
+68.53,350.0,30.05,59.3,1010.75,21.0,Severe: Dangerous CO (Nausea/Fatigue),59.3
+68.65,350.0,30.05,59.31,1010.77,20.98,Severe: Dangerous CO (Nausea/Fatigue),59.5
+68.53,350.0,30.05,59.32,1010.77,20.97,Severe: Dangerous CO (Nausea/Fatigue),59.7
+68.77,350.0,30.05,59.32,1010.76,21.0,Severe: Dangerous CO (Nausea/Fatigue),59.8
+68.77,350.0,30.05,59.32,1010.78,21.02,Severe: Dangerous CO (Nausea/Fatigue),59.8
+68.29,350.0,30.05,59.33,1010.76,21.03,Severe: Dangerous CO (Nausea/Fatigue),59.9
+67.33,350.0,30.05,59.37,1010.76,20.98,Severe: Dangerous CO (Nausea/Fatigue),59.9
+67.8,350.0,30.06,59.37,1010.74,20.94,Severe: Dangerous CO (Nausea/Fatigue),59.9
+67.19,350.0,30.07,59.37,1010.76,20.91,Severe: Dangerous CO (Nausea/Fatigue),60.0
+67.06,350.0,30.07,59.37,1010.75,20.9,Severe: Dangerous CO (Nausea/Fatigue),60.0
+67.17,350.0,30.08,59.36,1010.75,20.9,Severe: Dangerous CO (Nausea/Fatigue),60.0
+67.62,350.0,30.09,59.36,1010.75,20.91,Severe: Dangerous CO (Nausea/Fatigue),60.0
+62.68,350.0,30.1,59.36,1010.78,20.93,Severe: Dangerous CO (Nausea/Fatigue),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0.46,350.0,30.71,60.86,1010.86,18.77,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,47.2
+0.46,350.0,30.71,60.79,1010.81,18.77,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,38.4
+0.46,350.0,30.71,60.71,1010.84,18.81,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,32.3
+0.45,350.0,30.71,60.64,1010.83,18.87,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,28.2
+0.45,350.0,30.71,60.56,1010.83,18.92,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,25.5
+0.45,350.0,30.71,60.48,1010.8,18.94,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,23.5
+0.46,350.0,30.71,60.4,1010.83,18.93,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,22.0
+0.44,350.0,30.72,60.31,1010.84,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,20.7
+0.44,350.0,30.72,60.21,1010.82,19.24,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,19.7
+0.44,350.0,30.72,60.1,1010.83,19.31,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.9
+0.44,350.0,30.72,59.98,1010.82,19.22,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.4
+0.44,350.0,30.72,59.86,1010.82,19.21,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.1
+0.44,350.0,30.73,59.74,1010.82,19.27,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.9
+0.44,350.0,30.73,59.63,1010.81,19.33,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.8
+0.44,350.0,30.73,59.53,1010.83,19.33,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.8
+0.44,350.0,30.73,59.45,1010.8,19.33,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.8
+0.44,350.0,30.74,59.37,1010.83,19.36,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.9
+0.43,350.0,30.74,59.3,1010.8,19.45,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.0
+0.43,350.0,30.74,59.23,1010.78,19.47,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.2
+0.43,350.0,30.74,59.18,1010.81,19.48,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.5
+0.43,350.0,30.75,59.13,1010.82,19.5,no,18.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),25.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),36.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),43.2
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),48.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),50.9
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),52.3
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.3
+0.46,350.0,30.8,57.21,1010.79,18.93,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,47.3
+0.47,350.0,30.8,57.23,1010.74,18.99,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,38.6
+0.47,350.0,30.8,57.29,1010.78,19.01,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,32.6
+0.47,350.0,30.8,57.44,1010.77,19.01,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,28.5
+0.45,350.0,30.8,57.72,1010.75,18.96,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,25.8
+0.45,350.0,30.8,57.99,1010.8,18.97,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,24.0
+0.45,350.0,30.8,58.14,1010.81,18.97,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,22.5
+0.45,350.0,30.8,58.26,1010.85,18.99,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,21.1
+0.45,350.0,30.8,58.31,1010.8,18.94,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,19.9
+0.45,350.0,30.8,58.35,1010.8,19.02,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.9
+0.45,350.0,30.8,58.38,1010.8,19.03,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.2
+0.45,350.0,30.81,58.41,1010.79,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.7
+0.46,350.0,30.81,58.43,1010.81,19.03,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.4
+0.45,350.0,30.81,58.44,1010.77,19.0,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.2
+0.39,350.0,30.81,58.43,1010.77,19.03,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0.41,350.0,30.82,58.46,1010.79,18.39,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.41,350.0,30.82,58.4,1010.77,18.78,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.41,350.0,30.83,58.34,1010.78,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.4
+0.41,350.0,30.83,58.3,1010.79,20.08,no,16.6
+0.41,350.0,30.84,58.26,1010.8,20.11,no,17.2
+0.54,350.0,30.84,58.23,1010.77,20.2,no,18.5
+0.53,350.0,30.84,58.17,1010.79,20.21,no,20.4
+0.51,350.0,30.85,58.08,1010.8,20.19,no,23.4
+0.52,350.0,30.85,57.99,1010.79,20.11,no,27.6
+0.52,350.0,30.85,57.91,1010.77,20.12,no,33.1
+0.51,350.0,30.86,57.85,1010.78,20.12,no,39.3
+0.51,350.0,30.86,57.8,1010.77,20.12,no,44.8
+0.51,350.0,30.86,57.74,1010.81,20.13,no,49.0
+0.52,350.0,30.86,57.68,1010.82,20.15,no,52.0
+0.52,350.0,30.87,57.61,1010.81,20.16,no,54.2
+0.52,350.0,30.87,57.6,1010.8,20.14,no,55.6
+0.52,350.0,30.87,57.57,1010.81,20.13,no,56.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0.46,350.0,31.03,56.37,1010.82,19.0,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,47.2
+0.46,350.0,31.03,56.37,1010.8,19.02,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,38.5
+0.46,350.0,31.03,56.39,1010.87,19.04,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,32.5
+0.46,350.0,31.03,56.37,1010.83,19.05,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,28.5
+0.46,350.0,31.03,56.36,1010.86,19.01,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,25.9
+0.46,350.0,31.04,56.51,1010.82,18.96,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,24.1
+0.46,350.0,31.04,56.62,1010.85,18.96,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,22.6
+0.45,350.0,31.04,56.69,1010.85,18.99,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,21.2
+0.44,350.0,31.05,56.67,1010.85,19.01,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,19.9
+0.44,350.0,31.05,56.62,1010.81,19.01,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.9
+0.45,350.0,31.05,56.57,1010.83,19.02,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.2
+0.44,350.0,31.05,56.5,1010.79,19.0,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.8
+0.44,350.0,31.04,56.44,1010.81,18.99,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.4
+0.44,350.0,31.04,56.38,1010.8,18.97,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.2
+0.44,350.0,31.04,56.34,1010.81,19.01,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0.42,350.0,31.04,56.3,1010.81,19.03,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.41,350.0,31.04,56.29,1010.82,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.42,350.0,31.04,56.27,1010.8,19.05,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.42,350.0,31.04,56.22,1010.79,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.41,350.0,31.04,56.22,1010.79,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.41,350.0,31.04,56.22,1010.82,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.41,350.0,31.04,56.23,1010.83,19.05,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.41,350.0,31.05,56.25,1010.82,19.02,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.41,350.0,31.05,56.26,1010.8,19.03,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.42,350.0,31.05,56.25,1010.85,19.06,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.42,350.0,31.05,56.2,1010.85,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.41,350.0,31.05,56.16,1010.84,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.41,350.0,31.05,56.14,1010.8,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.41,350.0,31.05,56.13,1010.84,19.14,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),22.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0.46,350.0,31.36,59.23,1010.91,18.81,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,47.1
+0.46,350.0,31.36,59.27,1010.87,18.76,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,38.4
+0.46,350.0,31.36,59.26,1010.89,18.74,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,32.3
+0.48,350.0,31.35,59.25,1010.9,18.71,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,28.1
+0.48,350.0,31.35,59.24,1010.89,18.74,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,25.2
+0.5,350.0,31.35,59.25,1010.9,18.76,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,23.2
+0.5,350.0,31.35,59.31,1010.87,18.78,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,21.5
+0.51,350.0,31.35,59.28,1010.87,18.79,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,20.2
+0.5,350.0,31.35,59.21,1010.85,18.81,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,19.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),23.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),34.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),42.2
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),47.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),50.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),52.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),52.9
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.3
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.2
+0.45,350.0,31.32,55.95,1010.9,18.89,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,47.2
+0.45,350.0,31.32,55.96,1010.9,18.91,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,38.5
+0.45,350.0,31.32,55.91,1010.89,18.95,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,32.4
+0.45,350.0,31.32,55.83,1010.93,19.02,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,28.3
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),30.3
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),38.2
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),44.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),48.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),51.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),52.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.5
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.3
+0.47,350.0,31.34,56.54,1011.01,19.03,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,47.3
+0.47,350.0,31.34,56.5,1011.0,19.01,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,38.6
+0.47,350.0,31.34,56.52,1010.98,18.98,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,32.5
+0.47,350.0,31.34,56.49,1010.99,18.93,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,28.5
+0.48,350.0,31.34,56.45,1011.0,18.9,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,25.7
+0.47,350.0,31.34,56.47,1011.01,18.93,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,23.8
+0.48,350.0,31.34,56.73,1010.99,18.93,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,22.2
+0.47,350.0,31.34,56.92,1010.98,18.9,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,20.8
+0.47,350.0,31.34,56.93,1011.01,18.86,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,19.6
+0.47,350.0,31.33,56.81,1011.02,18.91,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.6
+0.47,350.0,31.33,56.65,1011.01,19.0,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.9
+0.47,350.0,31.32,56.48,1011.01,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.5
+0.46,350.0,31.32,56.32,1011.01,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.2
+0.45,350.0,31.31,56.15,1011.0,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0.45,350.0,31.31,56.0,1011.0,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.45,350.0,31.31,55.85,1011.0,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.46,350.0,31.3,55.71,1011.03,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.46,350.0,31.3,55.6,1011.01,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.45,350.0,31.3,55.49,1011.03,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.46,350.0,31.29,55.39,1011.01,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.46,350.0,31.29,55.31,1011.02,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.45,350.0,31.28,55.36,1011.01,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.46,350.0,31.28,55.34,1011.01,19.05,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.46,350.0,31.27,55.34,1010.98,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.47,350.0,31.27,55.38,1010.98,19.01,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.46,350.0,31.26,55.37,1010.99,19.05,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.47,350.0,31.25,55.34,1010.98,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.46,350.0,31.25,55.3,1010.97,19.03,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.47,350.0,31.25,55.25,1010.98,19.02,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.47,350.0,31.24,55.21,1010.97,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.47,350.0,31.24,55.16,1010.95,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.47,350.0,31.24,55.13,1010.95,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.47,350.0,31.24,55.11,1011.0,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.47,350.0,31.24,55.12,1010.97,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.47,350.0,31.24,55.14,1011.0,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.47,350.0,31.25,55.15,1010.97,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.25,55.12,1010.97,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.48,350.0,31.26,55.1,1010.98,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.26,55.09,1010.99,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.26,55.15,1011.0,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.27,55.15,1010.96,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.27,55.13,1010.98,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.27,55.13,1010.97,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.27,55.08,1011.0,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.28,55.04,1010.98,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.28,55.01,1010.96,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.28,55.0,1010.98,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.29,55.03,1010.99,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.29,55.04,1010.94,19.06,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.29,55.23,1010.98,19.0,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,31.29,55.41,1010.98,18.94,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.47,350.0,31.29,55.41,1010.96,18.87,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),56.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),56.1
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),56.1
+0.39,350.0,31.34,54.52,1011.02,19.02,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,51.5
+0.39,350.0,31.34,54.52,1011.03,19.13,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,42.4
+0.4,350.0,31.34,54.5,1011.02,19.1,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,36.0
+0.39,350.0,31.34,54.45,1011.01,19.13,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,32.3
+0.4,350.0,31.34,54.38,1011.0,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,29.1
+0.4,350.0,31.33,54.29,1011.0,19.18,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,26.6
+0.39,350.0,31.33,54.21,1011.0,19.2,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,24.6
+0.4,350.0,31.33,54.14,1011.01,19.22,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,22.9
+0.39,350.0,31.33,54.07,1011.01,19.25,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,21.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),27.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),37.2
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),44.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),48.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),50.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),52.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),54.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.6
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.9
+0.43,350.0,31.32,54.25,1010.99,19.18,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,51.4
+0.43,350.0,31.31,54.23,1011.01,19.17,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,42.5
+0.43,350.0,31.3,54.23,1010.99,19.15,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,36.1
+0.42,350.0,31.28,54.24,1010.95,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,32.5
+0.43,350.0,31.26,54.26,1010.89,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,29.3
+0.43,350.0,31.24,54.26,1010.95,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,26.7
+0.43,350.0,31.22,54.25,1010.89,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,24.6
+0.43,350.0,31.2,54.22,1010.94,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,22.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0.48,350.0,30.74,54.38,1011.01,19.14,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,60.0
+0.48,350.0,30.74,54.4,1011.03,19.14,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,60.0
+0.48,350.0,30.74,54.42,1011.03,19.14,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,15.1
+0.49,350.0,30.73,54.45,1011.09,19.13,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,15.1
+0.48,350.0,30.72,54.5,1011.03,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,15.8
+0.48,350.0,30.7,54.57,1011.03,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.48,350.0,30.69,54.61,1011.04,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.48,350.0,30.68,54.65,1011.04,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0.48,350.0,30.68,54.67,1011.05,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.0
+0.47,350.0,30.67,54.69,1011.05,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.9
+0.47,350.0,30.67,54.69,1011.05,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.48,350.0,30.66,54.69,1011.06,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.49,350.0,30.66,54.7,1011.08,19.14,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.47,350.0,30.66,54.69,1011.1,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.48,350.0,30.66,54.69,1011.07,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.48,350.0,30.66,54.69,1011.07,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.47,350.0,30.66,54.68,1011.05,19.16,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.47,350.0,30.66,54.68,1011.07,19.18,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.48,350.0,30.66,54.67,1011.06,19.16,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.46,350.0,30.66,54.67,1011.08,19.16,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.44,350.0,30.66,54.78,1011.09,19.16,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.43,350.0,30.66,54.8,1011.07,19.17,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.43,350.0,30.66,54.78,1011.07,19.15,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.8
+0.44,350.0,30.66,54.77,1011.08,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.46,350.0,30.66,54.74,1011.08,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.44,350.0,30.66,54.71,1011.06,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.44,350.0,30.65,54.69,1011.05,19.14,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.45,350.0,30.65,54.67,1011.11,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.46,350.0,30.65,54.67,1011.09,19.15,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.46,350.0,30.64,54.66,1011.07,19.15,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.46,350.0,30.64,54.67,1011.09,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.46,350.0,30.64,54.66,1011.04,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.46,350.0,30.64,54.65,1011.04,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.47,350.0,30.64,54.65,1011.06,19.15,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.48,350.0,30.63,54.64,1011.05,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.5,350.0,30.63,54.63,1011.05,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.51,350.0,30.63,54.63,1011.04,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.52,350.0,30.63,54.62,1011.05,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.51,350.0,30.63,54.62,1011.04,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.52,350.0,30.63,54.66,1011.05,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.51,350.0,30.63,54.98,1011.07,19.14,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.5,350.0,30.64,55.17,1011.06,19.15,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.49,350.0,30.64,55.17,1011.06,19.16,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.51,350.0,30.64,55.13,1011.06,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.5,350.0,30.65,55.11,1011.05,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.5,350.0,30.65,55.08,1011.05,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.5,350.0,30.65,55.05,1011.06,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.5,350.0,30.65,55.02,1011.03,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.5,350.0,30.65,54.99,1011.02,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.49,350.0,30.65,54.97,1011.05,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.48,350.0,30.65,54.93,1011.09,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.48,350.0,30.65,54.88,1011.11,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.47,350.0,30.65,54.85,1011.1,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.47,350.0,30.65,54.83,1011.11,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.48,350.0,30.65,54.79,1011.07,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.48,350.0,30.64,54.77,1011.08,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.49,350.0,30.64,54.73,1011.03,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.48,350.0,30.64,54.71,1011.06,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.47,350.0,30.63,54.7,1011.04,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.48,350.0,30.64,54.69,1011.04,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.48,350.0,30.64,54.69,1011.06,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.48,350.0,30.64,54.67,1011.03,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.48,350.0,30.63,54.66,1011.01,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.47,350.0,30.63,54.65,1011.03,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.47,350.0,30.63,54.63,1011.05,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.48,350.0,30.63,54.61,1011.04,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.48,350.0,30.63,54.6,1011.05,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.47,350.0,30.63,54.58,1011.04,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.48,350.0,30.63,54.55,1011.02,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.49,350.0,30.63,54.53,1011.03,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.49,350.0,30.62,54.51,1011.05,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.49,350.0,30.62,54.52,1011.02,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.49,350.0,30.62,54.52,1011.03,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.49,350.0,30.62,54.52,1011.03,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.48,350.0,30.62,54.52,1011.02,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.49,350.0,30.62,54.51,1011.03,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.49,350.0,30.62,54.54,1011.06,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.49,350.0,30.62,54.54,1011.05,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.49,350.0,30.62,54.52,1011.05,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.5,350.0,30.62,54.5,1011.01,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.54,350.0,30.62,54.55,1011.05,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.5
+0.58,350.0,30.62,54.61,1011.05,19.33,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.6
+0.54,350.0,30.62,54.74,1011.04,19.93,no,17.0
+0.54,350.0,30.63,54.95,1011.02,20.53,no,18.3
+0.52,350.0,30.64,55.41,1011.01,20.82,no,21.4
+0.52,350.0,30.65,55.76,1011.03,20.83,no,27.2
+0.53,350.0,30.66,55.91,1011.04,20.85,no,35.1
+0.52,350.0,30.67,56.16,1011.04,20.85,no,42.3
+0.52,350.0,30.69,56.84,1011.04,20.72,no,47.6
+0.51,350.0,30.7,56.99,1011.02,20.54,no,51.4
+0.51,350.0,30.71,57.09,1011.03,20.5,no,53.9
+0.5,350.0,30.71,56.98,1011.03,20.62,no,55.8
+0.5,350.0,30.71,56.87,1011.02,20.73,no,57.0
+0.5,350.0,30.72,56.67,1011.01,20.79,no,57.9
+0.51,350.0,30.72,56.5,1011.04,20.81,no,58.5
+0.51,350.0,30.73,56.37,1011.01,20.8,no,59.0
+0.51,350.0,30.73,56.27,1011.01,20.79,no,59.3
+0.5,350.0,30.74,56.18,1011.01,20.78,no,59.5
+0.5,350.0,30.74,56.02,1011.04,20.78,no,59.7
+0.5,350.0,30.75,55.88,1011.02,20.79,no,59.8
+0.48,350.0,30.76,55.77,1011.02,20.82,no,59.8
+0.47,350.0,30.76,55.66,1011.05,20.83,no,59.9
+0.47,350.0,30.77,55.65,1011.04,20.78,no,59.9
+0.48,350.0,30.78,55.71,1011.04,20.76,no,59.9
+0.47,350.0,30.78,55.52,1011.02,20.78,no,60.0
+0.47,350.0,30.78,55.33,1011.04,20.83,no,60.0
+0.47,350.0,30.79,55.16,1011.03,20.84,no,60.0
+0.48,350.0,30.79,55.0,1011.03,20.83,no,60.0
+0.48,350.0,30.8,54.84,1011.0,20.83,no,60.0
+0.48,350.0,30.8,54.7,1011.02,20.84,no,60.0
+0.47,350.0,30.8,54.58,1011.03,20.84,no,60.0
+0.48,350.0,30.81,54.5,1011.02,20.82,no,60.0
+0.47,350.0,30.81,54.42,1011.02,20.82,no,60.0
+0.47,350.0,30.81,54.33,1011.02,20.84,no,60.0
+0.49,350.0,30.81,54.37,1011.01,20.85,no,60.0
+0.47,350.0,30.82,54.43,1011.01,20.83,no,60.0
+0.47,350.0,30.82,54.52,1011.02,20.77,no,60.0
+0.47,350.0,30.83,54.61,1011.01,20.77,no,60.0
+0.47,350.0,30.84,54.83,1011.04,20.76,no,60.0
+0.47,350.0,30.84,54.94,1011.03,20.78,no,60.0
+0.48,350.0,30.85,54.87,1011.02,20.77,no,60.0
+0.47,350.0,30.85,54.82,1010.98,20.8,no,60.0
+0.47,350.0,30.86,54.78,1010.96,20.81,no,60.0
+0.48,350.0,30.86,54.82,1010.98,20.83,no,60.0
+0.47,350.0,30.87,55.02,1010.94,20.84,no,60.0
+0.48,350.0,30.88,55.12,1010.97,20.79,no,60.0
+0.48,350.0,30.88,55.16,1010.97,20.69,no,60.0
+0.47,350.0,30.89,55.23,1010.98,20.65,no,60.0
+0.47,350.0,30.89,55.28,1010.96,20.64,no,60.0
+0.47,350.0,30.9,55.31,1010.95,20.66,no,60.0
+0.47,350.0,30.91,55.32,1010.95,20.69,no,60.0
+0.47,350.0,30.91,55.32,1010.95,20.75,no,60.0
+0.48,350.0,30.92,55.27,1010.97,20.84,no,60.0
+0.47,350.0,30.93,55.17,1010.97,20.87,no,60.0
+0.47,350.0,30.93,55.08,1010.96,20.87,no,60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),56.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),56.4
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),56.4
+0.48,350.0,31.1,55.32,1011.04,18.93,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,45.5
+0.48,350.0,31.1,55.4,1011.03,18.95,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,37.1
+0.48,350.0,31.1,55.43,1011.01,18.91,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,31.5
+0.48,350.0,31.1,55.39,1011.02,18.92,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,28.5
+0.49,350.0,31.11,55.52,1011.0,18.87,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,25.6
+0.48,350.0,31.11,55.64,1011.01,18.83,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,22.9
+0.49,350.0,31.11,55.63,1011.01,18.78,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,21.0
+0.48,350.0,31.11,55.47,1011.03,18.8,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,19.5
+0.47,350.0,31.11,55.38,1011.03,18.89,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.1
+0.46,350.0,31.11,55.32,1011.05,18.97,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,16.7
+0.48,350.0,31.1,55.28,1011.03,19.0,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,15.8
+0.47,350.0,31.1,55.25,1011.06,19.01,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,15.2
+0.48,350.0,31.1,55.27,1011.03,19.03,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.8
+0.47,350.0,31.1,55.22,1011.05,19.03,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.6
+0.47,350.0,31.1,55.15,1011.04,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.4
+0.48,350.0,31.1,55.05,1011.03,19.0,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.3
+0.47,350.0,31.1,54.99,1011.02,18.98,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.47,350.0,31.11,54.95,1011.04,18.97,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.48,350.0,31.11,54.91,1011.05,18.99,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.48,350.0,31.11,54.87,1011.02,19.01,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.48,350.0,31.12,54.8,1011.02,19.03,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.46,350.0,31.12,54.68,1011.0,19.02,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.47,350.0,31.13,54.66,1011.01,18.99,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.47,350.0,31.13,54.6,1011.02,18.98,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.1
+0.47,350.0,31.13,54.5,1011.02,18.99,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.1
+0.47,350.0,31.13,54.46,1011.01,19.06,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.1
+0.47,350.0,31.13,54.47,1011.03,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.46,350.0,31.13,54.6,1011.02,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.46,350.0,31.14,54.69,1011.05,19.06,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.3
+0.46,350.0,31.14,54.76,1011.04,18.99,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.3
+0.46,350.0,31.14,54.73,1011.04,18.93,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.3
+0.46,350.0,31.14,54.81,1011.03,18.92,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.3
+0.45,350.0,31.14,54.72,1011.04,18.96,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.46,350.0,31.14,54.68,1011.05,18.98,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.46,350.0,31.14,54.69,1011.01,18.99,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.1
+0.46,350.0,31.14,54.6,1011.0,18.99,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.1
+0.46,350.0,31.14,54.55,1011.02,19.01,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.1
+0.46,350.0,31.14,54.46,1011.0,19.06,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.1
+0.46,350.0,31.14,54.33,1011.01,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.1
+0.46,350.0,31.13,54.23,1011.02,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.47,350.0,31.13,54.15,1010.99,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.2
+0.69,350.0,31.12,54.16,1011.01,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.3
+0.72,350.0,31.13,54.23,1011.02,19.32,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,14.4
+0.72,350.0,31.13,54.22,1011.05,19.93,no,14.7
+0.6,350.0,31.13,54.17,1011.04,20.51,no,15.5
+0.61,350.0,31.13,54.07,1011.04,20.77,no,17.6
+0.6,350.0,31.13,53.97,1011.06,20.77,no,21.5
+0.57,350.0,31.13,53.89,1011.03,20.78,no,27.5
+0.57,350.0,31.13,53.87,1011.02,20.78,no,34.3
+0.58,350.0,31.14,53.86,1011.04,20.77,no,40.5
+0.57,350.0,31.14,53.78,1011.03,20.78,no,45.7
+0.57,350.0,31.14,53.74,1011.05,20.79,no,49.6
+0.57,350.0,31.13,53.74,1011.06,20.78,no,52.6
+0.57,350.0,31.13,53.77,1011.05,20.76,no,54.7
+0.57,350.0,31.13,53.84,1011.02,20.74,no,56.3
+0.58,350.0,31.13,53.89,1011.03,20.71,no,57.3
+0.57,350.0,31.13,53.92,1011.04,20.68,no,58.0
+0.58,350.0,31.13,53.92,1011.02,20.7,no,58.5
+0.58,350.0,31.13,53.9,1011.02,20.73,no,58.9
+0.58,350.0,31.13,53.86,1011.01,20.78,no,59.2
+0.57,350.0,31.13,53.86,1011.05,20.76,no,59.4
+0.57,350.0,31.13,53.86,1011.02,20.75,no,59.5
+0.56,350.0,31.12,53.85,1011.01,20.71,no,59.6
+0.57,350.0,31.12,53.84,1011.03,20.74,no,59.7
+0.57,350.0,31.12,53.83,1011.03,20.75,no,59.7
+0.57,350.0,31.12,53.83,1011.02,20.76,no,59.7
+0.58,350.0,31.11,53.82,1011.01,20.76,no,59.7
+0.56,350.0,31.11,53.86,1011.03,20.77,no,59.8
+0.57,350.0,31.11,53.9,1011.03,20.77,no,59.8
+0.72,350.0,31.11,53.96,1011.01,20.74,no,59.8
+0.49,350.0,31.12,54.05,1010.98,20.73,no,59.8
+0.5,350.0,31.12,54.14,1010.97,20.74,no,59.8
+0.55,350.0,31.13,54.22,1010.95,20.74,no,59.8
+0.57,350.0,31.13,54.29,1011.01,20.74,no,59.8
+0.57,350.0,31.14,54.37,1011.0,20.73,no,59.8
+0.57,350.0,31.14,54.44,1010.98,20.73,no,59.8
+0.57,350.0,31.15,54.51,1010.99,20.73,no,59.8
+0.56,350.0,31.16,54.57,1011.03,20.73,no,59.8
+0.57,350.0,31.17,54.63,1011.01,20.74,no,59.8
+0.57,350.0,31.17,54.68,1011.01,20.73,no,59.8
+0.57,350.0,31.18,54.74,1011.01,20.73,no,59.8
+0.57,350.0,31.18,54.79,1010.98,20.72,no,59.8
+0.57,350.0,31.19,54.84,1011.01,20.73,no,59.8
+0.58,350.0,31.2,54.89,1011.01,20.73,no,59.8
+0.56,350.0,31.2,54.93,1011.01,20.73,no,59.8
+0.57,350.0,31.21,54.97,1011.01,20.73,no,59.8
+0.61,350.0,31.21,55.01,1011.01,20.73,no,59.8
+0.56,350.0,31.22,55.05,1011.0,20.73,no,59.8
+0.59,350.0,31.23,55.09,1011.03,20.73,no,59.8
+0.64,350.0,31.23,55.13,1011.02,20.73,no,59.8
+0.62,350.0,31.24,55.16,1011.02,20.74,no,59.8
+0.61,350.0,31.24,55.19,1010.98,20.74,no,59.8
+0.6,350.0,31.25,55.23,1011.04,20.74,no,59.8
+0.62,350.0,31.25,55.26,1011.02,20.74,no,59.8
+0.62,350.0,31.26,55.29,1010.99,20.74,no,59.8
+0.61,350.0,31.27,55.32,1011.01,20.74,no,59.8
+0.62,350.0,31.27,55.36,1011.02,20.74,no,59.8
+0.63,350.0,31.28,55.4,1010.98,20.74,no,59.8
+0.63,350.0,31.28,55.43,1011.0,20.73,no,59.8
+0.63,350.0,31.29,55.46,1011.02,20.74,no,59.8
+0.62,350.0,31.3,55.5,1011.0,20.73,no,59.8
+0.64,350.0,31.3,55.53,1010.98,20.73,no,59.8
+0.6,350.0,31.31,55.56,1011.01,20.73,no,59.8
+0.59,350.0,31.31,55.59,1010.99,20.73,no,59.8
+0.58,350.0,31.32,55.62,1010.97,20.73,no,59.8
+0.59,350.0,31.33,55.65,1010.97,20.73,no,59.8
+0.59,350.0,31.33,55.68,1010.97,20.74,no,59.9
+0.59,350.0,31.33,55.7,1010.98,20.74,no,59.9
+0.6,350.0,31.34,55.73,1010.99,20.74,no,59.9
+0.58,350.0,31.35,55.76,1011.01,20.74,no,59.9
+0.6,350.0,31.35,55.78,1011.0,20.74,no,59.9
+0.59,350.0,31.36,55.81,1011.01,20.74,no,59.9
+0.59,350.0,31.36,55.84,1011.01,20.74,no,59.9
+0.59,350.0,31.37,55.86,1010.99,20.74,no,59.9
+0.66,350.0,31.37,55.89,1010.98,20.74,no,59.9
+0.52,350.0,31.38,55.83,1010.99,20.73,no,59.9
+0.53,350.0,31.38,55.64,1010.99,20.74,no,59.9
+0.53,350.0,31.38,55.41,1011.0,20.76,no,59.9
+0.55,350.0,31.37,55.18,1010.97,20.76,no,59.9
+0.54,350.0,31.36,54.98,1010.98,20.76,no,59.9
+0.53,350.0,31.36,54.78,1010.98,20.77,no,59.9
+0.55,350.0,31.35,54.6,1010.95,20.78,no,59.9
+0.54,350.0,31.35,54.46,1010.95,20.79,no,59.9
+0.55,350.0,31.34,54.32,1010.96,20.8,no,59.9
+0.55,350.0,31.34,54.17,1010.94,20.8,no,59.9
+0.55,350.0,31.33,54.02,1010.94,20.8,no,60.0
+0.54,350.0,31.32,53.91,1010.95,20.79,no,60.0
+0.54,350.0,31.31,53.85,1010.98,20.79,no,60.0
+0.54,350.0,31.3,53.8,1010.97,20.79,no,59.9
+0.54,350.0,31.3,53.75,1010.97,20.8,no,59.9
+0.53,350.0,31.29,53.7,1010.96,20.79,no,59.9
+0.54,350.0,31.28,53.65,1010.98,20.8,no,59.9
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),54.2
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),54.2
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),54.2
+0.5,1.01,31.35,55.37,1010.96,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,45.2
+0.56,1.02,31.35,55.37,1010.97,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,36.1
+0.48,0.96,31.35,55.32,1010.94,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,29.7
+0.51,1.1,31.35,55.25,1010.91,19.43,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,25.7
+0.48,0.81,31.35,55.33,1010.95,20.09,no,23.8
+0.43,0.97,31.35,55.32,1010.93,20.7,no,25.0
+0.45,1.06,31.35,55.31,1010.93,20.89,no,31.2
+0.45,1.1,31.35,55.32,1010.95,20.86,no,38.7
+0.45,1.1,31.35,55.3,1010.92,20.84,no,44.4
+0.6,1.09,31.35,55.24,1010.92,20.82,no,48.8
+0.53,1.12,31.36,55.18,1010.93,20.82,no,51.7
+0.54,1.13,31.35,55.11,1010.92,20.81,no,53.8
+0.55,1.17,31.35,55.0,1010.92,20.8,no,55.3
+0.54,1.17,31.35,54.91,1010.94,20.8,no,56.4
+0.53,1.14,31.35,54.95,1010.9,20.82,no,57.4
+0.54,1.16,31.35,54.89,1010.92,20.81,no,58.1
+0.54,1.16,31.34,54.89,1010.91,20.79,no,58.5
+0.54,1.16,31.34,54.82,1010.91,20.81,no,58.8
+0.53,1.12,31.34,54.75,1010.93,20.84,no,59.1
+0.54,1.12,31.33,54.64,1010.9,20.85,no,59.2
+0.54,1.12,31.33,54.51,1010.94,20.86,no,59.4
+0.53,1.12,31.33,54.42,1010.93,20.85,no,59.5
+0.54,1.12,31.33,54.33,1010.92,20.85,no,59.5
+0.54,1.12,31.33,54.28,1010.9,20.84,no,59.5
+0.55,1.13,31.33,54.24,1010.93,20.85,no,59.6
+0.54,1.12,31.33,54.22,1010.91,20.86,no,59.6
+0.55,1.13,31.33,54.21,1010.92,20.86,no,59.6
+0.54,1.12,31.33,54.1,1010.91,20.87,no,59.6
+0.54,1.12,31.32,53.99,1010.9,20.87,no,59.6
+0.55,1.13,31.32,53.88,1010.88,20.92,no,59.7
+0.55,1.13,31.31,53.8,1010.89,20.9,no,59.7
+0.55,1.16,31.31,53.7,1010.91,20.91,no,59.7
+0.56,1.17,31.3,53.63,1010.9,20.87,no,59.7
+0.55,0.98,31.29,53.62,1010.87,20.87,no,59.7
+0.54,0.97,31.28,53.58,1010.86,20.86,no,59.7
+0.55,1.01,31.27,53.54,1010.88,20.87,no,59.7
+0.56,1.03,31.25,53.48,1010.87,20.88,no,59.7
+0.55,1.04,31.24,53.49,1010.87,20.88,no,59.7
+0.55,1.03,31.24,53.52,1010.86,20.87,no,59.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.9
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.9
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),53.9
+0.49,0.93,31.23,54.24,1010.89,18.99,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,45.4
+0.49,0.87,31.23,54.13,1010.89,19.02,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,39.2
+0.49,0.87,31.23,53.99,1010.88,19.05,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,34.6
+0.48,0.87,31.23,53.86,1010.89,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,31.9
+0.49,0.87,31.23,53.76,1010.86,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,29.8
+0.49,0.87,31.23,53.68,1010.85,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,27.8
+0.47,0.87,31.22,53.59,1010.88,19.12,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,25.9
+0.49,0.87,31.22,53.52,1010.84,19.14,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,23.9
+0.47,0.87,31.21,53.45,1010.82,19.14,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,22.1
+0.49,0.87,31.2,53.39,1010.85,19.13,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,20.8
+0.49,0.93,31.2,53.34,1010.87,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,19.8
+0.48,0.87,31.2,53.3,1010.85,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,19.1
+0.48,0.88,31.19,53.25,1010.83,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.6
+0.49,0.88,31.19,53.22,1010.85,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.3
+0.49,0.94,31.18,53.18,1010.83,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,18.0
+0.49,0.93,31.18,53.14,1010.84,19.06,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.9
+0.49,0.95,31.18,53.11,1010.84,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.7
+0.5,0.97,31.18,53.08,1010.83,19.04,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.51,0.98,31.17,53.06,1010.82,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.49,0.97,31.16,53.05,1010.84,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.5,0.97,31.16,53.05,1010.85,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.5,0.98,31.15,53.05,1010.83,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.5,1.0,31.15,53.06,1010.88,19.09,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.51,1.01,31.15,53.06,1010.83,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.51,1.0,31.14,53.06,1010.81,19.07,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.5,0.98,31.14,53.05,1010.83,19.1,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.51,1.01,31.14,53.05,1010.83,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.64,0.84,31.14,53.07,1010.83,19.11,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.66,1.17,31.14,53.17,1010.82,19.05,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.64,1.29,31.15,53.2,1010.83,19.28,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,17.6
+0.66,0.99,31.15,53.21,1010.81,19.9,no,18.0
+0.73,1.11,31.15,53.19,1010.78,20.57,no,19.4
+0.74,1.14,31.14,53.18,1010.79,20.84,no,23.0
+0.7,1.2,31.14,53.16,1010.79,20.81,no,29.8
+0.71,1.14,31.14,53.14,1010.81,20.79,no,36.7
+0.71,1.13,31.14,53.14,1010.79,20.79,no,42.2
+0.71,1.14,31.14,53.13,1010.81,20.82,no,46.2
+0.71,1.15,31.14,53.12,1010.79,20.83,no,49.0
+0.71,1.16,31.13,53.11,1010.79,20.86,no,51.2
+0.7,1.14,31.13,53.1,1010.76,20.89,no,52.9
+0.7,1.14,31.12,53.1,1010.77,20.91,no,54.3
+0.61,1.11,31.12,53.17,1010.75,20.91,no,55.3
+0.61,1.06,31.12,53.29,1010.76,20.89,no,56.0
+0.71,1.19,31.12,53.38,1010.79,20.89,no,56.5
+0.73,1.23,31.12,53.45,1010.78,20.9,no,56.8
+0.76,1.41,31.12,53.51,1010.83,20.88,no,57.1
+1.1,2.08,31.12,53.58,1010.83,20.82,no,57.3
+1.35,2.76,31.13,53.66,1010.81,20.74,no,57.4
+1.41,3.15,31.14,53.74,1010.84,20.69,no,57.4
+1.49,3.54,31.15,53.84,1010.85,20.69,no,57.4
+2.07,6.01,31.16,54.01,1010.83,20.64,no,57.4
+3.14,10.97,31.18,54.21,1010.84,20.51,no,57.3
+3.76,14.89,31.19,54.43,1010.82,20.38,no,57.1
+4.42,20.5,31.21,54.67,1010.86,20.28,no,56.9
+5.19,26.95,31.22,54.93,1010.83,20.21,no,56.6
+5.99,34.27,31.24,55.19,1010.83,20.12,Notice: CO rising significantly above ambient,56.1
+6.67,44.96,31.26,55.48,1010.82,20.07,Notice: CO rising significantly above ambient,55.6
+7.23,53.54,31.27,55.78,1010.83,20.03,Notice: CO rising significantly above ambient,54.9
+8.42,77.56,31.29,56.08,1010.83,19.98,Notice: CO rising significantly above ambient,54.2
+8.05,99.06,31.31,56.38,1010.78,19.92,no,53.3
+7.97,112.34,31.32,56.64,1010.82,19.87,no,52.1
+7.37,133.57,31.34,56.9,1010.81,19.88,no,50.6
+7.51,185.47,31.36,57.18,1010.8,19.91,no,48.9
+7.72,248.44,31.38,57.46,1010.82,19.89,Notice: CO2 levels increasing rapidly,47.2
+9.16,528.38,31.4,57.8,1010.82,19.86,Warning: Elevated CO levels|Notice: CO2 levels increasing rapidly,45.3
+9.22,730.09,31.42,58.12,1010.83,19.76,Warning: Elevated CO levels|Notice: CO2 levels increasing rapidly,43.0
+8.72,1052.71,31.44,58.45,1010.82,19.69,Warning: Poor Air Quality (Fatigue),39.9
+8.22,1792.78,31.46,58.77,1010.81,19.59,Warning: Poor Air Quality (Fatigue),35.5
+7.65,3120.71,31.48,59.08,1010.81,19.53,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 50%,30.3
+7.4,5856.23,31.51,59.38,1010.78,19.48,Warning: Oxygen Fatigue (Low O2)|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 60.0 minutes until unconsciousness,25.8
+6.79,11166.19,31.53,59.67,1010.81,19.46,Warning: Oxygen Fatigue (Low O2)|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,22.6
+6.8,29804.84,31.55,59.94,1010.8,19.41,Warning: Oxygen Fatigue (Low O2)|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,20.2
+4.98,943.54,31.57,60.07,1010.81,19.45,Warning: Oxygen Fatigue (Low O2)|Notice: Acceptable CO2 (Mild Drowsiness)|URGENT: Estimated 60.0 minutes until unconsciousness,19.2
+2.69,180.33,31.57,59.68,1010.79,19.71,no,19.1
+2.19,89.26,31.57,59.55,1010.85,20.06,no,19.7
+2.35,66.61,31.57,59.35,1010.82,20.38,no,20.9
+2.0,50.41,31.57,59.06,1010.8,20.51,no,23.6
+1.88,32.48,31.57,59.17,1010.82,20.55,no,28.6
+1.83,30.03,31.57,58.88,1010.81,20.58,no,34.6
+1.83,29.93,31.57,58.44,1010.77,20.61,no,39.8
+1.76,26.78,31.56,57.99,1010.8,20.72,no,44.2
+1.6,21.14,31.56,57.58,1010.79,20.76,no,47.5
+1.62,19.1,31.55,57.23,1010.82,20.77,no,50.1
+1.54,17.53,31.55,56.91,1010.81,20.77,no,52.0
+1.47,15.4,31.54,56.59,1010.81,20.77,no,53.5
+1.39,14.41,31.54,56.33,1010.81,20.77,no,54.6
+1.37,13.21,31.54,56.14,1010.83,20.73,no,55.3
+1.37,12.14,31.55,55.97,1010.79,20.76,no,55.9
+1.34,11.3,31.55,55.8,1010.79,20.79,no,56.3
+1.25,10.43,31.54,55.74,1010.81,20.84,no,56.6
+1.24,9.63,31.54,55.57,1010.8,20.79,no,56.9
+0.97,3.99,31.54,55.53,1010.76,20.77,no,57.1
+1.26,6.18,31.54,55.54,1010.79,20.94,no,57.2
+1.19,3.88,31.54,55.56,1010.82,21.44,no,57.4
+1.15,3.9,31.54,55.68,1010.83,21.62,no,57.7
+1.09,4.0,31.54,55.5,1010.79,21.5,no,58.0
+1.24,4.46,31.54,55.25,1010.77,21.08,no,58.1
+1.2,4.25,31.54,55.01,1010.78,20.97,no,58.1
+1.09,4.16,31.54,54.78,1010.78,20.9,no,58.0
+1.06,3.72,31.54,54.57,1010.76,20.89,no,57.9
+1.09,3.81,31.54,54.37,1010.78,20.89,no,57.9
+1.15,3.71,31.54,54.21,1010.76,20.9,no,58.0
+1.19,3.67,31.54,54.19,1010.76,20.87,no,58.1
+1.2,3.6,31.53,54.18,1010.77,20.82,no,58.2
+1.49,3.88,31.52,54.14,1010.77,20.75,no,58.2
+1.22,3.58,31.52,54.16,1010.75,20.74,no,58.1
+1.09,3.51,31.52,54.17,1010.77,20.78,no,57.9
+1.09,3.38,31.52,54.15,1010.75,20.83,no,57.8
+1.09,3.28,31.52,54.08,1010.74,20.87,no,57.8
+1.07,3.16,31.52,54.06,1010.75,20.88,no,57.8
+1.07,3.13,31.52,53.98,1010.75,20.85,no,57.8
+1.05,3.08,31.52,53.92,1010.77,20.84,no,57.8
+1.04,2.95,31.52,53.86,1010.77,20.81,no,57.7
+1.05,2.98,31.53,53.78,1010.75,20.82,no,57.6
+1.03,2.83,31.53,53.67,1010.77,20.84,no,57.6
+1.02,2.83,31.53,53.56,1010.77,20.87,no,57.6
+1.02,2.79,31.53,53.44,1010.78,20.94,no,57.7
+1.0,2.71,31.53,53.33,1010.78,20.94,no,57.7
+1.0,2.75,31.53,53.23,1010.76,20.92,no,57.8
+0.98,2.63,31.53,53.15,1010.74,20.9,no,57.8
+0.97,2.28,31.52,53.07,1010.76,20.91,no,57.8
+0.97,2.23,31.52,52.99,1010.72,20.91,no,57.8
+0.97,2.26,31.52,52.9,1010.74,20.89,no,57.8
+0.96,2.15,31.52,52.87,1010.75,20.88,no,57.8
+0.94,2.12,31.52,52.83,1010.76,20.9,no,57.8
+0.95,2.11,31.52,52.8,1010.78,20.91,no,57.8
+0.93,2.01,31.52,52.77,1010.77,20.95,no,57.9
+0.92,2.01,31.52,52.75,1010.76,20.92,no,57.9
+0.91,2.0,31.51,52.75,1010.74,20.94,no,57.9
+0.91,1.92,31.51,52.76,1010.75,20.9,no,57.9
+0.87,1.71,31.51,52.79,1010.72,20.89,no,57.9
+0.86,1.63,31.51,52.81,1010.78,20.92,no,57.9
+0.81,1.63,31.52,52.84,1010.76,20.93,no,57.9
+0.8,1.55,31.52,52.86,1010.76,20.92,no,57.9
+0.8,1.52,31.52,52.86,1010.74,20.9,no,57.9
+0.79,1.52,31.52,52.88,1010.77,20.88,no,57.9
+0.8,1.48,31.52,52.94,1010.75,20.9,no,57.9
+0.8,1.45,31.52,52.98,1010.74,20.91,no,57.9
+0.78,1.4,31.52,53.03,1010.75,20.92,no,57.9
+0.78,1.37,31.52,53.08,1010.76,20.91,no,57.9
+0.71,1.33,31.52,53.14,1010.73,20.94,no,57.9
+0.71,1.32,31.51,53.2,1010.74,20.94,no,57.9
+0.71,1.3,31.51,53.25,1010.73,20.92,no,57.9
+0.7,1.3,31.5,53.27,1010.71,20.89,no,57.9
+0.7,1.27,31.5,53.3,1010.76,20.89,no,57.9
+0.65,1.26,31.49,53.35,1010.76,20.89,no,57.9
+0.64,1.2,31.49,53.4,1010.74,20.87,no,57.9
+0.64,1.18,31.48,53.43,1010.73,20.87,no,57.9
+0.64,1.18,31.48,53.47,1010.71,20.9,no,57.9
+0.63,1.17,31.47,53.52,1010.7,20.92,no,57.9
+0.63,1.16,31.47,53.56,1010.74,20.92,no,57.9
+0.62,1.14,31.46,53.6,1010.75,20.91,no,57.9
+0.68,1.16,31.46,53.65,1010.74,20.9,no,57.9
+0.67,1.13,31.45,53.72,1010.76,20.87,no,57.9
+0.67,1.15,31.45,53.8,1010.76,20.87,no,57.9
+0.68,1.17,31.44,53.86,1010.77,20.89,no,57.8
+0.67,1.16,31.43,53.9,1010.74,20.9,no,57.8
+0.67,1.17,31.43,53.95,1010.75,20.91,no,57.9
+0.67,1.15,31.42,54.0,1010.74,20.9,no,57.9
+0.66,1.13,31.42,54.04,1010.74,20.9,no,57.9
+0.66,1.12,31.41,54.07,1010.75,20.9,no,57.9
+0.66,1.1,31.4,54.11,1010.74,20.91,no,57.9
+0.66,1.12,31.39,54.15,1010.74,20.91,no,57.9
+0.66,1.09,31.39,54.18,1010.75,20.91,no,57.9
+0.66,1.09,31.39,54.21,1010.75,20.92,no,57.9
+0.67,1.1,31.38,54.23,1010.78,20.93,no,57.9
+0.67,1.09,31.37,54.23,1010.73,20.95,no,57.9
+0.67,1.1,31.37,54.23,1010.72,20.93,no,57.9
+0.67,1.1,31.37,54.22,1010.75,20.94,no,57.9
+0.66,1.06,31.37,54.21,1010.74,20.94,no,57.9
+0.66,1.05,31.36,54.21,1010.72,20.94,no,57.9
+0.66,1.05,31.37,54.22,1010.75,20.92,no,57.9
+0.66,1.05,31.37,54.22,1010.74,20.93,no,57.9
+0.67,1.05,31.37,54.2,1010.74,20.95,no,57.9
+0.66,1.04,31.37,54.19,1010.69,20.93,no,57.9
+0.66,1.02,31.37,54.18,1010.7,20.9,no,57.9
+0.67,1.02,31.38,54.17,1010.74,20.87,no,57.9
+0.84,1.18,31.37,54.16,1010.72,20.88,no,57.9
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),54.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),54.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),54.0
+0.5,207.92,31.43,54.02,1010.69,19.83,Notice: Oxygen levels dropping rapidly|Notice: CO2 levels increasing rapidly,45.8
+0.5,211.53,31.43,54.06,1010.63,19.82,Notice: Oxygen levels dropping rapidly|Notice: CO2 levels increasing rapidly,36.8
+0.52,213.26,31.43,54.15,1010.64,19.83,Notice: Oxygen levels dropping rapidly|Notice: CO2 levels increasing rapidly,31.5
+0.52,208.36,31.43,54.16,1010.65,19.84,Notice: Oxygen levels dropping rapidly|Notice: CO2 levels increasing rapidly,27.6
+0.52,213.8,31.43,54.21,1010.68,19.85,no,24.9
+0.53,198.76,31.43,54.25,1010.65,19.84,no,24.6
+0.53,210.55,31.43,54.34,1010.65,19.82,no,27.4
+0.59,217.87,31.43,54.44,1010.67,19.81,no,31.7
+0.58,213.36,31.43,54.55,1010.67,19.83,no,35.7
+0.62,215.15,31.43,54.6,1010.65,19.84,no,38.8
+0.61,216.96,31.43,54.65,1010.67,19.86,no,41.1
+0.62,210.64,31.43,54.74,1010.64,19.89,no,42.8
+0.6,188.38,31.43,54.89,1010.66,19.86,no,44.2
+0.6,188.22,31.43,55.02,1010.67,19.79,no,45.2
+0.6,187.0,31.44,55.11,1010.66,19.73,no,45.7
+0.6,186.46,31.44,55.1,1010.64,19.79,no,45.8
+0.54,188.17,31.44,55.05,1010.67,19.91,no,45.8
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),60.0
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.7
+0,0,0,0,0,20.9,Warning: Low Humidity (Dry Air Discomfort),55.7
+0.42,220.96,31.21,54.92,1010.06,19.04,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,47.4
+0.42,220.94,31.21,54.93,1010.1,19.03,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,38.7
+0.42,215.97,31.21,54.91,1010.1,19.05,Warning: Oxygen Fatigue (Low O2)|Notice: CO2 levels increasing rapidly|URGENT: Estimated 60.0 minutes until unconsciousness,32.4
+0.39,183.65,31.21,54.91,1010.06,19.08,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,28.4
+0.42,181.15,31.21,54.96,1010.08,19.32,Warning: Oxygen Fatigue (Low O2)|URGENT: Estimated 60.0 minutes until unconsciousness,26.2
+0.49,136.27,31.21,55.06,1010.1,19.86,no,26.0
+0.34,150.72,31.21,55.04,1010.08,20.4,no,28.3
+0.34,148.14,31.21,55.04,1010.08,20.67,no,33.8
+0.35,150.72,31.21,55.03,1010.12,20.66,no,40.0
+0.34,148.66,31.21,55.02,1010.11,20.66,no,45.3
+0.35,154.42,31.21,54.99,1010.1,20.66,no,49.1
+0.35,153.9,31.22,54.97,1010.1,20.67,no,51.8
+0.35,155.53,31.22,54.93,1010.08,20.67,no,53.6
+0.35,155.58,31.22,54.89,1010.07,20.68,no,54.9
+0.35,157.24,31.21,54.84,1010.08,20.7,no,55.8
+0.34,148.36,31.21,54.79,1010.1,20.69,no,56.5
+0.34,148.91,31.21,54.76,1010.08,20.69,no,57.0
+0.34,149.99,31.2,54.73,1010.12,20.68,no,57.3
+0.35,156.87,31.2,54.71,1010.13,20.67,no,57.6
+0.35,163.47,31.19,54.7,1010.12,20.68,no,57.7
+0.35,163.5,31.19,54.68,1010.1,20.69,no,57.8
+0.34,161.31,31.18,54.67,1010.12,20.69,no,57.9
+0.35,164.65,31.18,54.67,1010.12,20.7,no,58.0
+0.35,165.23,31.17,54.67,1010.14,20.73,no,58.0
+0.34,200.04,31.17,54.67,1010.12,20.72,no,58.1
+0.43,204.01,31.16,54.7,1010.1,20.69,no,58.1
+0.38,187.73,31.16,54.74,1010.12,20.66,no,58.1
+0.4,192.74,31.16,54.79,1010.09,20.68,no,58.1
+0.48,197.86,31.17,54.84,1010.13,20.69,no,58.1
+0.46,195.18,31.17,54.89,1010.11,20.68,no,58.1
+0.37,201.01,31.18,54.93,1010.13,20.68,no,58.1
+0.37,199.62,31.18,54.96,1010.13,20.67,no,58.1
+0.39,202.87,31.19,55.0,1010.11,20.68,no,58.1
+0.45,296.44,31.2,55.07,1010.14,20.68,no,58.1
+0.58,586.26,31.21,55.19,1010.13,20.67,Notice: CO2 levels increasing rapidly,58.1
+0.76,1211.79,31.22,55.36,1010.09,20.66,Warning: Poor Air Quality (Fatigue),57.9
+1.05,2804.93,31.23,55.57,1010.04,20.66,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 50%,57.6
+1.38,5366.73,31.24,55.81,1010.06,20.66,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 10% - EVACUATE,56.8
+1.8,8817.64,31.25,56.08,1010.08,20.65,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 10% - EVACUATE,54.2
+2.41,14352.56,31.27,56.38,1010.13,20.62,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,48.4
+3.38,21694.33,31.28,56.7,1010.14,20.6,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,40.2
+4.02,31129.58,31.3,57.03,1010.12,20.55,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,33.0
+4.54,41351.85,31.31,57.37,1010.15,20.51,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,27.2
+3.26,25773.22,31.33,57.7,1010.12,20.66,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,23.0
+2.88,21523.8,31.34,57.79,1010.13,20.91,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 10% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,20.1
+2.02,11749.8,31.34,57.59,1010.14,21.04,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 10% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,18.4
+1.78,8379.42,31.34,57.36,1010.15,20.95,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 20% - EVACUATE,17.4
+1.66,6599.0,31.33,57.12,1010.15,20.88,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 20% - EVACUATE,17.2
+1.56,5492.55,31.33,56.9,1010.15,20.86,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 20% - EVACUATE,17.7
+1.5,4712.05,31.33,56.71,1010.14,20.85,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,19.1
+1.45,4012.77,31.32,56.53,1010.18,20.82,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,21.3
+1.4,3528.1,31.32,56.35,1010.15,20.8,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,23.3
+1.36,3146.56,31.32,56.22,1010.15,20.79,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,24.2
+1.32,2783.15,31.32,56.12,1010.17,20.78,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,25.3
+1.27,2469.53,31.31,55.99,1010.15,20.77,Warning: Poor Air Quality (Fatigue),27.2
+1.24,2222.15,31.31,55.88,1010.17,20.77,Warning: Poor Air Quality (Fatigue),30.2
+1.21,1993.72,31.31,55.79,1010.15,20.76,Warning: Poor Air Quality (Fatigue),34.0
+1.19,1859.75,31.31,55.74,1010.14,20.74,Warning: Poor Air Quality (Fatigue),38.0
+1.17,1724.47,31.31,55.73,1010.12,20.72,Warning: Poor Air Quality (Fatigue),42.0
+1.15,1603.23,31.31,55.75,1010.14,20.71,Warning: Poor Air Quality (Fatigue),45.5
+1.12,1498.92,31.31,55.74,1010.16,20.71,Warning: Poor Air Quality (Fatigue),48.4
+1.09,1382.18,31.31,55.68,1010.16,20.71,Warning: Poor Air Quality (Fatigue),50.8
+1.07,1285.27,31.31,55.6,1010.11,20.71,Warning: Poor Air Quality (Fatigue),52.6
+1.05,1218.69,31.31,55.54,1010.14,20.71,Warning: Poor Air Quality (Fatigue),54.1
+1.04,1175.01,31.31,55.49,1010.13,20.71,Warning: Poor Air Quality (Fatigue),55.1
+1.02,1094.91,31.31,55.46,1010.14,20.71,Warning: Poor Air Quality (Fatigue),55.9
+1.0,1046.46,31.32,55.43,1010.18,20.7,Warning: Poor Air Quality (Fatigue),56.6
+0.98,986.09,31.32,55.39,1010.07,20.7,Notice: Acceptable CO2 (Mild Drowsiness),57.0
+0.97,945.07,31.32,55.34,1010.12,20.7,Notice: Acceptable CO2 (Mild Drowsiness),57.3
+0.96,913.53,31.32,55.29,1010.11,20.71,Notice: Acceptable CO2 (Mild Drowsiness),57.6
+0.95,875.33,31.31,55.26,1010.14,20.71,Notice: Acceptable CO2 (Mild Drowsiness),57.8
+0.92,829.26,31.31,55.2,1010.14,20.72,Notice: Acceptable CO2 (Mild Drowsiness),57.9
+0.92,822.53,31.31,55.13,1010.14,20.72,Notice: Acceptable CO2 (Mild Drowsiness),58.0
+0.91,790.4,31.3,55.07,1010.17,20.72,no,58.1
+0.9,763.73,31.3,55.03,1010.15,20.73,no,58.2
+0.89,737.89,31.3,54.99,1010.21,20.72,no,58.2
+0.87,717.03,31.3,54.96,1010.15,20.71,no,58.2
+0.87,700.81,31.29,54.93,1010.14,20.71,no,58.2
+0.87,682.92,31.28,54.89,1010.14,20.71,no,58.2
+0.85,644.43,31.28,54.86,1010.14,20.7,no,58.2
+0.85,640.86,31.27,54.83,1010.14,20.7,no,58.2
+0.83,615.36,31.26,54.8,1010.14,20.7,no,58.2
+0.83,608.35,31.25,54.78,1010.15,20.7,no,58.2
+0.83,603.1,31.25,54.77,1010.15,20.7,no,58.2
+0.81,577.09,31.24,54.78,1010.15,20.7,no,58.2
+0.81,577.2,31.24,54.76,1010.15,20.7,no,58.2
+0.81,567.2,31.23,54.75,1010.16,20.7,no,58.2
+0.8,554.04,31.23,54.74,1010.13,20.7,no,58.2
+0.79,544.35,31.22,54.74,1010.14,20.7,no,58.2
+0.79,499.48,31.21,54.74,1010.15,20.69,no,58.2
+0.78,499.61,31.2,54.72,1010.13,20.69,no,58.2
+0.77,487.93,31.2,54.71,1010.12,20.7,no,58.2
+0.76,492.44,31.19,54.7,1010.15,20.7,no,58.2
+0.77,477.99,31.18,54.71,1010.15,20.7,no,58.2
+0.76,473.73,31.17,54.72,1010.12,20.69,no,58.2
+0.75,463.87,31.17,54.73,1010.1,20.69,no,58.2
+0.75,452.84,31.17,54.74,1010.1,20.69,no,58.1
+0.74,446.11,31.16,54.74,1010.1,20.69,no,58.1
+0.74,431.56,31.16,54.74,1010.14,20.68,no,58.1
+0.73,434.15,31.16,54.76,1010.1,20.68,no,58.1
+0.72,427.59,31.15,54.79,1010.12,20.68,no,58.1
+0.73,419.8,31.16,54.82,1010.12,20.68,no,58.1
+0.72,413.35,31.16,54.86,1010.11,20.68,no,58.1
+0.71,400.84,31.16,54.9,1010.13,20.68,no,58.1
+0.71,394.64,31.17,54.94,1010.15,20.68,no,58.1
+0.71,393.41,31.17,54.94,1010.12,20.68,no,58.1
+0.7,387.51,31.17,54.92,1010.12,20.68,no,58.1
+0.7,380.52,31.17,54.9,1010.09,20.68,no,58.1
+0.7,369.09,31.17,54.88,1010.11,20.68,no,58.1
+0.69,372.55,31.17,54.87,1010.16,20.67,no,58.1
+0.69,370.32,31.16,54.86,1010.15,20.67,no,58.1
+0.68,364.74,31.16,54.84,1010.12,20.68,no,58.1
+0.68,357.05,31.16,54.81,1010.12,20.68,no,58.1
+0.68,357.09,31.16,54.79,1010.12,20.68,no,58.1
+0.68,356.05,31.15,54.77,1010.11,20.68,no,58.1
+0.67,342.12,31.15,54.75,1010.13,20.68,no,58.1
+0.67,345.39,31.14,54.73,1010.1,20.67,no,58.1
+0.66,337.01,31.14,54.7,1010.1,20.67,no,58.1
+0.66,338.15,31.13,54.68,1010.1,20.67,no,58.1
+0.66,329.89,31.13,54.68,1010.12,20.67,no,58.1
+0.65,322.83,31.12,54.67,1010.1,20.68,no,58.1
+0.65,321.87,31.12,54.66,1010.11,20.68,no,58.1
+0.65,315.92,31.12,54.65,1010.09,20.68,no,58.1
+0.65,306.19,31.12,54.65,1010.1,20.68,no,58.1
+0.64,305.24,31.12,54.65,1010.07,20.68,no,58.1
+0.64,292.96,31.12,54.68,1010.09,20.68,no,58.1
+0.63,291.96,31.12,54.71,1010.08,20.68,no,58.1
+0.63,286.4,31.12,54.76,1010.09,20.68,no,58.1
+0.62,287.18,31.12,54.82,1010.11,20.68,no,58.1
+0.55,332.59,31.13,54.86,1010.09,20.81,no,58.1
+0.81,600.26,31.14,54.91,1010.12,20.83,Notice: CO2 levels increasing rapidly,58.1
+1.08,1323.57,31.15,54.97,1010.13,20.82,Warning: Poor Air Quality (Fatigue),58.1
+1.59,3926.07,31.16,55.05,1010.14,20.67,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 50%,57.7
+2.32,8723.24,31.18,55.17,1010.12,20.65,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 10% - EVACUATE,55.8
+3.2,16663.65,31.19,55.33,1010.12,20.65,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,50.9
+4.33,32358.0,31.21,55.53,1010.12,20.65,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,43.0
+5.5,49715.14,31.23,55.77,1010.14,20.62,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,34.8
+8.45,50000.0,31.25,56.12,1010.13,20.56,Notice: CO rising significantly above ambient|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,28.4
+9.48,50000.0,31.27,56.49,1010.13,20.45,Warning: Elevated CO levels|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,23.7
+10.08,50000.0,31.29,56.88,1010.12,20.34,Warning: Elevated CO levels|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,20.4
+10.91,50000.0,31.3,57.28,1010.14,20.21,Warning: Elevated CO levels|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,18.1
+11.74,50000.0,31.32,57.69,1010.15,20.17,Warning: Elevated CO levels|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,16.5
+10.84,50000.0,31.34,58.03,1010.15,20.15,Warning: Elevated CO levels|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,15.5
+9.96,50000.0,31.36,58.32,1010.12,20.22,Warning: Elevated CO levels|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,15.1
+9.06,50000.0,31.37,58.57,1010.15,20.21,Warning: Elevated CO levels|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,15.2
+9.1,50000.0,31.38,58.78,1010.14,20.23,Warning: Elevated CO levels|CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,15.5
+8.31,50000.0,31.4,58.96,1010.16,20.18,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,15.8
+7.98,50000.0,31.41,59.11,1010.13,20.19,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,16.1
+8.47,50000.0,31.42,59.23,1010.13,20.15,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,16.3
+3.17,50000.0,31.43,59.06,1010.15,20.52,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,16.5
+2.34,50000.0,31.43,58.76,1010.1,20.65,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,16.7
+1.92,50000.0,31.42,58.44,1010.15,20.77,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,16.9
+1.78,50000.0,31.41,58.11,1010.08,20.62,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,16.9
+1.66,50000.0,31.4,57.79,1010.07,20.69,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,17.0
+1.55,47253.52,31.39,57.48,1010.09,20.71,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 0% - EVACUATE|URGENT: Estimated 5.0 minutes until unconsciousness,17.0
+1.49,33643.4,31.37,57.18,1010.05,20.71,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 10% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,17.3
+1.64,27696.59,31.37,57.42,1010.05,20.61,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 10% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,18.0
+1.3,18334.0,31.36,57.42,1010.05,20.51,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 10% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,19.0
+1.33,16159.44,31.35,57.25,1010.08,20.47,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 10% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,19.7
+1.38,10827.25,31.35,57.03,1010.09,20.55,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 10% - EVACUATE|URGENT: Estimated 30.0 minutes until unconsciousness,20.7
+1.35,9057.7,31.33,56.79,1010.04,20.71,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 20% - EVACUATE,21.4
+1.38,8250.08,31.32,56.57,1010.05,20.83,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 20% - EVACUATE,21.5
+1.28,6312.36,31.31,56.38,1010.04,20.84,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 20% - EVACUATE,21.4
+1.27,5829.85,31.31,56.18,1010.05,20.84,CRITICAL: CO2 Suffocation Risk|CRITICAL: SAFETY SCORE 20% - EVACUATE,20.9
+1.19,4274.66,31.3,56.0,1010.06,20.79,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,20.4
+1.13,3853.6,31.29,55.85,1010.07,20.81,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,20.3
+1.09,3645.72,31.29,55.71,1010.09,20.74,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,20.5
+1.07,3517.94,31.28,55.58,1010.06,20.73,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,21.2
+1.05,3272.54,31.28,55.45,1010.1,20.71,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,22.3
+1.02,3193.58,31.27,55.32,1010.08,20.68,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,23.9
+0.96,3503.46,31.27,55.36,1010.08,20.61,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,25.4
+0.93,3445.94,31.27,55.32,1010.1,20.54,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,26.6
+0.92,3267.44,31.26,55.28,1010.06,20.55,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,27.5
+0.9,3073.43,31.26,55.2,1010.08,20.62,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,28.4
+0.87,2891.26,31.26,55.12,1010.09,20.69,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,29.6
+0.85,2781.61,31.25,55.05,1010.07,20.7,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,31.1
+0.83,2609.54,31.24,54.98,1010.03,20.72,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,33.0
+0.82,2503.53,31.24,54.91,1010.07,20.72,Severe: Dangerous CO2 (Sleepiness)|Warning: Poor Safety Score 60%,35.2
+0.8,2355.15,31.24,54.85,1010.05,20.68,Warning: Poor Air Quality (Fatigue),37.4
+0.78,2259.34,31.23,54.8,1010.07,20.67,Warning: Poor Air Quality (Fatigue),39.6
+0.77,2240.93,31.23,54.77,1010.05,20.62,Warning: Poor Air Quality (Fatigue),41.8
+0.75,2155.16,31.22,54.77,1010.09,20.62,Warning: Poor Air Quality (Fatigue),43.9
+0.74,2061.22,31.22,54.75,1010.09,20.59,Warning: Poor Air Quality (Fatigue),45.7
+0.91,1843.41,31.22,54.73,1010.06,20.64,Warning: Poor Air Quality (Fatigue),47.4
+0.88,1728.45,31.22,54.73,1010.03,20.69,Warning: Poor Air Quality (Fatigue),49.0
+0.86,1602.28,31.22,54.75,1010.09,20.67,Warning: Poor Air Quality (Fatigue),50.5
+0.83,1580.11,31.22,54.73,1010.03,20.74,Warning: Poor Air Quality (Fatigue),51.9
+0.81,1515.44,31.22,54.7,1010.03,20.83,Warning: Poor Air Quality (Fatigue),53.2
+0.78,1498.82,31.22,54.67,1010.05,20.9,Warning: Poor Air Quality (Fatigue),54.3
+0.75,1449.21,31.22,54.66,1010.01,20.86,Warning: Poor Air Quality (Fatigue),55.2
+0.72,1397.46,31.22,54.63,1010.02,20.82,Warning: Poor Air Quality (Fatigue),55.9
+0.7,1340.02,31.22,54.6,1010.04,20.71,Warning: Poor Air Quality (Fatigue),56.5
+0.67,1295.76,31.22,54.57,1010.05,20.66,Warning: Poor Air Quality (Fatigue),56.8
+0.65,1260.03,31.22,54.53,1010.04,20.63,Warning: Poor Air Quality (Fatigue),57.1
+0.63,1204.74,31.21,54.49,1010.03,20.66,Warning: Poor Air Quality (Fatigue),57.3
+0.61,1154.86,31.21,54.47,1010.0,20.66,Warning: Poor Air Quality (Fatigue),57.5
+0.6,1168.08,31.22,54.45,1010.03,20.64,Warning: Poor Air Quality (Fatigue),57.6
+0.58,1119.61,31.22,54.42,1010.05,20.6,Warning: Poor Air Quality (Fatigue),57.7
+0.57,1088.35,31.23,54.4,1010.04,20.6,Warning: Poor Air Quality (Fatigue),57.8
+0.56,1076.02,31.23,54.39,1010.03,20.57,Warning: Poor Air Quality (Fatigue),57.8
+0.54,1013.55,31.24,54.39,1010.01,20.57,Warning: Poor Air Quality (Fatigue),57.8
+0.54,1007.56,31.25,54.41,1010.03,20.59,Warning: Poor Air Quality (Fatigue),57.8
+0.52,954.4,31.26,54.4,1010.05,20.62,Notice: Acceptable CO2 (Mild Drowsiness),57.8
+0.51,970.82,31.26,54.39,1010.02,20.61,Notice: Acceptable CO2 (Mild Drowsiness),57.9
+0.5,922.22,31.27,54.37,1010.06,20.63,Notice: Acceptable CO2 (Mild Drowsiness),57.9
+0.49,911.7,31.27,54.37,1010.05,20.66,Notice: Acceptable CO2 (Mild Drowsiness),58.0
+0.49,888.34,31.28,54.39,1010.03,20.67,Notice: Acceptable CO2 (Mild Drowsiness),58.0
+0.48,893.34,31.28,54.39,1010.02,20.65,Notice: Acceptable CO2 (Mild Drowsiness),58.1
+0.47,880.56,31.29,54.38,1010.0,20.64,Notice: Acceptable CO2 (Mild Drowsiness),58.1
+0.46,845.77,31.29,54.39,1010.03,20.65,Notice: Acceptable CO2 (Mild Drowsiness),58.1
+0.46,816.93,31.3,54.4,1010.02,20.64,Notice: Acceptable CO2 (Mild Drowsiness),58.1
+0.46,789.01,31.31,54.42,1010.05,20.64,no,58.1
+0.44,764.19,31.31,54.44,1010.03,20.69,no,58.1
+0.44,744.62,31.31,54.42,1010.0,20.73,no,58.2
+0.42,744.68,31.32,54.4,1010.03,20.74,no,58.3
+0.42,729.73,31.32,54.4,1010.01,20.72,no,58.3
+0.42,719.25,31.32,54.39,1010.02,20.68,no,58.3
+0.42,709.1,31.32,54.35,1010.02,20.67,no,58.2
+0.41,696.93,31.31,54.34,1009.95,20.64,no,58.2
+0.42,697.03,31.31,54.33,1009.98,20.71,no,58.2
+0.41,692.97,31.31,54.34,1009.99,20.73,no,58.2
+0.41,697.0,31.31,54.35,1009.96,20.69,no,58.2
+0.4,671.25,31.3,54.34,1009.96,20.64,no,58.2
+0.4,671.23,31.29,54.37,1009.96,20.66,no,58.2
+0.4,667.23,31.29,54.4,1010.0,20.69,no,58.2
+0.41,653.52,31.29,54.46,1009.97,20.67,no,58.2
+0.4,625.26,31.28,54.53,1009.99,20.66,no,58.2
+0.38,585.85,31.28,54.62,1009.99,20.65,no,58.2
+0.38,561.87,31.27,54.72,1009.97,20.69,no,58.2
+0.37,540.25,31.27,54.86,1009.96,20.76,no,58.2
+0.37,498.19,31.27,55.0,1009.96,20.83,no,58.3
+0.37,468.92,31.27,55.11,1009.98,20.81,no,58.3
+0.37,497.42,31.27,55.24,1009.97,20.85,no,58.4
+0.37,497.08,31.27,55.34,1009.94,20.9,no,58.4
+0.36,496.88,31.27,55.4,1009.94,20.96,no,58.4
+0.36,495.26,31.28,55.43,1009.95,20.85,no,58.3
+0.36,482.11,31.28,55.43,1009.93,20.77,no,58.3
+0.36,475.03,31.28,55.4,1009.94,20.63,no,58.2
+0.36,473.68,31.28,55.38,1009.96,20.67,no,58.1
+0.36,473.76,31.28,55.36,1009.94,20.69,no,58.0
+0.35,414.98,31.27,55.35,1009.92,20.73,no,58.1
+0.36,409.99,31.27,55.36,1009.95,20.7,no,58.1
+0.36,430.44,31.26,55.33,1009.93,20.68,no,58.2
+0.36,435.81,31.26,55.3,1009.93,20.67,no,58.2
+0.35,439.86,31.26,55.26,1009.92,20.67,no,58.2
+0.35,441.3,31.26,55.22,1009.94,20.67,no,58.1
+0.35,433.52,31.26,55.17,1009.91,20.68,no,58.1
+0.35,436.25,31.27,55.12,1009.9,20.7,no,58.1
+0.35,377.05,31.27,55.1,1009.9,20.71,no,58.1
+0.35,380.67,31.26,55.05,1009.92,20.7,no,58.2
+0.34,359.17,31.27,55.02,1009.91,20.69,no,58.2
+0.35,377.27,31.27,55.0,1009.93,20.66,no,58.2
+0.34,369.27,31.27,54.99,1009.96,20.65,no,58.1
+0.34,362.6,31.27,54.96,1009.96,20.64,no,58.1
+0.34,362.67,31.27,54.92,1009.97,20.63,no,58.1
+0.34,363.85,31.28,54.88,1009.95,20.63,no,58.1
+0.34,363.92,31.28,54.85,1009.92,20.65,no,58.1
+0.33,359.56,31.27,54.82,1009.93,20.66,no,58.1
+0.33,355.23,31.27,54.79,1009.96,20.64,no,58.1
+0.34,361.92,31.27,54.76,1009.91,20.62,no,58.1
+0.33,359.78,31.27,54.74,1009.93,20.66,no,58.1
+0.33,356.57,31.26,54.72,1009.92,20.68,no,58.1
+0.33,355.57,31.25,54.71,1009.93,20.67,no,58.1
+0.33,355.64,31.24,54.7,1009.92,20.65,no,58.1
+0.32,356.8,31.23,54.71,1009.92,20.65,no,58.1
+0.32,354.67,31.22,54.72,1009.91,20.63,no,58.1
+0.32,355.81,31.2,54.73,1009.87,20.64,no,58.1
+0.32,330.35,31.2,54.75,1009.92,20.65,no,58.1
+0.32,341.82,31.19,54.76,1009.89,20.65,no,58.1
+0.32,341.79,31.19,54.79,1009.85,20.64,no,58.1
+0.31,342.76,31.19,54.82,1009.86,20.65,no,58.1
+0.32,338.46,31.19,54.85,1009.87,20.65,no,58.1
+0.31,329.09,31.19,54.88,1009.88,20.66,no,58.1
+0.31,330.1,31.19,54.89,1009.85,20.66,no,58.1
+0.31,330.08,31.18,54.92,1009.9,20.67,no,58.1
+0.31,338.32,31.18,54.95,1009.87,20.67,no,58.1
+0.31,334.05,31.18,55.0,1009.87,20.63,no,58.1
+0.29,359.55,31.18,55.1,1009.88,20.63,no,58.1
+0.32,399.83,31.18,55.25,1009.85,20.63,no,58.1
+0.34,497.85,31.18,55.35,1009.89,20.67,no,58.0
+0.34,497.68,31.19,55.39,1009.87,20.68,no,58.0
+0.34,494.69,31.19,55.39,1009.86,20.69,no,58.1
+0.34,497.7,31.19,55.37,1009.86,20.7,no,58.1
+0.34,497.78,31.2,55.34,1009.89,20.71,no,58.1
+0.34,497.85,31.2,55.31,1009.88,20.71,no,58.1
+0.34,494.94,31.2,55.29,1009.88,20.71,no,58.1
+0.34,497.92,31.2,55.28,1009.86,20.71,no,58.1
+0.34,492.03,31.2,55.27,1009.83,20.72,no,58.1
+0.34,496.52,31.2,55.25,1009.82,20.72,no,58.1
+0.34,498.1,31.2,55.22,1009.85,20.72,no,58.1
+0.34,498.2,31.2,55.19,1009.89,20.71,no,58.1
+0.34,498.25,31.2,55.17,1009.88,20.71,no,58.1
+0.34,490.93,31.2,55.14,1009.89,20.71,no,58.1
+0.34,492.46,31.2,55.12,1009.9,20.72,no,58.1
+0.34,498.44,31.2,55.1,1009.89,20.74,no,58.1
+0.34,494.02,31.21,55.09,1009.88,20.76,no,58.2
+0.33,498.44,31.21,55.09,1009.86,20.75,no,58.2
+0.33,495.45,31.21,55.08,1009.89,20.73,no,58.2
+0.34,498.39,31.22,55.08,1009.88,20.73,no,58.2
+0.33,496.84,31.22,55.09,1009.84,20.73,no,58.1
+0.33,492.34,31.22,55.11,1009.89,20.73,no,58.1
+0.33,498.23,31.23,55.1,1009.86,20.7,no,58.1
+0.34,485.03,31.23,55.08,1009.88,20.72,no,58.1
+0.34,485.01,31.24,55.08,1009.85,20.73,no,58.1
+0.33,477.83,31.24,55.06,1009.86,20.75,no,58.1
+0.33,485.12,31.24,55.04,1009.85,20.73,no,58.2
+0.34,486.63,31.23,55.02,1009.88,20.73,no,58.2
+0.33,479.47,31.23,55.01,1009.85,20.71,no,58.2
+0.33,476.64,31.23,55.01,1009.86,20.74,no,58.1
+0.33,466.78,31.22,55.03,1009.84,20.74,no,58.2
+0.33,466.83,31.21,55.04,1009.85,20.73,no,58.2
+0.33,464.05,31.2,55.07,1009.87,20.71,no,58.2
+0.33,451.63,31.19,55.1,1009.82,20.71,no,58.1
+0.33,452.91,31.18,55.15,1009.84,20.72,no,58.1
+0.33,458.29,31.18,55.2,1009.81,20.72,no,58.1
+0.33,455.45,31.18,55.24,1009.82,20.74,no,58.1
+0.32,447.2,31.17,55.29,1009.84,20.75,no,58.2
+0.33,462.17,31.17,55.31,1009.83,20.75,no,58.2
+0.33,455.14,31.17,55.37,1009.82,20.77,no,58.2
+0.33,452.21,31.16,55.46,1009.81,20.76,no,58.2
+0.32,445.16,31.16,55.57,1009.83,20.76,no,58.2
+0.32,443.6,31.16,55.66,1009.82,20.72,no,58.2
+0.32,446.12,31.16,55.72,1009.82,20.73,no,58.1
+0.32,439.35,31.16,55.76,1009.79,20.71,no,58.1
+0.32,440.64,31.15,55.78,1009.8,20.72,no,58.1
+0.32,437.94,31.15,55.8,1009.79,20.71,no,58.1
+0.32,437.92,31.15,55.8,1009.77,20.7,no,58.1
+0.32,432.69,31.16,55.79,1009.79,20.7,no,58.1
+0.32,432.77,31.16,55.76,1009.81,20.69,no,58.1
+0.32,431.5,31.15,55.77,1009.79,20.7,no,58.1
+0.32,432.82,31.14,55.78,1009.79,20.68,no,58.1
+0.32,436.74,31.14,55.8,1009.8,20.68,no,58.1
+0.32,431.44,31.13,55.83,1009.78,20.67,no,58.1
+0.31,430.06,31.13,55.87,1009.78,20.66,no,58.1
+0.32,432.55,31.13,55.92,1009.78,20.66,no,58.1
+0.31,410.79,31.13,55.94,1009.78,20.67,no,58.1
+0.32,431.12,31.13,55.97,1009.78,20.68,no,58.1
+0.32,432.38,31.13,55.98,1009.81,20.69,no,58.1
+0.32,427.19,31.13,55.98,1009.8,20.68,no,58.1
+0.31,428.5,31.13,55.96,1009.77,20.68,no,58.1
+0.31,420.83,31.14,55.94,1009.73,20.69,no,58.1
+0.32,428.56,31.14,55.92,1009.79,20.7,no,58.1
+0.32,431.26,31.14,55.88,1009.76,20.7,no,58.1
+0.31,418.5,31.14,55.85,1009.74,20.72,no,58.1
+0.31,417.31,31.14,55.82,1009.74,20.72,no,58.1
+0.32,424.99,31.14,55.81,1009.78,20.71,no,58.1
+0.32,431.56,31.14,55.79,1009.75,20.72,no,58.1
+0.31,430.28,31.13,55.78,1009.76,20.72,no,58.1
+0.31,427.71,31.13,55.78,1009.74,20.68,no,58.1
+0.32,431.67,31.13,55.76,1009.73,20.69,no,58.1
+0.31,431.7,31.13,55.75,1009.76,20.69,no,58.1
+0.31,417.63,31.13,55.73,1009.76,20.7,no,58.1
+0.31,418.94,31.13,55.71,1009.78,20.69,no,58.1
+0.31,424.02,31.13,55.72,1009.7,20.7,no,58.1
+0.31,425.34,31.13,55.71,1009.74,20.68,no,58.1
+0.31,415.18,31.12,55.72,1009.74,20.67,no,58.1
+0.31,413.97,31.12,55.72,1009.71,20.67,no,58.1
+0.31,415.22,31.11,55.73,1009.73,20.68,no,58.1
+0.31,415.2,31.12,55.73,1009.71,20.69,no,58.1
+0.31,413.95,31.12,55.72,1009.71,20.69,no,58.1
+0.31,430.55,31.12,55.72,1009.72,20.69,no,58.1
+0.31,412.7,31.12,55.7,1009.73,20.7,no,58.1
+0.31,415.18,31.13,55.69,1009.72,20.7,no,58.1
+0.3,410.21,31.13,55.67,1009.71,20.68,no,58.1
+0.31,407.77,31.14,55.65,1009.72,20.67,no,58.1
+0.3,408.94,31.14,55.67,1009.71,20.66,no,58.1
+0.31,417.68,31.14,55.68,1009.75,20.65,no,58.1
+0.3,407.61,31.14,55.7,1009.7,20.7,no,58.1
+0.3,397.79,31.14,55.7,1009.73,20.72,no,58.1
+0.3,405.11,31.14,55.7,1009.69,20.73,no,58.1
+0.3,405.11,31.14,55.7,1009.75,20.72,no,58.1
+0.31,407.59,31.14,55.69,1009.69,20.72,no,58.1
+0.3,395.42,31.14,55.68,1009.72,20.71,no,58.1
+0.31,401.5,31.14,55.68,1009.71,20.68,no,58.1
+0.31,397.86,31.14,55.67,1009.68,20.67,no,58.1
+0.3,391.86,31.15,55.66,1009.69,20.67,no,58.1
+0.31,395.49,31.15,55.64,1009.7,20.67,no,58.1

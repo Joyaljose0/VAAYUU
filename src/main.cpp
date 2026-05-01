@@ -80,29 +80,43 @@ float getMedian(float *data, int n) {
   return data[n / 2];
 }
 
-float getMQ7_PPM(int raw_adc) {
+float getMQ7_PPM(int raw_adc, float temp, float hum) {
   if (raw_adc < 1)
     return 0.5;
   float v_out = (raw_adc * 3.3) / 4095.0;
   if (v_out < 0.1)
     return 0.5;
   float Rs = (3.3 - v_out) / v_out;
-  float ratio = Rs / MQ7_R0;
-  // ratio = 1.0 in clean air (0.5ppm CO).
-  float ppm = 0.5 * pow(ratio, -4.5);
+
+  // Basic temperature compensation for MQ7
+  float correction = 1.0;
+  if (temp > -10 && temp < 60) {
+    correction = -0.015 * (temp - 20.0) + 1.0; 
+  }
+  
+  float ratio = (Rs / correction) / MQ7_R0;
+  float ppm = MQ7_A_CO * pow(ratio, MQ7_B_CO);
   return (ppm > 2000.0) ? 2000.0 : ppm;
 }
 
-float getMQ135_PPM(int raw_adc) {
+float getMQ135_PPM(int raw_adc, float temp, float hum) {
   if (raw_adc < 1)
     return 400.0;
   float v_out = (raw_adc * 3.3) / 4095.0;
   if (v_out < 0.1)
     return 400.0;
   float Rs = (3.3 - v_out) / v_out;
-  float ratio = Rs / MQ135_R0;
-  // ratio = 1.0 in clean air (400ppm CO2).
-  float ppm = 400.0 * pow(ratio, -3.5);
+  
+  // Robust baseline compensation for Thermal Drift
+  float correction = 1.0;
+  if (temp > -10 && temp < 60 && hum > 0) {
+    correction = 0.00035 * temp * temp - 0.02718 * temp + 1.3753 - (hum - 33.0) * 0.0018;
+    if (correction < 0.5) correction = 0.5;
+  }
+  
+  float ratio = (Rs / correction) / MQ135_R0;
+  float ppm = MQ135_A_CO2 * pow(ratio, MQ135_B_CO2);
+  
   return (ppm > 50000.0) ? 50000.0 : ppm;
 }
 
@@ -293,7 +307,7 @@ void setup() {
   // Set R0 as the actual resistance in current (clean) air
   // Sanity check: If ADC is too low (saturation), don't lock a broken baseline
   if (v_out7 > 0.05) {
-    MQ7_R0 = Rs7;
+    MQ7_R0 = Rs7 / 27.0;
   } else {
     MQ7_R0 = 1.0; // Fail-safe default
     Serial.println(
@@ -301,7 +315,7 @@ void setup() {
   }
 
   if (v_out135 > 0.05) {
-    MQ135_R0 = Rs135;
+    MQ135_R0 = Rs135 / 0.64;
   } else {
     MQ135_R0 = 1.0; // Fail-safe default
     Serial.println(
@@ -366,7 +380,7 @@ void setup() {
             "DNS Initial Check Failed. Applying Static Fallback (8.8.8.8)...");
         IPAddress dns1(8, 8, 8, 8);
         IPAddress dns2(8, 8, 4, 4);
-        WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, dns1, dns2);
+        WiFi.config(WiFi.localIP(), WiFi.gatewayIP(), WiFi.subnetMask(), dns1, dns2);
 
         if (WiFi.hostByName("google.com", testIp)) {
           Serial.println("DNS OK (via Static Fallback)");
@@ -503,12 +517,7 @@ void loop() {
         preferences.putString("password", password);
         preferences.putString("ip", backendIp);
 
-        // Configure Static DNS for reliability (Google DNS)
-        IPAddress dns1(8, 8, 8, 8);
-        IPAddress dns2(8, 8, 4, 4);
-        if (!WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE, dns1, dns2)) {
-          Serial.println("Error: Failed to configure Static DNS");
-        }
+        // We rely on DHCP for the initial IP/DNS lease.
 
         WiFi.disconnect();
         WiFi.begin(ssid.c_str(), password.c_str());
@@ -578,7 +587,7 @@ void loop() {
       int raw135 = analogRead(MQ135_A_PIN);
       float v_out135 = (raw135 * 3.3) / 4095.0;
       float Rs135 = (3.3 - v_out135) / v_out135;
-      MQ135_R0 = Rs135 / 4.4;
+      MQ135_R0 = Rs135 / 0.64;
       Serial.print("New MQ135_R0: ");
       Serial.println(MQ135_R0);
     } else if (msg == "CAL_CO7") {
@@ -597,12 +606,12 @@ void loop() {
       int r135 = analogRead(MQ135_A_PIN);
       float v135 = (r135 * 3.3) / 4095.0;
       if (v135 > 0.1)
-        MQ135_R0 = (3.3 - v135) / v135;
+        MQ135_R0 = ((3.3 - v135) / v135) / 0.64;
       // 3. MQ7 (Baseline Reset)
       int r7 = analogRead(MQ7_A_PIN);
       float v7 = (r7 * 3.3) / 4095.0;
       if (v7 > 0.1)
-        MQ7_R0 = (3.3 - v7) / v7;
+        MQ7_R0 = ((3.3 - v7) / v7) / 27.0;
       Serial.println("OK: All Baselines Reset.");
     } else if (msg == "RAW") {
       int r7 = analogRead(MQ7_A_PIN);
@@ -634,20 +643,6 @@ void loop() {
     }
   }
 
-  /* MQ Sensors (Median Filtering for stability) */
-  float mq7_samples[11];
-  float mq135_samples[11];
-  for (int i = 0; i < 11; i++) {
-    mq7_samples[i] = analogRead(MQ7_A_PIN);
-    mq135_samples[i] = analogRead(MQ135_A_PIN);
-    delay(5);
-  }
-  int mq7_val = getMedian(mq7_samples, 11);
-  int mq135_val = getMedian(mq135_samples, 11);
-
-  float co_ppm = getMQ7_PPM(mq7_val);
-  float gas_ppm = getMQ135_PPM(mq135_val);
-
   /* BME280 (Hybrid Filter to prevent rapid humidity jumps) */
   float temp_samples[11];
   float hum_samples[11];
@@ -673,6 +668,20 @@ void loop() {
   float temperature = filtered_temperature;
   float humidity = filtered_humidity;
   float pressure = bme.readPressure() / 100.0;
+
+  /* MQ Sensors (Median Filtering for stability) */
+  float mq7_samples[11];
+  float mq135_samples[11];
+  for (int i = 0; i < 11; i++) {
+    mq7_samples[i] = analogRead(MQ7_A_PIN);
+    mq135_samples[i] = analogRead(MQ135_A_PIN);
+    delay(5);
+  }
+  int mq7_val = getMedian(mq7_samples, 11);
+  int mq135_val = getMedian(mq135_samples, 11);
+
+  float co_ppm = getMQ7_PPM(mq7_val, temperature, humidity);
+  float gas_ppm = getMQ135_PPM(mq135_val, temperature, humidity);
 
   /* Oxygen (Sanitized and Filtered) */
   float o2_samples[7];

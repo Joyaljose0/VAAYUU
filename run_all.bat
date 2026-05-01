@@ -38,7 +38,7 @@ start /b cmd /c "cd frontend && npm run dev"
 timeout /t 3 /nobreak >nul
 
 echo [3/3] Starting Python Backend...
-echo The React dashboard should automatically open or be available at http://localhost:5173
+echo The React dashboard should automatically open or be available at http://localhost:3000
 echo.
 
 set VENV_PYTHON="%~dp0.venv\Scripts\python.exe"

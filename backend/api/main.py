@@ -105,10 +105,23 @@ async def lifespan(app: FastAPI):
                         })
 
                     # Trigger physical buzzer via Serial if hazardous
-                    if alerts and (safety_score <= 80 or any("CRITICAL" in a or "Severe" in a for a in alerts)):
+                    if alerts and (safety_score < 80 or any("CRITICAL" in a or "Severe" in a for a in alerts)):
                         if not sensor.get("is_warming_up"):
                             print("[Serial] Hazard Detected! Sending BUZZ command.")
                             write_serial("BUZZ\n")
+
+                    # --- USB-to-Cloud Bridge ---
+                    if not os.getenv("RENDER"):
+                        def forward_to_cloud(f_sensor):
+                            try:
+                                import urllib.request, json
+                                req = urllib.request.Request("https://vaayuu.onrender.com/sensor-data", 
+                                                             data=json.dumps(f_sensor).encode('utf-8'), 
+                                                             headers={'Content-Type': 'application/json'})
+                                urllib.request.urlopen(req, timeout=5)
+                            except Exception:
+                                pass # Silently ignore network drops to prevent spam
+                        threading.Thread(target=forward_to_cloud, args=(sensor.copy(),), daemon=True).start()
 
                     # Format alerts or say 'no'
                     alert_text = "|".join(alerts) if alerts else "no"
@@ -265,14 +278,15 @@ def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
     )
     
     # Determine if buzzer should sound (Critical or Safety Score <= 80)
-    should_buzz = len(alerts) > 0 and (safety_score <= 80 or any("CRITICAL" in a or "Severe" in a for a in alerts))
+    should_buzz = len(alerts) > 0 and (safety_score < 80 or any("CRITICAL" in a or "Severe" in a for a in alerts))
     
     # Also send via Serial if in USB mode or mixed mode
     if should_buzz and not sensor.get("is_warming_up"):
         write_serial("BUZZ\n")
     
     # Background the logging and voice tasks to keep response fast
-    background_tasks.add_task(process_wifi_data, sensor, alerts, safety_score, ttu)
+    escape_time = predict_escape(list(inference_buffer_wifi), env_mode)
+    background_tasks.add_task(process_wifi_data, sensor, alerts, safety_score, ttu, escape_time)
     
     from fastapi import Response
     import json
@@ -283,7 +297,7 @@ def receive_sensor_data(data: SensorData, background_tasks: BackgroundTasks):
     })
     return Response(content=resp_body, media_type='application/json')
 
-def process_wifi_data(sensor, alerts, safety_score, ttu):
+def process_wifi_data(sensor, alerts, safety_score, ttu, escape_time):
     global latest_data
     try:
         # Update dashboard with AI and alert results
@@ -293,7 +307,7 @@ def process_wifi_data(sensor, alerts, safety_score, ttu):
                 "connection_mode": "WIFI",
                 "last_updated": int(time.time()),
                 "env_mode": env_mode,
-                "escape_time": ttu if not sensor.get("is_warming_up") else None, # Using TTU as proxy for escape
+                "escape_time": escape_time if not sensor.get("is_warming_up") else None,
                 "ttu_estimate": ttu if not sensor.get("is_warming_up") else None,
                 "safety_score": safety_score if not sensor.get("is_warming_up") else 100,
                 "backend_alerts": alerts if not sensor.get("is_warming_up") else [],

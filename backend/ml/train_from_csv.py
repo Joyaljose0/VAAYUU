@@ -6,17 +6,22 @@ from tensorflow.keras.layers import LSTM, Dense, Dropout
 import os
 import joblib
 
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(BASE_DIR)
+
 # Config for BOTH modes
 MODES = {
     "BUILDING": {
-        "csv": "data/air_quality_building.csv",
-        "model": "backend/models/escape_time_lstm_building.keras",
-        "scaler": "backend/models/scaler_building.gz"
+        "csv": os.path.join(PROJECT_ROOT, "data", "air_quality_building.csv"),
+        "model": os.path.join(BASE_DIR, "models", "escape_time_lstm_building.keras"),
+        "scaler": os.path.join(BASE_DIR, "models", "scaler_building.gz")
     },
     "VEHICLE": {
-        "csv": "data/air_quality_vehicle.csv",
-        "model": "backend/models/escape_time_lstm_vehicle.keras",
-        "scaler": "backend/models/scaler_vehicle.gz"
+        "csv": os.path.join(PROJECT_ROOT, "data", "air_quality_vehicle.csv"),
+        "model": os.path.join(BASE_DIR, "models", "escape_time_lstm_vehicle.keras"),
+        "scaler": os.path.join(BASE_DIR, "models", "scaler_vehicle.gz")
     }
 }
 
@@ -87,7 +92,7 @@ def train_model(env_mode="BUILDING"):
     X_scaled = scaler.fit_transform(X)
     
     # Save scaler
-    os.makedirs("backend/models", exist_ok=True)
+    os.makedirs(os.path.dirname(config["scaler"]), exist_ok=True)
     joblib.dump(scaler, config["scaler"])
 
     # Prepare Sequences (Lookback = 10 steps)

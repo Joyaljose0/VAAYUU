@@ -3,15 +3,19 @@ import tensorflow as tf
 import joblib
 import os
 
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Config map for models
 MODES = {
     "BUILDING": {
-        "model": "backend/models/escape_time_lstm_building.keras",
-        "scaler": "backend/models/scaler_building.gz"
+        "model": os.path.join(BASE_DIR, "models", "escape_time_lstm_building.keras"),
+        "scaler": os.path.join(BASE_DIR, "models", "scaler_building.gz")
     },
     "VEHICLE": {
-        "model": "backend/models/escape_time_lstm_vehicle.keras",
-        "scaler": "backend/models/scaler_vehicle.gz"
+        "model": os.path.join(BASE_DIR, "models", "escape_time_lstm_vehicle.keras"),
+        "scaler": os.path.join(BASE_DIR, "models", "scaler_vehicle.gz")
     }
 }
 

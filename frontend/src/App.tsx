@@ -379,7 +379,7 @@ const App: React.FC = () => {
       if (newData.escape_time !== undefined && newData.escape_time !== null) {
         const newSeconds = Math.floor(newData.escape_time * 60);
         setPredictionAnchor(prev => {
-          if (!prev || newSeconds < 600 || Math.abs(prev.escapeSeconds - newSeconds) > 10) {
+          if (!prev || Math.abs(prev.escapeSeconds - newSeconds) > 10) {
             return { timeMs: Date.now(), escapeSeconds: newSeconds };
           }
           return prev;
@@ -394,7 +394,7 @@ const App: React.FC = () => {
       if (physioEst !== null) {
         const newSeconds = Math.floor(physioEst * 60);
         setPhysioAnchor(prev => {
-          if (!prev || newSeconds < 600 || Math.abs(prev.escapeSeconds - newSeconds) > 30) {
+          if (!prev || Math.abs(prev.escapeSeconds - newSeconds) > 30) {
             return { timeMs: Date.now(), escapeSeconds: newSeconds };
           }
           return prev;
